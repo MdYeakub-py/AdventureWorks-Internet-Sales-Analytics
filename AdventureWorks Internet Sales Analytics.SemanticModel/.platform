@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "AdventureWorks Internet Sales Analytics"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "8e4c8b9a-788a-416b-9e5c-26bda0f91999"
+  }
+}

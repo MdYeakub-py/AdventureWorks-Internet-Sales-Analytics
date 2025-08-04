@@ -1,0 +1,32 @@
+table 'Product Categories Lookup'
+	lineageTag: abee35aa-cdb5-4288-b923-04245d1215fd
+
+	column ProductCategoryKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 1f32dcf8-9a87-4b06-9c1e-5d7a222cb67d
+		summarizeBy: none
+		sourceColumn: ProductCategoryKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column CategoryName
+		dataType: string
+		lineageTag: 75c42443-d79c-4bca-9fc3-9aae5311e1d4
+		summarizeBy: none
+		sourceColumn: CategoryName
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Product Categories Lookup' = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("E:\new work space\All Class Video\power bi academy course\Adventure Works Project-20250803T155554Z-1-001\Adventure Works Project\AdventureWorks Product Categories Lookup.csv"),[Delimiter=",", Columns=2, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"ProductCategoryKey", Int64.Type}, {"CategoryName", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

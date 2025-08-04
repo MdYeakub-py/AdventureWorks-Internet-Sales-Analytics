@@ -1,0 +1,48 @@
+table 'Territory Lookup'
+	lineageTag: 192ea0b3-ef3b-4dcb-9911-34d8417d49a8
+
+	column SalesTerritoryKey
+		dataType: int64
+		formatString: 0
+		lineageTag: c6832f57-f941-4ce7-9c83-5b35905a2769
+		summarizeBy: count
+		sourceColumn: SalesTerritoryKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region
+		dataType: string
+		lineageTag: 757dc2bf-543e-4d17-85e8-afee66c8e843
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		lineageTag: 8afa3831-aea9-4927-b0d8-b498c871b35a
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column Continent
+		dataType: string
+		lineageTag: 1ee7cae7-9f53-4fee-984d-6103613b351d
+		summarizeBy: none
+		sourceColumn: Continent
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Territory Lookup' = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("E:\new work space\All Class Video\power bi academy course\Adventure Works Project-20250803T155554Z-1-001\Adventure Works Project\AdventureWorks Territory Lookup.csv"),[Delimiter=",", Columns=4, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"SalesTerritoryKey", Int64.Type}, {"Region", type text}, {"Country", type text}, {"Continent", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

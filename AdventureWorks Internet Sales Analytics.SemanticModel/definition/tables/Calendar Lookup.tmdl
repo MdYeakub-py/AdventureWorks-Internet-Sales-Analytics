@@ -1,0 +1,26 @@
+table 'Calendar Lookup'
+	lineageTag: 167a2046-aaac-4cce-9f95-c09f7c65b07e
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: af957a14-1cf9-41dd-b64d-814635d443ea
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition 'Calendar Lookup' = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("E:\new work space\All Class Video\power bi academy course\Adventure Works Project-20250803T155554Z-1-001\Adventure Works Project\AdventureWorks Calendar Lookup.csv"),[Delimiter=",", Columns=1, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Date", type date}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
