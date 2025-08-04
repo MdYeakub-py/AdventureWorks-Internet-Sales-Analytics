@@ -1,0 +1,36 @@
+1. Table name is : Calendar
+column : 1. Date
+
+2. table name is : customerInformation
+column: 1. age
+2. AgeGroup
+3. AnnualIncome
+4. Birthdate
+5. CustomerKey
+6. EducationalKey
+7. EmailAddress
+8. FullName
+9. Gender
+10. HomeOwner
+11. MartialStatus
+12. Occupation
+13. Prefix
+14. TotalChildren
+
+3. table name is: ProductCategory
+column: 1. CategoryName
+2. ProductCategoryKey
+
+4. table name is: ProductInformation
+column: 1. ModelName
+2. ProductColor
+3. ProductCost
+4. ProductDescription
+5. ProductKey
+6. ProductName
+7. ProductPrice
+8. ProductSize
+9. ProductSKU
+10. ProductStyle
+11. ProductSubCategoryKey
+

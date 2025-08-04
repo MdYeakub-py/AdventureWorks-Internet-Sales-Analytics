@@ -18,22 +18,6 @@ table 'Customer Lookup'
 
 		annotation SummarizationSetBy = Automatic
 
-	column FirstName
-		dataType: string
-		lineageTag: da065297-5d3b-40ba-8df2-7c3f701fc405
-		summarizeBy: none
-		sourceColumn: FirstName
-
-		annotation SummarizationSetBy = Automatic
-
-	column LastName
-		dataType: string
-		lineageTag: bdab38d7-dea4-40ad-9e74-244d094b4782
-		summarizeBy: none
-		sourceColumn: LastName
-
-		annotation SummarizationSetBy = Automatic
-
 	column BirthDate
 		dataType: dateTime
 		formatString: Long Date
@@ -111,6 +95,31 @@ table 'Customer Lookup'
 
 		annotation SummarizationSetBy = Automatic
 
+	column FullName
+		dataType: string
+		lineageTag: 1c973b1e-ac3b-48e1-9168-b7eb7cbddca5
+		summarizeBy: none
+		sourceColumn: FullName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Age
+		dataType: int64
+		formatString: 0
+		lineageTag: cb022036-eb7d-4b11-9896-b2767b529f81
+		summarizeBy: sum
+		sourceColumn: Age
+
+		annotation SummarizationSetBy = Automatic
+
+	column Age_Group
+		dataType: string
+		lineageTag: b731ee41-67bb-4f95-a4b9-40b659fe88e3
+		summarizeBy: none
+		sourceColumn: Age_Group
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'Customer Lookup' = m
 		mode: import
 		source =
@@ -122,9 +131,16 @@ table 'Customer Lookup'
 				    #"Removed Top Rows" = Table.Skip(#"Replaced Value",1),
 				    #"Removed Errors" = Table.RemoveRowsWithErrors(#"Removed Top Rows"),
 				    #"Removed Top Rows1" = Table.Skip(#"Removed Errors",1),
-				    #"Removed Bottom Rows" = Table.RemoveLastN(#"Removed Top Rows1",1)
+				    #"Removed Bottom Rows" = Table.RemoveLastN(#"Removed Top Rows1",1),
+				    #"Merged Columns" = Table.CombineColumns(#"Removed Bottom Rows",{"FirstName", "LastName"},Combiner.CombineTextByDelimiter(" ", QuoteStyle.None),"Merged"),
+				    #"Renamed Columns" = Table.RenameColumns(#"Merged Columns",{{"Merged", "FullName"}}),
+				    #"Inserted Age" = Table.AddColumn(#"Renamed Columns", "Age", each Date.From(DateTime.LocalNow()) - [BirthDate], type duration),
+				    #"Calculated Total Years" = Table.TransformColumns(#"Inserted Age",{{"Age", each Duration.TotalDays(_) / 365, type number}}),
+				    #"Rounded Down" = Table.TransformColumns(#"Calculated Total Years",{{"Age", Number.RoundDown, Int64.Type}}),
+				    #"Added Conditional Column" = Table.AddColumn(#"Rounded Down", "Age_Group", each if [Age] < 18 then "0-18" else if [Age] <= 30 then "19-30" else if [Age] <= 50 then "31-50" else if [Age] <= 65 then "51-65" else if [Age] <= 90 then "66-90" else if [Age] <= 115 then "91-115" else "Unknown"),
+				    #"Reordered Columns" = Table.ReorderColumns(#"Added Conditional Column",{"CustomerKey", "Prefix", "FullName", "BirthDate", "Age", "Age_Group", "MaritalStatus", "Gender", "EmailAddress", "AnnualIncome", "TotalChildren", "EducationLevel", "Occupation", "HomeOwner"})
 				in
-				    #"Removed Bottom Rows"
+				    #"Reordered Columns"
 
 	annotation PBI_ResultType = Table
 
