@@ -1,0 +1,20 @@
+table 'KIPs Time Intelligence'
+	lineageTag: 60f6c350-eaa5-4bb2-8768-89953130fe12
+
+	column Column
+		formatString: 0
+		lineageTag: c05577a1-975b-4243-a3bd-2c19cde2b614
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'KIPs Time Intelligence' = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = 2541aabf77db496f9fd5256d79469000
+
+	annotation 436ba87b-9c83-4389-a31b-ebd06a36be98 = {"Expression":""}
+

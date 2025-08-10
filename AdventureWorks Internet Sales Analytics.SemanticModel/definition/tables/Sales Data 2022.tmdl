@@ -35,7 +35,7 @@ table 'Sales Data 2022'
 		dataType: int64
 		formatString: 0
 		lineageTag: 1a6c7c3b-4252-4131-8813-ed46bd64273d
-		summarizeBy: none
+		summarizeBy: count
 		sourceColumn: ProductKey
 
 		annotation SummarizationSetBy = Automatic

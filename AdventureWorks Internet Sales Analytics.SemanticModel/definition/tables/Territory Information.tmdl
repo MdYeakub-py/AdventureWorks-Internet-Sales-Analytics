@@ -1,11 +1,11 @@
-table 'Territory Lookup'
+table 'Territory Information'
 	lineageTag: 192ea0b3-ef3b-4dcb-9911-34d8417d49a8
 
 	column SalesTerritoryKey
 		dataType: int64
 		formatString: 0
 		lineageTag: c6832f57-f941-4ce7-9c83-5b35905a2769
-		summarizeBy: count
+		summarizeBy: none
 		sourceColumn: SalesTerritoryKey
 
 		annotation SummarizationSetBy = Automatic
@@ -34,7 +34,7 @@ table 'Territory Lookup'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition 'Territory Lookup' = m
+	partition 'Territory Information' = m
 		mode: import
 		source =
 				let

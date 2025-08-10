@@ -1,4 +1,4 @@
-table 'Calendar Lookup'
+table Calendar
 	lineageTag: 167a2046-aaac-4cce-9f95-c09f7c65b07e
 
 	column Date
@@ -12,7 +12,7 @@ table 'Calendar Lookup'
 
 		annotation UnderlyingDateTimeDataType = Date
 
-	partition 'Calendar Lookup' = m
+	partition Calendar = m
 		mode: import
 		source =
 				let

@@ -1,0 +1,29 @@
+table 'KPIs Return'
+	lineageTag: 3369e1ac-1523-43a4-9014-2f7903b27f1d
+
+	measure 'Total Units Returns' = SUM('Returns Data'[ReturnQuantity])
+		formatString: 0
+		lineageTag: acf541b6-4a2e-4013-a0f1-3544154ecb84
+
+	measure 'Return Rate (%)' = DIVIDE([Total Units Returns], [Total Sold Units],0)
+		lineageTag: 504f44f5-282d-46c7-94c6-87c5e76638f6
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column
+		formatString: 0
+		lineageTag: a548fdc1-37e2-4155-b0e9-e0b22449410f
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'KPIs Return' = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = 894dc745ebca45b08f17d3609666a5ee
+
+	annotation 436ba87b-9c83-4389-a31b-ebd06a36be98 = {"Expression":""}
+

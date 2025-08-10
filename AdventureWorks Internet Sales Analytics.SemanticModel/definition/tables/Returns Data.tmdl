@@ -16,7 +16,7 @@ table 'Returns Data'
 		dataType: int64
 		formatString: 0
 		lineageTag: ccbe4d90-0ac8-419b-8c46-a975737fdad8
-		summarizeBy: count
+		summarizeBy: none
 		sourceColumn: TerritoryKey
 
 		annotation SummarizationSetBy = Automatic

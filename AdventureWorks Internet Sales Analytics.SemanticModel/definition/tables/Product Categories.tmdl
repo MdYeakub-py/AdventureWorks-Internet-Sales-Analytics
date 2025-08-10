@@ -1,4 +1,4 @@
-table 'Product Categories Lookup'
+table 'Product Categories'
 	lineageTag: abee35aa-cdb5-4288-b923-04245d1215fd
 
 	column ProductCategoryKey
@@ -18,7 +18,7 @@ table 'Product Categories Lookup'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition 'Product Categories Lookup' = m
+	partition 'Product Categories' = m
 		mode: import
 		source =
 				let

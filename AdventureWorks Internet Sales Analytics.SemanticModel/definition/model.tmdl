@@ -10,21 +10,27 @@ annotation __PBI_TimeIntelligenceEnabled = 0
 
 annotation PBIDesktopVersion = 2.145.1105.0 (25.07)+decbc46fce458c5b8d5109d6f32a743f2ac949c8
 
-annotation PBI_QueryOrder = ["Calendar Lookup","Customer Lookup","Product Categories Lookup","Product Lookup","Product Subcategories Lookup","Returns Data","Territory Lookup","Sales Data 2020","Sales Data 2021","Sales Data 2022"]
+annotation PBI_QueryOrder = ["Calendar","Customer Information","Product Categories","Product Information","Product Subcategories","Returns Data","Territory Information","Sales Data 2020","Sales Data 2021","Sales Data 2022","SalesData"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
-ref table 'Calendar Lookup'
-ref table 'Customer Lookup'
-ref table 'Product Categories Lookup'
-ref table 'Product Lookup'
-ref table 'Product Subcategories Lookup'
+ref table Calendar
+ref table 'Customer Information'
+ref table 'Product Categories'
+ref table 'Product Information'
+ref table 'Product Subcategories'
 ref table 'Returns Data'
-ref table 'Territory Lookup'
+ref table 'Territory Information'
 ref table 'Sales Data 2020'
 ref table 'Sales Data 2021'
 ref table 'Sales Data 2022'
-ref table 'All Measures'
+ref table 'KPIs Profit and Retur'
+ref table SalesData
+ref table 'KPIs Core Sales'
+ref table 'KPIs Return'
+ref table 'KIPs Time Intelligence'
+ref table 'KPIs Customers'
+ref table 'KPIs for Card'
 
 ref cultureInfo en-US
 

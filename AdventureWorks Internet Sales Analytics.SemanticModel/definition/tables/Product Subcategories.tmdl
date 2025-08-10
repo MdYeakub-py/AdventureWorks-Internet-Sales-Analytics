@@ -1,4 +1,4 @@
-table 'Product Subcategories Lookup'
+table 'Product Subcategories'
 	lineageTag: 008d1b89-9bcf-42fc-a9d6-30a0808dcc1c
 
 	column ProductSubcategoryKey
@@ -27,7 +27,7 @@ table 'Product Subcategories Lookup'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition 'Product Subcategories Lookup' = m
+	partition 'Product Subcategories' = m
 		mode: import
 		source =
 				let

@@ -1,0 +1,121 @@
+table 'KPIs for Card'
+	lineageTag: 6956b593-a4a6-46c7-a048-0746c78bb160
+
+	measure PreviousSales =
+			CALCULATE(
+			    [Total Sales],
+			    DATEADD('Calendar'[Date],-1,YEAR)
+			)
+		lineageTag: ef209bcf-79db-416e-bd89-05ad00a5281d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Sales Change %' = ```
+			
+			VAR _Current = [Total Sales]
+			VAR Previous = [PreviousSales]
+			RETURN
+			IF(
+			    NOT(ISBLANK(Previous)),
+			    DIVIDE(_Current - Previous, Previous),
+			    BLANK()
+			)
+			
+			```
+		lineageTag: 1ae9059e-2037-4fa6-84f5-15519728f5e9
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Sales Comparison' = ```
+			
+			VAR Prev = [PreviousSales] / 1000000
+			VAR Change = [Sales Change %]
+			VAR Arrow = IF(Change < 0, UNICHAR(9660), UNICHAR(9650))  // ▼ or ▲
+			RETURN
+			"vs prev: " & FORMAT(Prev, "0.0") & "M / " & Arrow & FORMAT(Change, "0.0%")
+			
+			
+			```
+		lineageTag: fd0bfa86-770c-4870-bf9c-e1eeae717c43
+
+	measure 'Previous Orders' =
+			CALCULATE(
+			    [Total Orders],
+			    DATEADD('Calendar'[Date],-1, YEAR
+			    ))
+		formatString: 0
+		lineageTag: 3feb6644-d10f-4dd4-9281-0a30cf4b91ca
+
+	measure 'Orders Change %' =
+			
+			VAR _Current = [Total Orders]
+			VAR Previous = [Previous Orders]
+			RETURN
+			IF(
+			    NOT(ISBLANK(Previous)),
+			    DIVIDE(_Current - Previous, Previous),
+			    BLANK()
+			)
+		lineageTag: 46ccab8a-ac01-4caa-90dd-da763979f2ee
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Orders Comparison' =
+			
+			VAR Prev = [Previous Orders]
+			VAR Change = [Orders Change %]
+			VAR Arrow = IF(Change < 0, UNICHAR(9660), UNICHAR(9650))  // ▼ or ▲
+			RETURN
+			"vs prev: " & FORMAT(Prev, "0.0") & "K / " & Arrow & FORMAT(Change, "0.0%")
+		lineageTag: d12bdf92-177f-4ed2-b985-c2cae70551b2
+
+	measure 'Previous Cost' =
+			CALCULATE(
+			    [Total Cost],
+			    DATEADD('Calendar'[Date],-1,YEAR))
+		lineageTag: ee4ad84b-00fe-4034-a040-dc47657afbc4
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Cost Change %' = ```
+			
+			VAR _Current = [Total Cost]
+			VAR Previous = [Previous Cost]
+			RETURN
+			IF(
+			   NOT(ISBLANK(Previous)),
+			    DIVIDE(_Current - Previous, Previous),
+			    BLANK()
+			)
+			
+			```
+		lineageTag: e59cf486-e6bf-4d22-9d51-82599477ce9f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Cost Comparison' = ```
+			
+			VAR Prev = [Previous Cost] / 1000000
+			VAR Change = [Cost Change %]
+			VAR Arrow = IF(Change < 0, UNICHAR(9660), UNICHAR(9650))  // ▼ or ▲
+			RETURN
+			"vs prev: " & FORMAT(Prev, "0.0") & "M / " & Arrow & FORMAT(Change, "0.0%")
+			
+			```
+		lineageTag: c230ac42-fcac-41aa-b494-00be5b966120
+
+	column Column
+		formatString: 0
+		lineageTag: f7dd9b47-89ae-4c5d-9a30-c0ed0c8ed584
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'KPIs for Card' = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = 883e0b19c1794f3bb0098c4c10ed6874
+

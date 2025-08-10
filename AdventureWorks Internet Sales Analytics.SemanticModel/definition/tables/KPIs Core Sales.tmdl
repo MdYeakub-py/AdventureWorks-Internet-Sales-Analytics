@@ -1,0 +1,38 @@
+table 'KPIs Core Sales'
+	lineageTag: 29704e9b-242f-493b-8560-c76fa4645ae3
+
+	measure 'Total Sales' = ```
+			SUMX(SalesData,SalesData[OrderQuantity] * RELATED('Product Information'[ProductPrice])) 
+			```
+		lineageTag: 74822bde-bf11-449c-bf37-04cfd29db745
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total Sold Units' = SUM(SalesData[OrderQuantity])
+		formatString: 0
+		lineageTag: dfea64df-41c3-47d4-b957-d238ce1418db
+
+	measure 'Total Orders' = DISTINCTCOUNT(SalesData[OrderNumber])
+		formatString: 0
+		lineageTag: 0af88097-c7e4-4eaa-915b-b708a059e768
+
+	measure 'Avg Order Value' = DIVIDE([Total Sales], [Total Orders],0)
+		lineageTag: 9e6906db-6960-418d-bf63-39648a568986
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column
+		formatString: 0
+		lineageTag: 2b4bbf7c-a86e-42b4-8c0b-da65f0c5e39b
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'KPIs Core Sales' = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = a0759bd1eee64a8696992229aa49649f
+

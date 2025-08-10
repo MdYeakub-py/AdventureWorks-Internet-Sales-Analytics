@@ -34,3 +34,29 @@ column: 1. ModelName
 10. ProductStyle
 11. ProductSubCategoryKey
 
+5. table name is: ProductSubCategory
+column: 1. ProductCategoryKey
+2. ProductSubCategoryKey
+3. SubCategoryName
+
+6. table name is : ReturnData
+column: 1. ProductKey
+2. ReturnDate
+3. ReturnQuantity
+4. TerritoryKey
+
+7. table name is: SalesData2020
+column: 1. CustomerKey
+2. OrderDate
+3. OrderLineItem
+4. OrderNumber
+5. OrderQuantity
+6. ProductKey
+7. StockDate
+8.TerritoryKey
+
+8. table name is: TerritoryLookup
+column: 1. Continent
+2. Country
+3. Region
+4. SalesTerritoryKey

@@ -1,10 +1,10 @@
-table 'Sales Data 2020'
-	lineageTag: f5af62b9-cfe9-4d48-82cc-281300e2a3d3
+table SalesData
+	lineageTag: b84ab6d6-d0f7-4b9d-a47a-03d0bee052ef
 
 	column OrderDate
 		dataType: dateTime
 		formatString: Long Date
-		lineageTag: 712f08a5-5bb2-4beb-930b-71d61fa2cb12
+		lineageTag: b03da70d-2422-4687-825b-0af4dcc6f2e0
 		summarizeBy: none
 		sourceColumn: OrderDate
 
@@ -15,7 +15,7 @@ table 'Sales Data 2020'
 	column StockDate
 		dataType: dateTime
 		formatString: Long Date
-		lineageTag: 4fe05a42-e675-4221-883d-031e7b9502f2
+		lineageTag: 86cdb386-41cf-45ab-9466-efa05008991e
 		summarizeBy: none
 		sourceColumn: StockDate
 
@@ -25,7 +25,7 @@ table 'Sales Data 2020'
 
 	column OrderNumber
 		dataType: string
-		lineageTag: e1ef8794-7f54-4b5b-b06b-1a0f810e3d03
+		lineageTag: 920da718-d388-468f-8ed4-82991e08f718
 		summarizeBy: none
 		sourceColumn: OrderNumber
 
@@ -34,8 +34,8 @@ table 'Sales Data 2020'
 	column ProductKey
 		dataType: int64
 		formatString: 0
-		lineageTag: 1d859ec0-8af5-4da3-a90a-5e2386013f25
-		summarizeBy: count
+		lineageTag: d7f018b2-bb39-4642-8989-79484735821b
+		summarizeBy: none
 		sourceColumn: ProductKey
 
 		annotation SummarizationSetBy = Automatic
@@ -43,8 +43,8 @@ table 'Sales Data 2020'
 	column CustomerKey
 		dataType: int64
 		formatString: 0
-		lineageTag: 67d3dc79-149b-4017-8468-c862017a6403
-		summarizeBy: count
+		lineageTag: 7466f925-8aae-4ded-bbd8-bfbc79fcbb56
+		summarizeBy: none
 		sourceColumn: CustomerKey
 
 		annotation SummarizationSetBy = Automatic
@@ -52,8 +52,8 @@ table 'Sales Data 2020'
 	column TerritoryKey
 		dataType: int64
 		formatString: 0
-		lineageTag: 6f427e30-8af5-4b07-85a4-afa8c2b65f79
-		summarizeBy: count
+		lineageTag: c58d8ff4-8bce-4e80-8015-e42889897097
+		summarizeBy: none
 		sourceColumn: TerritoryKey
 
 		annotation SummarizationSetBy = Automatic
@@ -61,7 +61,7 @@ table 'Sales Data 2020'
 	column OrderLineItem
 		dataType: int64
 		formatString: 0
-		lineageTag: bda58be5-5fd2-4e91-8261-0e27504c3e4a
+		lineageTag: ae415e5e-6d78-4c34-a154-effcf7f685d7
 		summarizeBy: sum
 		sourceColumn: OrderLineItem
 
@@ -70,21 +70,21 @@ table 'Sales Data 2020'
 	column OrderQuantity
 		dataType: int64
 		formatString: 0
-		lineageTag: 08452eaf-51e5-408c-8880-e7fbaf04174f
+		lineageTag: d9e44ddb-48f7-4be6-8377-63d1f9997999
 		summarizeBy: sum
 		sourceColumn: OrderQuantity
 
 		annotation SummarizationSetBy = Automatic
 
-	partition 'Sales Data 2020' = m
+	partition SalesData = m
 		mode: import
 		source =
 				let
-				    Source = Csv.Document(File.Contents("E:\new work space\All Class Video\power bi academy course\Adventure Works Project-20250803T155554Z-1-001\Adventure Works Project\Sales Data\AdventureWorks Sales Data 2020.csv"),[Delimiter=",", Columns=8, Encoding=1252, QuoteStyle=QuoteStyle.None]),
-				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
-				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"OrderDate", type date}, {"StockDate", type date}, {"OrderNumber", type text}, {"ProductKey", Int64.Type}, {"CustomerKey", Int64.Type}, {"TerritoryKey", Int64.Type}, {"OrderLineItem", Int64.Type}, {"OrderQuantity", Int64.Type}})
+				    Source = Table.Combine({#"Sales Data 2020", #"Sales Data 2021", #"Sales Data 2022"})
 				in
-				    #"Changed Type"
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
 
 	annotation PBI_ResultType = Table
 

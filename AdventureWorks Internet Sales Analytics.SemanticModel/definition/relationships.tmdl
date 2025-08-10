@@ -1,24 +1,36 @@
 relationship AutoDetected_6cbd69cc-e851-4922-b5f0-8dc203f8f33f
-	fromColumn: 'Product Subcategories Lookup'.ProductCategoryKey
-	toColumn: 'Product Categories Lookup'.ProductCategoryKey
+	fromColumn: 'Product Subcategories'.ProductCategoryKey
+	toColumn: 'Product Categories'.ProductCategoryKey
 
 relationship AutoDetected_056651b2-3bed-4fa2-bb35-a43fc3418eba
-	fromColumn: 'Product Lookup'.ProductSubcategoryKey
-	toColumn: 'Product Subcategories Lookup'.ProductSubcategoryKey
+	fromColumn: 'Product Information'.ProductSubcategoryKey
+	toColumn: 'Product Subcategories'.ProductSubcategoryKey
 
 relationship AutoDetected_876f5791-0ae6-4fce-8b21-900272ac419d
 	fromColumn: 'Returns Data'.ProductKey
-	toColumn: 'Product Lookup'.ProductKey
+	toColumn: 'Product Information'.ProductKey
 
-relationship AutoDetected_64a24d69-e999-4695-9ccf-feb86d578875
-	fromColumn: 'Sales Data 2020'.ProductKey
-	toColumn: 'Product Lookup'.ProductKey
+relationship a3df8845-8b69-ef68-aee7-490c35ab8885
+	fromColumn: SalesData.TerritoryKey
+	toColumn: 'Territory Information'.SalesTerritoryKey
 
-relationship AutoDetected_0a7249c7-9ac9-490c-96ae-3e222ba503fb
-	fromColumn: 'Sales Data 2021'.ProductKey
-	toColumn: 'Product Lookup'.ProductKey
+relationship 9ed27592-b7d3-d0df-63d5-0cd3319d9a6c
+	fromColumn: SalesData.CustomerKey
+	toColumn: 'Customer Information'.CustomerKey
 
-relationship AutoDetected_d7462b3b-023c-498a-9cf6-61d78f898c4a
-	fromColumn: 'Sales Data 2022'.ProductKey
-	toColumn: 'Product Lookup'.ProductKey
+relationship 6849bb70-121e-712a-165b-44b0fb8ad2f7
+	fromColumn: SalesData.ProductKey
+	toColumn: 'Product Information'.ProductKey
+
+relationship e91568b4-e99e-6d85-4ddb-45fcbfc0fc86
+	fromColumn: SalesData.OrderDate
+	toColumn: Calendar.Date
+
+relationship 273fdce8-dee3-7157-e484-97b717c4b32a
+	fromColumn: 'Returns Data'.TerritoryKey
+	toColumn: 'Territory Information'.SalesTerritoryKey
+
+relationship 4e20eb75-6440-8da2-caa5-d00fdb859f89
+	fromColumn: 'Returns Data'.ReturnDate
+	toColumn: Calendar.Date
 

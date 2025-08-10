@@ -1,0 +1,24 @@
+table 'KPIs Customers'
+	lineageTag: 645714b8-b30b-4882-b439-0b4a996e492e
+
+	measure 'Total Customers' = DISTINCTCOUNT('Customer Information'[CustomerKey])
+		formatString: 0
+		lineageTag: 717039d8-d66e-4174-aec2-a936f5c11f16
+
+	column Column
+		formatString: 0
+		lineageTag: f6a0b9b8-2004-4dc2-9244-93db5f1378c6
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'KPIs Customers' = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = 6de050eea3034c0986ebd20b310a8e30
+
+	annotation 436ba87b-9c83-4389-a31b-ebd06a36be98 = {"Expression":""}
+
