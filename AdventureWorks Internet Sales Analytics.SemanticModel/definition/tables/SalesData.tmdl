@@ -3,10 +3,13 @@ table SalesData
 
 	column OrderDate
 		dataType: dateTime
+		isHidden
 		formatString: Long Date
 		lineageTag: b03da70d-2422-4687-825b-0af4dcc6f2e0
 		summarizeBy: none
 		sourceColumn: OrderDate
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 

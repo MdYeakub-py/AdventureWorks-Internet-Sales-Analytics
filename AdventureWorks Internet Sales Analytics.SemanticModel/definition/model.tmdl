@@ -24,7 +24,7 @@ ref table 'Territory Information'
 ref table 'Sales Data 2020'
 ref table 'Sales Data 2021'
 ref table 'Sales Data 2022'
-ref table 'KPIs Profit and Retur'
+ref table 'KPIs Profit'
 ref table SalesData
 ref table 'KPIs Core Sales'
 ref table 'KPIs Return'

@@ -1,4 +1,4 @@
-table 'KPIs Profit and Retur'
+table 'KPIs Profit'
 	lineageTag: 3d69c1d0-249e-4961-8c37-37d3f87419a7
 
 	measure 'Total Cost' = SUMX(SalesData, SalesData[OrderQuantity]* RELATED('Product Information'[ProductCost]))
@@ -6,12 +6,12 @@ table 'KPIs Profit and Retur'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure 'Total Profit' = [Total Sales]-[Total Cost]
+	measure 'Total Profit' = [Total Revenew]-[Total Cost]
 		lineageTag: f9fe2010-2358-463e-9682-cadaaa9a3df6
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure 'Profit Margin (%)' = DIVIDE([Total Profit],[Total Sales],0)
+	measure 'Profit Margin (%)' = DIVIDE([Total Profit],[Total Revenew],0)
 		lineageTag: 6cd2c977-1993-45e6-adba-7c7b718e671d
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
@@ -25,7 +25,7 @@ table 'KPIs Profit and Retur'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition 'KPIs Profit and Retur' = calculated
+	partition 'KPIs Profit' = calculated
 		mode: import
 		source = Row("Column", BLANK())
 
