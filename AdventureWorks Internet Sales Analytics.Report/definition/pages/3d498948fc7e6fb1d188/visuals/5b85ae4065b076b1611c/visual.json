@@ -4,10 +4,10 @@
   "position": {
     "x": 633.06088407005836,
     "y": 132.37698081734777,
-    "z": 16007,
+    "z": 23000,
     "height": 45.904920767306088,
     "width": 449.441201000834,
-    "tabOrder": 16007
+    "tabOrder": 21000
   },
   "visual": {
     "visualType": "slicer",
@@ -76,23 +76,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "ff321c738a3594468c58",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Product Categories"
-              }
-            },
-            "Property": "CategoryName"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

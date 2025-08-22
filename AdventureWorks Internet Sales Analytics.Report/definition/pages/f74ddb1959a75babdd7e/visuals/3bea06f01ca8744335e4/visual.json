@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
-  "name": "543762003dbe0db9262c",
+  "name": "3bea06f01ca8744335e4",
   "position": {
-    "x": 1056.880733944954,
-    "y": 132.37698081734777,
-    "z": 16008,
-    "height": 45.904920767306088,
-    "width": 194.29524603836529,
-    "tabOrder": 16008
+    "x": 160.43915827996341,
+    "y": 52.698993595608421,
+    "z": 17000,
+    "height": 45.672461116193965,
+    "width": 303.31198536139067,
+    "tabOrder": 15000
   },
   "visual": {
     "visualType": "slicer",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Customer Information"
+                      "Entity": "Calendar"
                     }
                   },
-                  "Property": "Gender"
+                  "Property": "Year"
                 }
               },
-              "queryRef": "Customer Information.Gender",
-              "nativeQueryRef": "Gender",
+              "queryRef": "Calendar.Year",
+              "nativeQueryRef": "Year",
               "active": true
             }
           ]
@@ -61,13 +61,53 @@
           }
         }
       ],
+      "header": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "selection": [
+        {
+          "properties": {
+            "singleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "strictSingleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "selectAllCheckboxEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
       "items": [
         {
           "properties": {
-            "textSize": {
+            "outlineStyle": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "15D"
                 }
               }
             }
@@ -80,18 +120,18 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "bfef95657327007e0b02",
+        "name": "835992717d3dd33940a3",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "Customer Information"
+                "Entity": "Calendar"
               }
             },
-            "Property": "Gender"
+            "Property": "Year"
           }
         },
-        "type": "Categorical"
+        "type": "Advanced"
       }
     ]
   }

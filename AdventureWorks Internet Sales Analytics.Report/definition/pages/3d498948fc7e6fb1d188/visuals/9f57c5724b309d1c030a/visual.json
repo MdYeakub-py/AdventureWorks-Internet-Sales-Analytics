@@ -4,10 +4,10 @@
   "position": {
     "x": 705.6547122602168,
     "y": 469.7247706422018,
-    "z": 16004,
+    "z": 20000,
     "height": 235.929941618015,
     "width": 546.58882402001666,
-    "tabOrder": 16004
+    "tabOrder": 18000
   },
   "visual": {
     "visualType": "donutChart",
@@ -133,37 +133,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "d1ba3f4d40cba01018ce",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Return"
-              }
-            },
-            "Property": "Return Rate (%)"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "4fa88ed3d1612c0de97b",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Product Categories"
-              }
-            },
-            "Property": "CategoryName"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

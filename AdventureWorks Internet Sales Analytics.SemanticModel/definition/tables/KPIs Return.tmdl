@@ -5,7 +5,7 @@ table 'KPIs Return'
 		formatString: 0
 		lineageTag: acf541b6-4a2e-4013-a0f1-3544154ecb84
 
-	measure 'Return Rate (%)' = DIVIDE([Total Units Returns], [Total Sold Units],0)
+	measure 'Return Rate (%)' = DIVIDE([Total Units Returns], [Total Units Sold],0)
 		lineageTag: 504f44f5-282d-46c7-94c6-87c5e76638f6
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}

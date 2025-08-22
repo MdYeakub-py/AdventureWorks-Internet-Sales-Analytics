@@ -4,10 +4,10 @@
   "position": {
     "x": 157.99833194328608,
     "y": 469.7247706422018,
-    "z": 16003,
+    "z": 19000,
     "height": 236.99749791492908,
     "width": 538.04837364470393,
-    "tabOrder": 16003
+    "tabOrder": 17000
   },
   "visual": {
     "visualType": "columnChart",
@@ -179,37 +179,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "ba695d192d4e5397b601",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Profit"
-              }
-            },
-            "Property": "Profit Margin (%)"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "f9a97c819066a1220676",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Product Categories"
-              }
-            },
-            "Property": "CategoryName"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

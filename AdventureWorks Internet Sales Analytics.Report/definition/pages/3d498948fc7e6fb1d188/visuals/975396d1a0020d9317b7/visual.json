@@ -7,7 +7,7 @@
     "z": 3000,
     "height": 116.97732997481107,
     "width": 171.38539042821156,
-    "tabOrder": 3000
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -23,7 +23,7 @@
                       "Entity": "KPIs Core Sales"
                     }
                   },
-                  "Property": "Total Sold Units"
+                  "Property": "Total Units Sold"
                 }
               },
               "queryRef": "KPIs Core Sales.Total Sold Units",
@@ -56,7 +56,7 @@
                     "Entity": "KPIs Core Sales"
                   }
                 },
-                "Property": "Total Sold Units"
+                "Property": "Total Units Sold"
               }
             },
             "direction": "Descending"
@@ -760,6 +760,61 @@
           "selector": {
             "id": "default"
           }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "image": {
+              "image": {
+                "name": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'total sold-white.png'"
+                    }
+                  }
+                },
+                "url": {
+                  "expr": {
+                    "ResourcePackageItem": {
+                      "PackageName": "RegisteredResources",
+                      "PackageType": 1,
+                      "ItemName": "total_sold-white49971782558354283.png"
+                    }
+                  }
+                },
+                "scaling": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'Normal'"
+                    }
+                  }
+                }
+              }
+            },
+            "verticalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'bottom'"
+                }
+              }
+            },
+            "padding": {
+              "expr": {
+                "Literal": {
+                  "Value": "5L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "KPIs Core Sales.Total Sold Units"
+          }
         }
       ]
     },
@@ -828,7 +883,7 @@
             "top": {
               "expr": {
                 "Literal": {
-                  "Value": "0D"
+                  "Value": "8D"
                 }
               }
             },
@@ -935,37 +990,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "cc984e1ede2e9041ad2a",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Core Sales"
-              }
-            },
-            "Property": "Total Sold Units"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "07451c53d0c1ccd8b6e0",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs for Card"
-              }
-            },
-            "Property": "Sold Units Comparison"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

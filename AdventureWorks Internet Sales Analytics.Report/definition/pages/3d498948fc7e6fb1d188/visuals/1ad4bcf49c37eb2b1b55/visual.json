@@ -2,12 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "1ad4bcf49c37eb2b1b55",
   "position": {
-    "x": 1056.880733944954,
-    "y": 11.743119266055045,
+    "x": 1057.2644376899696,
+    "y": 11.671732522796352,
     "z": 2000,
-    "height": 117.43119266055045,
-    "width": 194.29524603836529,
-    "tabOrder": 2000
+    "height": 117.68996960486322,
+    "width": 195.50151975683892
   },
   "visual": {
     "visualType": "cardVisual",
@@ -977,6 +976,61 @@
           "selector": {
             "metadata": "KPIs Core Sales.Total Sales"
           }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "image": {
+              "image": {
+                "name": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'return ratio-color.png'"
+                    }
+                  }
+                },
+                "url": {
+                  "expr": {
+                    "ResourcePackageItem": {
+                      "PackageName": "RegisteredResources",
+                      "PackageType": 1,
+                      "ItemName": "return_ratio-color24898119055121393.png"
+                    }
+                  }
+                },
+                "scaling": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'Normal'"
+                    }
+                  }
+                }
+              }
+            },
+            "verticalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'middle'"
+                }
+              }
+            },
+            "padding": {
+              "expr": {
+                "Literal": {
+                  "Value": "6L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "KPIs Return.Return Rate (%)"
+          }
         }
       ]
     },
@@ -1045,7 +1099,7 @@
             "top": {
               "expr": {
                 "Literal": {
-                  "Value": "0D"
+                  "Value": "8D"
                 }
               }
             },
@@ -1152,37 +1206,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "93486e24a35ce03727eb",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Return"
-              }
-            },
-            "Property": "Return Rate (%)"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "5bfa4da4a141a36080c3",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs for Card"
-              }
-            },
-            "Property": "Return Rate Comparison"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

@@ -71,7 +71,7 @@ table 'KPIs for Card'
 
 	measure PreviousSoldUnits =
 			CALCULATE(
-			    [Total Sold Units],
+			    [Total Units Sold],
 			    DATEADD('Calendar'[Date],-1,YEAR)
 			)
 		formatString: 0
@@ -105,7 +105,7 @@ table 'KPIs for Card'
 
 	measure 'Sold Units Change %' =
 			
-			VAR _Current = [Total Sold Units]
+			VAR _Current = [Total Units Sold]
 			VAR Previous = [PreviousSoldUnits]
 			RETURN
 			IF(
@@ -194,6 +194,38 @@ table 'KPIs for Card'
 			RETURN
 			"vs prev: " & FORMAT(Prev, "0.0") & "K / " & Arrow & FORMAT(Change, "0.0%")
 		lineageTag: 4789fa85-89fd-4104-9a0d-66c4e0478bd9
+
+	measure 'Previous Profit Marging(%)' =
+			CALCULATE(
+			    [Profit Margin (%)],
+			    DATEADD('Calendar'[Date],-1, YEAR
+			    ))
+		lineageTag: 4c03d15f-5dc1-437b-8275-0f632216af16
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Profit Margin Change %' =
+			
+			VAR _Current = [Profit Margin (%)]
+			VAR Previous = [Previous Profit Marging(%)]
+			RETURN
+			IF(
+			    NOT(ISBLANK(Previous)),
+			    DIVIDE(_Current - Previous, Previous),
+			    BLANK()
+			)
+		lineageTag: 208a17f0-3ca7-4c2e-974c-0baee21caa4a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Profit Margin Comparison' =
+			
+			VAR Prev = [Previous Profit Marging(%)]
+			VAR Change = [Profit Margin Change %]
+			VAR Arrow = IF(Change < 0, UNICHAR(9660), UNICHAR(9650))  // ▼ or ▲
+			RETURN
+			"vs prev: " & FORMAT(Prev, "0.0") & "K / " & Arrow & FORMAT(Change, "0.0%")
+		lineageTag: 805173a0-ff4c-42a6-ba9a-cf72a63b5a72
 
 	column Column
 		formatString: 0

@@ -14,10 +14,6 @@ relationship a3df8845-8b69-ef68-aee7-490c35ab8885
 	fromColumn: SalesData.TerritoryKey
 	toColumn: 'Territory Information'.SalesTerritoryKey
 
-relationship 9ed27592-b7d3-d0df-63d5-0cd3319d9a6c
-	fromColumn: SalesData.CustomerKey
-	toColumn: 'Customer Information'.CustomerKey
-
 relationship 6849bb70-121e-712a-165b-44b0fb8ad2f7
 	fromColumn: SalesData.ProductKey
 	toColumn: 'Product Information'.ProductKey
@@ -33,4 +29,9 @@ relationship 273fdce8-dee3-7157-e484-97b717c4b32a
 relationship 4e20eb75-6440-8da2-caa5-d00fdb859f89
 	fromColumn: 'Returns Data'.ReturnDate
 	toColumn: Calendar.Date
+
+relationship 0312e483-d4af-2abf-e63b-3f6f0092862e
+	crossFilteringBehavior: bothDirections
+	fromColumn: SalesData.CustomerKey
+	toColumn: 'Customer Information'.CustomerKey
 

@@ -4,10 +4,10 @@
   "position": {
     "x": 440.90075062552125,
     "y": 132.37698081734777,
-    "z": 16006,
+    "z": 22000,
     "height": 45.904920767306088,
     "width": 199.63302752293578,
-    "tabOrder": 16006
+    "tabOrder": 20000
   },
   "visual": {
     "visualType": "slicer",
@@ -144,23 +144,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "aa12e2bfe2ea87467b51",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Calendar"
-              }
-            },
-            "Property": "Month Name"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

@@ -4,10 +4,10 @@
   "position": {
     "x": 157.99833194328608,
     "y": 178.28190158465387,
-    "z": 16001,
+    "z": 17000,
     "height": 283.9699749791493,
     "width": 538.04837364470393,
-    "tabOrder": 16001
+    "tabOrder": 15000
   },
   "visual": {
     "visualType": "lineChart",
@@ -432,51 +432,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "3da80301946a7006b050",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Profit"
-              }
-            },
-            "Property": "Total Profit"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "a1c99e26e0070090d387",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Calendar"
-              }
-            },
-            "Property": "Month Name"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "e83fc677c27e5bdbe851",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Core Sales"
-              }
-            },
-            "Property": "Total Revenew"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

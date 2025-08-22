@@ -43,6 +43,8 @@ table 'Customer Information'
 		summarizeBy: none
 		sourceColumn: Gender
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column EmailAddress
@@ -138,9 +140,13 @@ table 'Customer Information'
 				    #"Calculated Total Years" = Table.TransformColumns(#"Inserted Age",{{"Age", each Duration.TotalDays(_) / 365, type number}}),
 				    #"Rounded Down" = Table.TransformColumns(#"Calculated Total Years",{{"Age", Number.RoundDown, Int64.Type}}),
 				    #"Added Conditional Column" = Table.AddColumn(#"Rounded Down", "Age_Group", each if [Age] < 18 then "0-18" else if [Age] <= 30 then "19-30" else if [Age] <= 50 then "31-50" else if [Age] <= 65 then "51-65" else if [Age] <= 90 then "66-90" else if [Age] <= 115 then "91-115" else "Unknown"),
-				    #"Reordered Columns" = Table.ReorderColumns(#"Added Conditional Column",{"CustomerKey", "Prefix", "FullName", "BirthDate", "Age", "Age_Group", "MaritalStatus", "Gender", "EmailAddress", "AnnualIncome", "TotalChildren", "EducationLevel", "Occupation", "HomeOwner"})
+				    #"Reordered Columns" = Table.ReorderColumns(#"Added Conditional Column",{"CustomerKey", "Prefix", "FullName", "BirthDate", "Age", "Age_Group", "MaritalStatus", "Gender", "EmailAddress", "AnnualIncome", "TotalChildren", "EducationLevel", "Occupation", "HomeOwner"}),
+				    #"Replaced Value1" = Table.ReplaceValue(#"Reordered Columns","","F",Replacer.ReplaceValue,{"Gender"}),
+				    #"Replaced Value2" = Table.ReplaceValue(#"Replaced Value1","NA","M",Replacer.ReplaceText,{"Gender"}),
+				    #"Replaced Value3" = Table.ReplaceValue(#"Replaced Value2","f","F",Replacer.ReplaceText,{"Gender"}),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Replaced Value3",{{"Gender", type text}})
 				in
-				    #"Reordered Columns"
+				    #"Changed Type1"
 
 	annotation PBI_ResultType = Table
 

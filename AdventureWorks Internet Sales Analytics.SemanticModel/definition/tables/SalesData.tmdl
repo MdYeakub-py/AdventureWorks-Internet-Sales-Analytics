@@ -3,7 +3,6 @@ table SalesData
 
 	column OrderDate
 		dataType: dateTime
-		isHidden
 		formatString: Long Date
 		lineageTag: b03da70d-2422-4687-825b-0af4dcc6f2e0
 		summarizeBy: none
@@ -50,6 +49,8 @@ table SalesData
 		summarizeBy: none
 		sourceColumn: CustomerKey
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column TerritoryKey
@@ -83,9 +84,10 @@ table SalesData
 		mode: import
 		source =
 				let
-				    Source = Table.Combine({#"Sales Data 2020", #"Sales Data 2021", #"Sales Data 2022"})
+				    Source = Table.Combine({#"Sales Data 2020", #"Sales Data 2021", #"Sales Data 2022"}),
+				    #"Sorted Rows" = Table.Sort(Source,{{"CustomerKey", Order.Descending}})
 				in
-				    Source
+				    #"Sorted Rows"
 
 	annotation PBI_NavigationStepName = Navigation
 

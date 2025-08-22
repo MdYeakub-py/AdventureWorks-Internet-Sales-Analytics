@@ -7,7 +7,7 @@
     "z": 1000,
     "height": 116.97732997481107,
     "width": 167.75818639798487,
-    "tabOrder": 1000
+    "tabOrder": 24000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -152,14 +152,14 @@
             "bottomOuterMargin": {
               "expr": {
                 "Literal": {
-                  "Value": "30L"
+                  "Value": "0L"
                 }
               }
             },
             "leftOuterMargin": {
               "expr": {
                 "Literal": {
-                  "Value": "5L"
+                  "Value": "0L"
                 }
               }
             }
@@ -327,7 +327,7 @@
             "horizontalAlignment": {
               "expr": {
                 "Literal": {
-                  "Value": "'left'"
+                  "Value": "'center'"
                 }
               }
             }
@@ -496,6 +496,13 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "alignBaselines": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -1101,7 +1108,7 @@
             "padding": {
               "expr": {
                 "Literal": {
-                  "Value": "30L"
+                  "Value": "10L"
                 }
               }
             },
@@ -1184,7 +1191,7 @@
             "top": {
               "expr": {
                 "Literal": {
-                  "Value": "0D"
+                  "Value": "5D"
                 }
               }
             },
@@ -1291,37 +1298,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "00eb765f46d8384180ee",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Core Sales"
-              }
-            },
-            "Property": "Total Orders"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "318b4243403b7dd0ba84",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs for Card"
-              }
-            },
-            "Property": "Orders Comparison"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

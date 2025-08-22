@@ -7,7 +7,7 @@
     "z": 1000,
     "height": 77.984886649874056,
     "width": 149.62216624685138,
-    "tabOrder": 1000
+    "tabOrder": 17000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -23,7 +23,7 @@
                       "Entity": "KPIs Core Sales"
                     }
                   },
-                  "Property": "Total Sold Units"
+                  "Property": "Total Units Sold"
                 }
               },
               "queryRef": "KPIs Core Sales.Total Sold Units",
@@ -42,7 +42,7 @@
                     "Entity": "KPIs Core Sales"
                   }
                 },
-                "Property": "Total Sold Units"
+                "Property": "Total Units Sold"
               }
             },
             "direction": "Descending"
