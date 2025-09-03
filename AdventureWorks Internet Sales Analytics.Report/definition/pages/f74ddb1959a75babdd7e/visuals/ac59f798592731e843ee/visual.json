@@ -7,7 +7,7 @@
     "z": 0,
     "height": 116.97732997481107,
     "width": 170.47858942065491,
-    "tabOrder": 17000
+    "tabOrder": 15000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -1074,37 +1074,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "6a492bc0b73838e17888",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Core Sales"
-              }
-            },
-            "Property": "Total Revenew"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "036f13757e5720d7e81d",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs for Card"
-              }
-            },
-            "Property": "Sales Comparison"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

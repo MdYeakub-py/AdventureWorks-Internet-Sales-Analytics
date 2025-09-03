@@ -7,7 +7,7 @@
     "z": 5000,
     "height": 117.1088746569076,
     "width": 180.34766697163769,
-    "tabOrder": 3000
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -1020,37 +1020,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "84149301b1bd6e309025",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Profit"
-              }
-            },
-            "Property": "Profit Margin (%)"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "54ae2201c6e5ce0e7758",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs for Card"
-              }
-            },
-            "Property": "Profit Margin Comparison"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

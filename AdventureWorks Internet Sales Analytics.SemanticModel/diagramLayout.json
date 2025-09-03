@@ -4,7 +4,7 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 1078.193117376509,
+        "x": 1037.2691963678265,
         "y": 0
       },
       "nodes": [
@@ -211,6 +211,19 @@
             "y": 753.53088930941249
           },
           "nodeIndex": "KPIs Profit",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2741.5513733186194,
+            "y": 400.77109529945278
+          },
+          "nodeIndex": "Table",
+          "nodeLineageTag": "b0e290db-d515-4d91-b9c1-6373e393d583",
           "size": {
             "height": 200,
             "width": 234

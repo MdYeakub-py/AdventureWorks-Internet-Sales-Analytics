@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "d78efbbf06110bbabbeb",
   "position": {
-    "x": 1010.6495882891126,
-    "y": 411.05215004574569,
+    "x": 1021.2765957446809,
+    "y": 568.99696048632222,
     "z": 27000,
-    "height": 151.0704483074108,
-    "width": 258.81061299176577,
-    "tabOrder": 27000
+    "height": 150.75987841945289,
+    "width": 258.72340425531917,
+    "tabOrder": 25000
   },
   "visual": {
     "visualType": "pieChart",
@@ -196,7 +196,7 @@
             "left": {
               "expr": {
                 "Literal": {
-                  "Value": "0D"
+                  "Value": "5D"
                 }
               }
             }
@@ -267,20 +267,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "bfa888ab6b15d6c26801",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Core Sales"
-              }
-            },
-            "Property": "Total Revenew"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

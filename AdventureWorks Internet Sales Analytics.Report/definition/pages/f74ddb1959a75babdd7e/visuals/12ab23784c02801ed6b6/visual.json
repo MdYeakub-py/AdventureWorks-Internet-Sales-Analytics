@@ -7,7 +7,7 @@
     "z": 22000,
     "height": 45.672461116193965,
     "width": 210.79597438243368,
-    "tabOrder": 22000
+    "tabOrder": 20000
   },
   "visual": {
     "visualType": "slicer",
@@ -90,23 +90,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "b1d4118e5a48b6394d4c",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Territory Information"
-              }
-            },
-            "Property": "Continent"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

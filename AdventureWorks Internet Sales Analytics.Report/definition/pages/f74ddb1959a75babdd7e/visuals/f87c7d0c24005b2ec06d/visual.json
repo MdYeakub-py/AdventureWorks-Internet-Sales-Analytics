@@ -7,7 +7,7 @@
     "z": 23000,
     "height": 173.32113449222325,
     "width": 537.52973467520587,
-    "tabOrder": 23000
+    "tabOrder": 21000
   },
   "visual": {
     "visualType": "lineChart",
@@ -241,37 +241,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "d11bc4d97305ba04d704",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Core Sales"
-              }
-            },
-            "Property": "Total Revenew"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "0531318f320064430ba7",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Calendar"
-              }
-            },
-            "Property": "Date"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

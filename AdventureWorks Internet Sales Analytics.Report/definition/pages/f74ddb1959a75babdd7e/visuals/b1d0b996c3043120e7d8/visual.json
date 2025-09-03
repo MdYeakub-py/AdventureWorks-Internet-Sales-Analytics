@@ -7,7 +7,7 @@
     "z": 20000,
     "height": 45.672461116193965,
     "width": 178.00548947849956,
-    "tabOrder": 20000
+    "tabOrder": 18000
   },
   "visual": {
     "visualType": "slicer",
@@ -90,23 +90,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "881c00e7635013e60015",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Territory Information"
-              }
-            },
-            "Property": "SalesTerritoryKey"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

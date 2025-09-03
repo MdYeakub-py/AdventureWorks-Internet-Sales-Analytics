@@ -8,6 +8,8 @@ table 'Customer Information'
 		summarizeBy: none
 		sourceColumn: CustomerKey
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column Prefix
@@ -119,6 +121,39 @@ table 'Customer Information'
 		lineageTag: b731ee41-67bb-4f95-a4b9-40b659fe88e3
 		summarizeBy: none
 		sourceColumn: Age_Group
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'First Purchase Date' = ```
+			
+			CALCULATE(
+			    MIN(SalesData[OrderDate]),
+			    FILTER(
+			        SalesData,
+			        SalesData[CustomerKey] = 'Customer Information'[CustomerKey]
+			    )
+			)
+			
+			
+			
+			```
+		formatString: General Date
+		lineageTag: 2fa1142d-7823-4593-931e-574e06a31f89
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Last Purchase Date' = ```
+			
+			CALCULATE(
+			    MAX(SalesData[OrderDate]),
+			    FILTER(SalesData, SalesData[CustomerKey] = 'Customer Information'[CustomerKey])
+			)
+			
+			```
+		formatString: General Date
+		lineageTag: 7c687f78-e7fa-4ffa-a9c2-49fb64608771
+		summarizeBy: none
 
 		annotation SummarizationSetBy = Automatic
 

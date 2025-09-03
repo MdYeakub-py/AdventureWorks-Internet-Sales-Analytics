@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "3b5f667626491e34e387",
   "position": {
-    "x": 160.43915827996341,
-    "y": 570.32021957914,
+    "x": 705.16717325227967,
+    "y": 412.40121580547117,
     "z": 28000,
-    "height": 149.89935956084173,
-    "width": 1109.0210430009149,
-    "tabOrder": 28000
+    "height": 149.78723404255319,
+    "width": 564.13373860182378,
+    "tabOrder": 26000
   },
   "visual": {
     "visualType": "lineChart",
@@ -23,11 +23,11 @@
                       "Entity": "Calendar"
                     }
                   },
-                  "Property": "Month"
+                  "Property": "Month Name"
                 }
               },
-              "queryRef": "Calendar.Month",
-              "nativeQueryRef": "Sum of Month",
+              "queryRef": "Calendar.Month Name",
+              "nativeQueryRef": "Month Name",
               "active": true
             }
           ]
@@ -145,7 +145,7 @@
             "strokeWidth": {
               "expr": {
                 "Literal": {
-                  "Value": "3D"
+                  "Value": "2D"
                 }
               }
             },
@@ -153,6 +153,27 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "lineChartType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'smooth'"
+                }
+              }
+            },
+            "interpolationSmooth": {
+              "expr": {
+                "Literal": {
+                  "Value": "'monotoneX'"
+                }
+              }
+            },
+            "showMarker": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -200,6 +221,60 @@
               "expr": {
                 "Literal": {
                   "Value": "'Scalar'"
+                }
+              }
+            },
+            "maxMarginFactor": {
+              "expr": {
+                "Literal": {
+                  "Value": "15L"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "matchLineColor": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'TopCenter'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "80D"
                 }
               }
             }
@@ -267,51 +342,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "32c28deed233e1666268",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Core Sales"
-              }
-            },
-            "Property": "Total Units Sold"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "eee049351b6a43b00bd6",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Calendar"
-              }
-            },
-            "Property": "Month"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "3b45663fc7a684a16630",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Return"
-              }
-            },
-            "Property": "Total Units Returns"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

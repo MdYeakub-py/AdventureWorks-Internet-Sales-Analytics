@@ -1,9 +1,72 @@
 table 'KPIs Customers'
 	lineageTag: 645714b8-b30b-4882-b439-0b4a996e492e
 
-	measure 'Total Customers' = DISTINCTCOUNT('Customer Information'[CustomerKey])
+	measure 'Total Customers' = DISTINCTCOUNT(SalesData[CustomerKey])
 		formatString: 0
 		lineageTag: 717039d8-d66e-4174-aec2-a936f5c11f16
+
+	measure 'New Customers' = ```
+			
+			CALCULATE(
+			    DISTINCTCOUNT(SalesData[CustomerKey]),
+			    FILTER(
+			        SalesData,
+			        SalesData[OrderDate] = RELATED('Customer Information'[First Purchase Date])
+			    )
+			)
+			
+			
+			```
+		formatString: 0
+		lineageTag: b73592dc-8137-446b-ad46-9fe54461f2b7
+
+	measure 'Returning Customers' = ```
+			
+			[Total Customers] - [New Customers]
+			
+			
+			```
+		formatString: 0
+		lineageTag: b9d6f6df-66ff-409c-a3d1-437a70094bdc
+
+	measure 'Active Customers (L-180d)' = ```
+			
+			CALCULATE(
+			    DISTINCTCOUNT(SalesData[CustomerKey]),
+			    FILTER(
+			        SalesData,
+			        SalesData[OrderDate] >= MAX(SalesData[OrderDate]) - 180
+			    )
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 9515a695-a6c5-4627-b3dc-d29edcb371e7
+
+	measure 'Lost Customers (L-180d)' = ```
+			
+			VAR MaxOrderDate =
+			    CALCULATE(
+			        MAX ( SalesData[OrderDate] )
+			    )
+			RETURN
+			CALCULATE(
+			    DISTINCTCOUNT ( 'Customer Information'[CustomerKey] ),
+			    FILTER (
+			        'Customer Information',
+			       'Customer Information'[Last Purchase Date] < (MaxOrderDate) - 180
+			    )
+			)
+			
+			
+			```
+		formatString: 0
+		lineageTag: da02dd68-2290-4eb4-99dd-bb01d3a085c7
+
+	measure 'Avg Revenue per Customer' = DIVIDE([Total Revenew],[Total Customers],0)
+		lineageTag: b54fd0b7-43ab-4e22-9778-6eb00441c519
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column Column
 		formatString: 0

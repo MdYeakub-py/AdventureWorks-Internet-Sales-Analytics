@@ -6,8 +6,7 @@
     "y": 105.39798719121684,
     "z": 4000,
     "height": 117.1088746569076,
-    "width": 172.15004574565415,
-    "tabOrder": 2000
+    "width": 172.15004574565415
   },
   "visual": {
     "visualType": "cardVisual",
@@ -972,37 +971,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "c1bdadd04aa7ab8907a2",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Profit"
-              }
-            },
-            "Property": "Total Profit"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "c52702f7a7150e847696",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs for Card"
-              }
-            },
-            "Property": "Profit Comparison"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

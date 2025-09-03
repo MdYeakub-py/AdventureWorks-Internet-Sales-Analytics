@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "8f18bee285dcbb308aa1",
   "position": {
-    "x": 990.74107959743822,
-    "y": 229.5333943275389,
+    "x": 988.20668693009122,
+    "y": 229.54407294832828,
     "z": 25000,
-    "height": 173.32113449222325,
-    "width": 278.71912168344011,
-    "tabOrder": 25000
+    "height": 173.13069908814592,
+    "width": 281.09422492401217,
+    "tabOrder": 23000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -403,20 +403,6 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "43c11ff405c063390d50",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Core Sales"
-              }
-            },
-            "Property": "Total Revenew"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
         "name": "da288ac8cae29ea01bc1",
         "field": {
           "Column": {
@@ -428,7 +414,22 @@
             "Property": "SubcategoryName"
           }
         },
-        "type": "Categorical"
+        "type": "Categorical",
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
       }
     ]
   }

@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "15dfb052b7b81a99b49e",
   "position": {
-    "x": 160.43915827996341,
-    "y": 411.05215004574569,
+    "x": 160.48632218844986,
+    "y": 411.42857142857144,
     "z": 26000,
-    "height": 151.0704483074108,
-    "width": 842.01280878316561,
-    "tabOrder": 26000
+    "height": 150.75987841945289,
+    "width": 537.87234042553189,
+    "tabOrder": 24000
   },
   "visual": {
     "visualType": "columnChart",
@@ -80,6 +80,20 @@
                   "Value": "true"
                 }
               }
+            },
+            "labelDensity": {
+              "expr": {
+                "Literal": {
+                  "Value": "70L"
+                }
+              }
+            },
+            "labelContentLayout": {
+              "expr": {
+                "Literal": {
+                  "Value": "'SingleLine'"
+                }
+              }
             }
           }
         }
@@ -98,6 +112,19 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "categoryAxis": [
+        {
+          "properties": {
+            "innerPadding": {
+              "expr": {
+                "Literal": {
+                  "Value": "5L"
                 }
               }
             }
@@ -165,37 +192,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "a26712dba4ca75ca05eb",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Territory Information"
-              }
-            },
-            "Property": "SalesTerritoryKey"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "3aef318a9cd06909d2a6",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Profit"
-              }
-            },
-            "Property": "Profit Margin (%)"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

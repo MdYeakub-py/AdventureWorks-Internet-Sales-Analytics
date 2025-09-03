@@ -30,8 +30,7 @@ relationship 4e20eb75-6440-8da2-caa5-d00fdb859f89
 	fromColumn: 'Returns Data'.ReturnDate
 	toColumn: Calendar.Date
 
-relationship 0312e483-d4af-2abf-e63b-3f6f0092862e
-	crossFilteringBehavior: bothDirections
+relationship 31398dfc-92d3-ead1-bf49-14dddc400ae0
 	fromColumn: SalesData.CustomerKey
 	toColumn: 'Customer Information'.CustomerKey
 

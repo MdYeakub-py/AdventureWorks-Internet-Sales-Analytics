@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "e0102e70a939d06c0408",
   "position": {
-    "x": 710.8508691674291,
-    "y": 229.5333943275389,
+    "x": 705.16717325227967,
+    "y": 229.54407294832828,
     "z": 24000,
-    "height": 173.32113449222325,
-    "width": 270.52150045745657,
-    "tabOrder": 24000
+    "height": 173.13069908814592,
+    "width": 276.23100303951367,
+    "tabOrder": 22000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -371,37 +371,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "67772b582c98100694dc",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Core Sales"
-              }
-            },
-            "Property": "Total Revenew"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "90652680131e0c94660a",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Product Categories"
-              }
-            },
-            "Property": "CategoryName"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }
