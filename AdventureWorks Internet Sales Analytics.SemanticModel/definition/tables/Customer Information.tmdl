@@ -157,6 +157,48 @@ table 'Customer Information'
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Customer Revenue Rank' = ```
+			
+			RANKX(
+			    ALL('Customer Information'),
+			    'Customer Information'[Customer Total Revenue],
+			    ,
+			    DESC,
+			    Dense
+			    )
+			
+			```
+		formatString: 0
+		lineageTag: edbcd081-4935-439c-8c9a-f29f717632ea
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer Total Revenue' =
+			
+			CALCULATE(
+			    [Total Revenue],
+			    ALLEXCEPT('Customer Information','Customer Information'[CustomerKey]))
+		lineageTag: 18a3d487-c16a-42bd-baa3-ee4fb65e2092
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Customer Category' =
+			
+			SWITCH(
+			    TRUE(),
+			    'Customer Information'[Customer Revenue Rank] <= ROUND(DISTINCTCOUNT('Customer Information'[CustomerKey]) * 0.1, 0), "High Value",
+			    'Customer Information'[Customer Revenue Rank] <= ROUND(DISTINCTCOUNT('Customer Information'[CustomerKey]) * 0.2,0), "Medium Value",
+			    "Low Value"
+			)
+		lineageTag: 1303d1c4-79e9-4ab7-a28a-cf5342bac81d
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'Customer Information' = m
 		mode: import
 		source =

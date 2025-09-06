@@ -5,6 +5,11 @@
       "name": "CY24SU10",
       "reportVersionAtImport": "5.59",
       "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "Colours8249189052688856.json",
+      "reportVersionAtImport": "5.65",
+      "type": "RegisteredResources"
     }
   },
   "objects": {
@@ -35,6 +40,9 @@
       }
     ]
   },
+  "publicCustomVisuals": [
+    "scatterChartByAkvelon6CFB0DAB29E746BE850B6DFD1E2789FD"
+  ],
   "resourcePackages": [
     {
       "name": "SharedResources",
@@ -57,18 +65,8 @@
           "type": "Image"
         },
         {
-          "name": "Sales_Performance7042222931161465.png",
-          "path": "Sales_Performance7042222931161465.png",
-          "type": "Image"
-        },
-        {
           "name": "box-color_-total_orders4600250842683091.png",
           "path": "box-color_-total_orders4600250842683091.png",
-          "type": "Image"
-        },
-        {
-          "name": "total_sold-white49971782558354283.png",
-          "path": "total_sold-white49971782558354283.png",
           "type": "Image"
         },
         {
@@ -77,23 +75,43 @@
           "type": "Image"
         },
         {
-          "name": "history-return-white7809212916226675.png",
-          "path": "history-return-white7809212916226675.png",
+          "name": "Colours8249189052688856.json",
+          "path": "Colours8249189052688856.json",
+          "type": "CustomTheme"
+        },
+        {
+          "name": "Sales_Performance7140910623236898.png",
+          "path": "Sales_Performance7140910623236898.png",
           "type": "Image"
         },
         {
-          "name": "return_ratio-color24898119055121393.png",
-          "path": "return_ratio-color24898119055121393.png",
+          "name": "money-bags-color6551019516482703.png",
+          "path": "money-bags-color6551019516482703.png",
           "type": "Image"
         },
         {
-          "name": "money-bags-color9623678509556012.png",
-          "path": "money-bags-color9623678509556012.png",
+          "name": "shopping-cart-sold-color7495892128548292.png",
+          "path": "shopping-cart-sold-color7495892128548292.png",
           "type": "Image"
         },
         {
-          "name": "profit_margin629999142094784.png",
-          "path": "profit_margin629999142094784.png",
+          "name": "total_profit-color865536530623113.png",
+          "path": "total_profit-color865536530623113.png",
+          "type": "Image"
+        },
+        {
+          "name": "return_ratio-color06742129317109025.png",
+          "path": "return_ratio-color06742129317109025.png",
+          "type": "Image"
+        },
+        {
+          "name": "history-return-color031953399617818734.png",
+          "path": "history-return-color031953399617818734.png",
+          "type": "Image"
+        },
+        {
+          "name": "profit_margin9252048806921193.png",
+          "path": "profit_margin9252048806921193.png",
           "type": "Image"
         }
       ]

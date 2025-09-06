@@ -4,10 +4,10 @@
   "position": {
     "x": 160.48632218844986,
     "y": 173.13069908814592,
-    "z": 22001,
+    "z": 21000,
     "height": 203.28267477203647,
-    "width": 338.48024316109422,
-    "tabOrder": 22001
+    "width": 348.20668693009122,
+    "tabOrder": 20000
   },
   "visual": {
     "visualType": "treemap",
@@ -95,7 +95,26 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "13D"
+                  "Value": "14D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 4,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }
@@ -136,37 +155,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "459c44612ad9457de5ad",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Territory Information"
-              }
-            },
-            "Property": "Region"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "4fbc2c8568a10943ace8",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Customers"
-              }
-            },
-            "Property": "Total Customers"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

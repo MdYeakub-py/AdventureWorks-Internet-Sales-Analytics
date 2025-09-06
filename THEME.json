@@ -1,0 +1,25 @@
+{
+  "name": "PremiumMinimalTheme",
+  "dataColors": [
+    "#E67E22",  
+    "#34495E",  
+    "#95A5A6",  
+    "#2ECC71",  
+    "#E74C3C"   
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#333333",
+  "tableAccent": "#E67E22",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "title": [
+          {
+            "color": { "solid": { "color": "#333333" } },
+            "fontSize": 12
+          }
+        ]
+      }
+    }
+  }
+}

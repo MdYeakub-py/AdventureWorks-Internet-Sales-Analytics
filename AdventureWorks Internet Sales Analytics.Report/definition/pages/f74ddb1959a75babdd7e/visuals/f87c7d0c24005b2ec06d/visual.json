@@ -7,7 +7,7 @@
     "z": 23000,
     "height": 173.32113449222325,
     "width": 537.52973467520587,
-    "tabOrder": 21000
+    "tabOrder": 20000
   },
   "visual": {
     "visualType": "lineChart",
@@ -42,7 +42,7 @@
                       "Entity": "KPIs Core Sales"
                     }
                   },
-                  "Property": "Total Revenew"
+                  "Property": "Total Revenue"
                 }
               },
               "queryRef": "KPIs Core Sales.Total Revenew",
@@ -71,68 +71,6 @@
       }
     },
     "objects": {
-      "lineStyles": [
-        {
-          "properties": {
-            "lineStyle": {
-              "expr": {
-                "Literal": {
-                  "Value": "'solid'"
-                }
-              }
-            },
-            "strokeAutoScale": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "strokeDashArray": {
-              "expr": {
-                "Literal": {
-                  "Value": "'5 8 2 5'"
-                }
-              }
-            },
-            "strokeWidth": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            },
-            "lineChartType": {
-              "expr": {
-                "Literal": {
-                  "Value": "'smooth'"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "dataPoint": [
-        {
-          "properties": {
-            "fill": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 4,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "KPIs Core Sales.Total Revenew"
-          }
-        }
-      ],
       "valueAxis": [
         {
           "properties": {
@@ -160,6 +98,33 @@
               "expr": {
                 "Literal": {
                   "Value": "2D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "lineStyles": [
+        {
+          "properties": {
+            "strokeWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "strokeLineJoin": {
+              "expr": {
+                "Literal": {
+                  "Value": "'miter'"
+                }
+              }
+            },
+            "lineChartType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'smooth'"
                 }
               }
             }

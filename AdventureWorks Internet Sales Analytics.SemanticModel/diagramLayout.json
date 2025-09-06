@@ -4,7 +4,7 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 1037.2691963678265,
+        "x": 1078.193117376509,
         "y": 0
       },
       "nodes": [
@@ -20,45 +20,6 @@
             "width": 234
           },
           "zIndex": 11
-        },
-        {
-          "location": {
-            "x": 2285.3016980056127,
-            "y": 0
-          },
-          "nodeIndex": "Sales Data 2020",
-          "nodeLineageTag": "f5af62b9-cfe9-4d48-82cc-281300e2a3d3",
-          "size": {
-            "height": 272,
-            "width": 234
-          },
-          "zIndex": 12
-        },
-        {
-          "location": {
-            "x": 2278.3496081870053,
-            "y": 340.76922684814639
-          },
-          "nodeIndex": "Sales Data 2021",
-          "nodeLineageTag": "8626b9b9-76d8-4a8d-9d63-b9c5b43c7079",
-          "size": {
-            "height": 272,
-            "width": 234
-          },
-          "zIndex": 6
-        },
-        {
-          "location": {
-            "x": 2243.7952528698188,
-            "y": 729.54219059890556
-          },
-          "nodeIndex": "Sales Data 2022",
-          "nodeLineageTag": "ac1ec2b8-47dc-4771-8ad6-033557bd1c2b",
-          "size": {
-            "height": 272,
-            "width": 234
-          },
-          "zIndex": 7
         },
         {
           "location": {

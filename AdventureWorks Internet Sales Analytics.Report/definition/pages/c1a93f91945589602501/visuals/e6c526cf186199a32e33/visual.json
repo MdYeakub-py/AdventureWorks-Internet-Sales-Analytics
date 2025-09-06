@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "e6c526cf186199a32e33",
   "position": {
-    "x": 504.80243161094228,
+    "x": 517.44680851063833,
     "y": 173.13069908814592,
-    "z": 22002,
+    "z": 22000,
     "height": 203.28267477203647,
-    "width": 345.28875379939211,
-    "tabOrder": 22002
+    "width": 332.64437689969606,
+    "tabOrder": 21000
   },
   "visual": {
     "visualType": "columnChart",
@@ -42,7 +42,7 @@
                       "Entity": "KPIs Core Sales"
                     }
                   },
-                  "Property": "Total Revenew"
+                  "Property": "Total Revenue"
                 }
               },
               "queryRef": "KPIs Core Sales.Total Revenew",
@@ -61,7 +61,7 @@
                     "Entity": "KPIs Core Sales"
                   }
                 },
-                "Property": "Total Revenew"
+                "Property": "Total Revenue"
               }
             },
             "direction": "Descending"
@@ -87,6 +87,20 @@
                   "Value": "true"
                 }
               }
+            },
+            "titleFontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
             }
           }
         }
@@ -105,6 +119,13 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            },
+            "titleFontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
                 }
               }
             }
@@ -127,64 +148,39 @@
                   "Value": "2L"
                 }
               }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 4,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
             }
           }
         }
       ],
       "dataPoint": [
         {
-          "properties": {
-            "fill": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "FillRule": {
-                      "Input": {
-                        "Aggregation": {
-                          "Expression": {
-                            "Column": {
-                              "Expression": {
-                                "SourceRef": {
-                                  "Entity": "Customer Information"
-                                }
-                              },
-                              "Property": "Age_Group"
-                            }
-                          },
-                          "Function": 5
-                        }
-                      },
-                      "FillRule": {
-                        "linearGradient2": {
-                          "min": {
-                            "color": {
-                              "Literal": {
-                                "Value": "'#D9B300'"
-                              }
-                            }
-                          },
-                          "max": {
-                            "color": {
-                              "Literal": {
-                                "Value": "'#E66C37'"
-                              }
-                            }
-                          },
-                          "nullColoringStrategy": {
-                            "strategy": {
-                              "Literal": {
-                                "Value": "'noColor'"
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
+          "properties": {},
           "selector": {
             "data": [
               {
@@ -225,6 +221,25 @@
               "expr": {
                 "Literal": {
                   "Value": "'Total Revenue by Age Group'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 4,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -339,20 +354,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "e4569bf4ab877119ee37",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Core Sales"
-              }
-            },
-            "Property": "Total Revenew"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

@@ -7,7 +7,7 @@
     "z": 2000,
     "height": 59.331306990881458,
     "width": 210.09118541033436,
-    "tabOrder": 20000
+    "tabOrder": 17000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -237,9 +237,8 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 3,
-                      "Percent": 0
+                    "Literal": {
+                      "Value": "'#1B7EAC'"
                     }
                   }
                 }
@@ -339,27 +338,17 @@
         },
         {
           "properties": {
-            "textWrap": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#1B7EAC'"
+                    }
+                  }
                 }
               }
             },
-            "labelDisplayUnits": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "KPIs Customers.Lost Customers (L-180d)"
-          }
-        },
-        {
-          "properties": {
             "labelDisplayUnits": {
               "expr": {
                 "Literal": {
@@ -374,16 +363,35 @@
         },
         {
           "properties": {
-            "labelDisplayUnits": {
+            "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "1D"
+                  "Value": "9D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.5
+                    }
+                  }
                 }
               }
             }
           },
           "selector": {
-            "metadata": "KPIs Customers.New Customers"
+            "metadata": "KPIs for Card.Profit Comparison"
           }
         },
         {
@@ -430,7 +438,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#002D72'"
+                      "Value": "'#605E5C'"
                     }
                   }
                 }
@@ -499,7 +507,28 @@
         },
         {
           "properties": {
-            "textWrap": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "KPIs for Card.Profit Comparison"
+          }
+        },
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "bold": {
               "expr": {
                 "Literal": {
                   "Value": "true"
@@ -508,7 +537,25 @@
             }
           },
           "selector": {
-            "metadata": "KPIs Customers.Lost Customers (L-180d)"
+            "metadata": "KPIs Profit.Total Profit"
+          }
+        },
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#605E5C'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "KPIs Customers.Total Customers"
           }
         }
       ],
@@ -727,6 +774,61 @@
           },
           "selector": {
             "id": "default"
+          }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "image": {
+              "image": {
+                "name": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'total profit-color.png'"
+                    }
+                  }
+                },
+                "url": {
+                  "expr": {
+                    "ResourcePackageItem": {
+                      "PackageName": "RegisteredResources",
+                      "PackageType": 1,
+                      "ItemName": "total_profit-color026865126305591347.png"
+                    }
+                  }
+                },
+                "scaling": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'Normal'"
+                    }
+                  }
+                }
+              }
+            },
+            "padding": {
+              "expr": {
+                "Literal": {
+                  "Value": "10L"
+                }
+              }
+            },
+            "verticalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'middle'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "KPIs Profit.Total Profit"
           }
         }
       ]

@@ -1,7 +1,7 @@
 table 'KPIs Core Sales'
 	lineageTag: 29704e9b-242f-493b-8560-c76fa4645ae3
 
-	measure 'Total Revenew' = ```
+	measure 'Total Revenue' = ```
 			SUMX(SalesData,SalesData[OrderQuantity] * RELATED('Product Information'[ProductPrice])) 
 			```
 		lineageTag: 74822bde-bf11-449c-bf37-04cfd29db745
@@ -16,8 +16,17 @@ table 'KPIs Core Sales'
 		formatString: 0
 		lineageTag: 0af88097-c7e4-4eaa-915b-b708a059e768
 
-	measure 'Avg Order Value' = DIVIDE([Total Revenew], [Total Orders],0)
+	measure 'Avg Order Value' = DIVIDE([Total Revenue], [Total Orders])
 		lineageTag: 9e6906db-6960-418d-bf63-39648a568986
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Previous Month Orders' = CALCULATE([Total Orders],DATEADD('Calendar'[Date],-1,MONTH))
+		formatString: 0
+		lineageTag: 7ab1419c-bb9b-40cf-a2f3-6cc4e62f6f11
+
+	measure 'Previous Month Profit' = CALCULATE([Total Profit],DATEADD('Calendar'[Date],-1,MONTH))
+		lineageTag: f34cc072-a94d-42b4-bc29-1e6c2c570c90
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 

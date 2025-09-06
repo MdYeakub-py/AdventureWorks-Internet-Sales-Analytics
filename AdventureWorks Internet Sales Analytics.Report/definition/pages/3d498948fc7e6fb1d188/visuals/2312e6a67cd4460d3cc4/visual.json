@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "2312e6a67cd4460d3cc4",
   "position": {
-    "x": 157.99833194328608,
-    "y": 178.28190158465387,
-    "z": 17000,
-    "height": 283.9699749791493,
-    "width": 538.04837364470393,
-    "tabOrder": 13000
+    "x": 157.56838905775078,
+    "y": 177.99392097264439,
+    "z": 10000,
+    "height": 284.01215805471128,
+    "width": 538.84498480243167,
+    "tabOrder": 10000
   },
   "visual": {
     "visualType": "lineChart",
@@ -56,7 +56,7 @@
                       "Entity": "KPIs Core Sales"
                     }
                   },
-                  "Property": "Total Revenew"
+                  "Property": "Total Revenue"
                 }
               },
               "queryRef": "KPIs Core Sales.Total Revenew",
@@ -116,39 +116,6 @@
                 }
               }
             },
-            "showMarker": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "markerSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "4D"
-                }
-              }
-            },
-            "markerShape": {
-              "expr": {
-                "Literal": {
-                  "Value": "'diamond'"
-                }
-              }
-            },
-            "markerColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 6,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            },
             "interpolationSmooth": {
               "expr": {
                 "Literal": {
@@ -166,53 +133,15 @@
           }
         },
         {
-          "properties": {
-            "markerColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#e044a7'"
-                    }
-                  }
-                }
-              }
-            }
-          },
+          "properties": {},
           "selector": {
             "metadata": "KPIs Profit.Total Profit"
           }
         },
         {
-          "properties": {
-            "markerColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 4,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            }
-          },
+          "properties": {},
           "selector": {
             "metadata": "KPIs Core Sales.Total Revenew"
-          }
-        }
-      ],
-      "markers": [
-        {
-          "properties": {
-            "rotation": {
-              "expr": {
-                "Literal": {
-                  "Value": "90D"
-                }
-              }
-            }
           }
         }
       ],
@@ -332,44 +261,6 @@
           }
         }
       ],
-      "dataPoint": [
-        {
-          "properties": {
-            "fill": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#00FF00'"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "KPIs Profit.Total Profit"
-          }
-        },
-        {
-          "properties": {
-            "fill": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#55CCC9'"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "KPIs Core Sales.Total Revenew"
-          }
-        }
-      ],
       "legend": [
         {
           "properties": {
@@ -424,6 +315,18 @@
               "expr": {
                 "Literal": {
                   "Value": "'Sales & Profit Trend'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 4,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }

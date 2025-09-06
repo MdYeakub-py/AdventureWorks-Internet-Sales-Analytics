@@ -73,6 +73,17 @@ table Calendar
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Start of Month'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ce527737-1a57-4fcd-af08-7ceab8d029b4
+		summarizeBy: none
+		sourceColumn: Start of Month
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
 	partition Calendar = m
 		mode: import
 		source =
@@ -86,9 +97,11 @@ table Calendar
 				    #"Inserted Week of Year" = Table.AddColumn(#"Inserted Quarter", "Week of Year", each Date.WeekOfYear([Date]), Int64.Type),
 				    #"Inserted Day Name" = Table.AddColumn(#"Inserted Week of Year", "Day Name", each Date.DayOfWeekName([Date]), type text),
 				    #"Inserted Day" = Table.AddColumn(#"Inserted Day Name", "Day", each Date.Day([Date]), Int64.Type),
-				    #"Inserted Month" = Table.AddColumn(#"Inserted Day", "Month", each Date.Month([Date]), Int64.Type)
+				    #"Inserted Month" = Table.AddColumn(#"Inserted Day", "Month", each Date.Month([Date]), Int64.Type),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Inserted Month",{{"Month Name", type text}}),
+				    #"Inserted Start of Month" = Table.AddColumn(#"Changed Type1", "Start of Month", each Date.StartOfMonth([Date]), type date)
 				in
-				    #"Inserted Month"
+				    #"Inserted Start of Month"
 
 	annotation PBI_ResultType = Table
 

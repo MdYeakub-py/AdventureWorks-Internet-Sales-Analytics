@@ -7,7 +7,7 @@
     "z": 2000,
     "height": 117.1088746569076,
     "width": 202.59835315645014,
-    "tabOrder": 27000
+    "tabOrder": 26000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -92,13 +92,6 @@
       "layout": [
         {
           "properties": {
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'middle'"
-                }
-              }
-            },
             "orientation": {
               "expr": {
                 "Literal": {
@@ -126,6 +119,13 @@
                   "Value": "'Cards'"
                 }
               }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'top'"
+                }
+              }
             }
           }
         },
@@ -149,10 +149,17 @@
                 }
               }
             },
+            "leftOuterMargin": {
+              "expr": {
+                "Literal": {
+                  "Value": "0L"
+                }
+              }
+            },
             "bottomOuterMargin": {
               "expr": {
                 "Literal": {
-                  "Value": "30L"
+                  "Value": "0L"
                 }
               }
             }
@@ -264,17 +271,10 @@
       "value": [
         {
           "properties": {
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
-                }
-              }
-            },
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "16D"
+                  "Value": "17D"
                 }
               }
             },
@@ -282,17 +282,6 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
-                }
-              }
-            },
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#002D72'"
-                    }
-                  }
                 }
               }
             },
@@ -306,272 +295,6 @@
           },
           "selector": {
             "id": "default"
-          }
-        },
-        {
-          "properties": {
-            "labelDisplayUnits": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "KPIs Core Sales.Total Orders"
-          }
-        },
-        {
-          "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "8D"
-                }
-              }
-            },
-            "bold": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 1,
-                      "Percent": 0.2
-                    }
-                  }
-                }
-              }
-            },
-            "horizontalAlignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'center'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "KPIs for Card.Sales Comparison"
-          }
-        },
-        {
-          "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "9D"
-                }
-              }
-            },
-            "bold": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 1,
-                      "Percent": 0.2
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "KPIs for Card.Orders Comparison"
-          }
-        },
-        {
-          "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "15D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "KPIs Core Sales.Total Sales"
-          }
-        },
-        {
-          "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "9D"
-                }
-              }
-            },
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": -0.5
-                    }
-                  }
-                }
-              }
-            },
-            "bold": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "KPIs for Card.Return Rate Comparison"
-          }
-        }
-      ],
-      "label": [
-        {
-          "properties": {
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Arial'"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "9D"
-                }
-              }
-            },
-            "bold": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#002D72'"
-                    }
-                  }
-                }
-              }
-            },
-            "alignBaselines": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          },
-          "selector": {
-            "id": "default"
-          }
-        },
-        {
-          "properties": {
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
-                }
-              }
-            },
-            "bold": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "KPIs Core Sales.Total Orders"
-          }
-        },
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "' '"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "KPIs for Card.Sales Comparison"
-          }
-        },
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "KPIs for Card.Orders Comparison"
-          }
-        },
-        {
-          "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "9D"
-                }
-              }
-            },
-            "textWrap": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "matchValueAlignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "KPIs Core Sales.Total Sales"
           }
         },
         {
@@ -585,59 +308,36 @@
             }
           },
           "selector": {
-            "metadata": "KPIs Return.Return Rate (%)"
+            "metadata": "KPIs for Card.Sales Comparison"
           }
         },
         {
           "properties": {
-            "show": {
+            "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "10D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "KPIs for Card.Return Rate Comparison"
-          }
-        }
-      ],
-      "spacing": [
-        {
-          "properties": {
-            "verticalSpacing": {
-              "expr": {
-                "Literal": {
-                  "Value": "0L"
-                }
-              }
-            }
-          },
-          "selector": {
-            "id": "default"
+            "metadata": "KPIs for Card.Orders Comparison"
           }
         },
         {
           "properties": {
-            "verticalSpacing": {
+            "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "12L"
+                  "Value": "18D"
                 }
               }
-            }
-          },
-          "selector": {
-            "metadata": "KPIs Core Sales.Total Orders"
-          }
-        },
-        {
-          "properties": {
-            "verticalSpacing": {
+            },
+            "horizontalAlignment": {
               "expr": {
                 "Literal": {
-                  "Value": "0L"
+                  "Value": "'center'"
                 }
               }
             }
@@ -648,16 +348,67 @@
         },
         {
           "properties": {
-            "verticalSpacing": {
+            "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "0L"
+                  "Value": "18D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "KPIs Return.Return Rate (%)"
+          }
+        },
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "KPIs for Card.Return Rate Comparison"
+          }
+        }
+      ],
+      "label": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
                 }
               }
             }
           },
           "selector": {
             "metadata": "KPIs for Card.Sales Comparison"
+          }
+        },
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "KPIs for Card.Return Rate Comparison"
           }
         }
       ],
@@ -746,6 +497,20 @@
           },
           "selector": {
             "metadata": "KPIs for Card.Sales Comparison"
+          }
+        },
+        {
+          "properties": {
+            "bottomMargin": {
+              "expr": {
+                "Literal": {
+                  "Value": "100L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "KPIs for Card.Orders Comparison"
           }
         }
       ],
@@ -860,6 +625,34 @@
           "selector": {
             "metadata": "KPIs for Card.Sales Comparison"
           }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "KPIs Core Sales.Total Orders"
+          }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "KPIs for Card.Orders Comparison"
+          }
         }
       ],
       "image": [
@@ -886,7 +679,7 @@
                     "ResourcePackageItem": {
                       "PackageName": "RegisteredResources",
                       "PackageType": 1,
-                      "ItemName": "Sales_Performance5793198533130806.png"
+                      "ItemName": "Sales_Performance7140910623236898.png"
                     }
                   }
                 },
@@ -926,6 +719,13 @@
                   "Value": "true"
                 }
               }
+            },
+            "verticalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'middle'"
+                }
+              }
             }
           },
           "selector": {
@@ -955,21 +755,51 @@
         },
         {
           "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
             "image": {
               "image": {
                 "name": {
                   "expr": {
                     "Literal": {
-                      "Value": "''"
+                      "Value": "'money-bags-color.png'"
                     }
                   }
                 },
                 "url": {
                   "expr": {
-                    "Literal": {
-                      "Value": "''"
+                    "ResourcePackageItem": {
+                      "PackageName": "RegisteredResources",
+                      "PackageType": 1,
+                      "ItemName": "money-bags-color6551019516482703.png"
                     }
                   }
+                },
+                "scaling": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'Normal'"
+                    }
+                  }
+                }
+              }
+            },
+            "padding": {
+              "expr": {
+                "Literal": {
+                  "Value": "10L"
+                }
+              }
+            },
+            "size": {
+              "expr": {
+                "Literal": {
+                  "Value": "45L"
                 }
               }
             }
@@ -992,7 +822,7 @@
                 "name": {
                   "expr": {
                     "Literal": {
-                      "Value": "'return ratio-color.png'"
+                      "Value": "'box-color -total orders.png'"
                     }
                   }
                 },
@@ -1001,7 +831,7 @@
                     "ResourcePackageItem": {
                       "PackageName": "RegisteredResources",
                       "PackageType": 1,
-                      "ItemName": "return_ratio-color24898119055121393.png"
+                      "ItemName": "box-color_-total_orders4600250842683091.png"
                     }
                   }
                 },
@@ -1011,6 +841,48 @@
                       "Value": "'Normal'"
                     }
                   }
+                }
+              }
+            },
+            "padding": {
+              "expr": {
+                "Literal": {
+                  "Value": "10L"
+                }
+              }
+            },
+            "size": {
+              "expr": {
+                "Literal": {
+                  "Value": "35L"
+                }
+              }
+            },
+            "fixedSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "verticalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'bottom'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "KPIs Core Sales.Total Orders"
+          }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             },
@@ -1024,7 +896,41 @@
             "padding": {
               "expr": {
                 "Literal": {
-                  "Value": "6L"
+                  "Value": "10L"
+                }
+              }
+            },
+            "size": {
+              "expr": {
+                "Literal": {
+                  "Value": "45L"
+                }
+              }
+            },
+            "image": {
+              "image": {
+                "name": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'return ratio-color.png'"
+                    }
+                  }
+                },
+                "url": {
+                  "expr": {
+                    "ResourcePackageItem": {
+                      "PackageName": "RegisteredResources",
+                      "PackageType": 1,
+                      "ItemName": "return_ratio-color06742129317109025.png"
+                    }
+                  }
+                },
+                "scaling": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'Normal'"
+                    }
+                  }
                 }
               }
             }
@@ -1052,6 +958,13 @@
       "title": [
         {
           "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
             "titleWrap": {
               "expr": {
                 "Literal": {
@@ -1100,7 +1013,7 @@
             "top": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "5D"
                 }
               }
             },

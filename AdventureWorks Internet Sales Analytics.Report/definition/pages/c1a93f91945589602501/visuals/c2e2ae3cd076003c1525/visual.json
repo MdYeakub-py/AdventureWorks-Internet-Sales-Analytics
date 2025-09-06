@@ -7,7 +7,7 @@
     "z": 3000,
     "height": 59.331306990881458,
     "width": 153.67781155015197,
-    "tabOrder": 21000
+    "tabOrder": 18000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -237,9 +237,8 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 3,
-                      "Percent": 0
+                    "Literal": {
+                      "Value": "'#1B7EAC'"
                     }
                   }
                 }
@@ -372,6 +371,17 @@
         },
         {
           "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#1B7EAC'"
+                    }
+                  }
+                }
+              }
+            },
             "labelDisplayUnits": {
               "expr": {
                 "Literal": {
@@ -428,7 +438,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#002D72'"
+                      "Value": "'#605E5C'"
                     }
                   }
                 }
@@ -528,6 +538,24 @@
           },
           "selector": {
             "metadata": "KPIs Profit.Total Profit"
+          }
+        },
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#605E5C'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "KPIs Customers.Total Customers"
           }
         }
       ],

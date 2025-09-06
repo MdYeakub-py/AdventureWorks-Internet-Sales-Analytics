@@ -3,7 +3,7 @@ table 'KPIs for Card'
 
 	measure PreviousSales =
 			CALCULATE(
-			    [Total Revenew],
+			    [Total Revenue],
 			    DATEADD('Calendar'[Date],-1,YEAR)
 			)
 		lineageTag: ef209bcf-79db-416e-bd89-05ad00a5281d
@@ -12,7 +12,7 @@ table 'KPIs for Card'
 
 	measure 'Sales Change %' = ```
 			
-			VAR _Current = [Total Revenew]
+			VAR _Current = [Total Revenue]
 			VAR Previous = [PreviousSales]
 			RETURN
 			IF(

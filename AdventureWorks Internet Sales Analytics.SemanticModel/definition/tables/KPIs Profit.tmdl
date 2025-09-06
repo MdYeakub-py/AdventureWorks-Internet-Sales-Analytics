@@ -6,13 +6,18 @@ table 'KPIs Profit'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure 'Total Profit' = [Total Revenew]-[Total Cost]
+	measure 'Total Profit' = [Total Revenue]-[Total Cost]
 		lineageTag: f9fe2010-2358-463e-9682-cadaaa9a3df6
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure 'Profit Margin (%)' = DIVIDE([Total Profit],[Total Revenew],0)
+	measure 'Profit Margin (%)' = DIVIDE([Total Profit],[Total Revenue],0)
 		lineageTag: 6cd2c977-1993-45e6-adba-7c7b718e671d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Profit Per Unit' = DIVIDE([Total Profit],[Total Units Sold])
+		lineageTag: eeb47935-b267-4e42-b3d5-c5aa8a1b98a1
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
