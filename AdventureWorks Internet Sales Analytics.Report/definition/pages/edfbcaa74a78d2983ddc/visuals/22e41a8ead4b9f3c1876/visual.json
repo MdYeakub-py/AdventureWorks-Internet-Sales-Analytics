@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "22e41a8ead4b9f3c1876",
   "position": {
-    "x": 178.0355938251252,
-    "y": 99.561445318706149,
+    "x": 177.99392097264439,
+    "y": 100.18237082066869,
     "z": 0,
     "height": 59.331306990881458,
     "width": 171.1854103343465,
-    "tabOrder": 11000
+    "tabOrder": 10000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -23,7 +23,7 @@
                       "Entity": "KPIs Core Sales"
                     }
                   },
-                  "Property": "Total Revenue"
+                  "Property": "Gross Revenue"
                 }
               },
               "queryRef": "KPIs Core Sales.Total Revenew",
@@ -42,7 +42,7 @@
                     "Entity": "KPIs Core Sales"
                   }
                 },
-                "Property": "Total Revenue"
+                "Property": "Gross Revenue"
               }
             },
             "direction": "Descending"

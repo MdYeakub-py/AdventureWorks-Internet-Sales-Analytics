@@ -7,7 +7,7 @@
     "z": 20000,
     "height": 185.36418166238218,
     "width": 335.6298200514139,
-    "tabOrder": 20000
+    "tabOrder": 19000
   },
   "visual": {
     "visualType": "columnChart",
@@ -42,7 +42,7 @@
                       "Entity": "KPIs Profit"
                     }
                   },
-                  "Property": "Total Profit"
+                  "Property": "Gross Profit"
                 }
               },
               "queryRef": "KPIs Profit.Total Profit",
@@ -61,7 +61,7 @@
                     "Entity": "KPIs Profit"
                   }
                 },
-                "Property": "Total Profit"
+                "Property": "Gross Profit"
               }
             },
             "direction": "Descending"

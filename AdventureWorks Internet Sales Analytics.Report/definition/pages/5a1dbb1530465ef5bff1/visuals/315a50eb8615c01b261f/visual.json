@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "315a50eb8615c01b261f",
   "position": {
-    "x": 503.44473007712082,
-    "y": 359.76006855184232,
+    "x": 502.85714285714289,
+    "y": 359.87841945288756,
     "z": 21000,
-    "height": 185.36418166238218,
-    "width": 765.58697514995708,
-    "tabOrder": 21000
+    "height": 185.77507598784194,
+    "width": 765.47112462006078,
+    "tabOrder": 20000
   },
   "visual": {
     "visualType": "tableEx",
@@ -37,7 +37,7 @@
                       "Entity": "KPIs Core Sales"
                     }
                   },
-                  "Property": "Total Revenue"
+                  "Property": "Gross Revenue"
                 }
               },
               "queryRef": "KPIs Core Sales.Total Revenew",
@@ -82,7 +82,7 @@
                       "Entity": "KPIs Profit"
                     }
                   },
-                  "Property": "Total Profit"
+                  "Property": "Gross Profit"
                 }
               },
               "queryRef": "KPIs Profit.Total Profit",
@@ -132,7 +132,7 @@
                     "Entity": "KPIs Profit"
                   }
                 },
-                "Property": "Total Profit"
+                "Property": "Gross Profit"
               }
             },
             "direction": "Descending"
@@ -291,7 +291,7 @@
                               "Entity": "KPIs Profit"
                             }
                           },
-                          "Property": "Total Profit"
+                          "Property": "Gross Profit"
                         }
                       },
                       "FillRule": {
@@ -740,7 +740,7 @@
                                 "Source": "k"
                               }
                             },
-                            "Property": "Total Profit"
+                            "Property": "Gross Profit"
                           }
                         }
                       }

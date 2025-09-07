@@ -7,7 +7,7 @@
     "z": 22000,
     "height": 203.28267477203647,
     "width": 332.64437689969606,
-    "tabOrder": 21000
+    "tabOrder": 20000
   },
   "visual": {
     "visualType": "columnChart",
@@ -42,7 +42,7 @@
                       "Entity": "KPIs Core Sales"
                     }
                   },
-                  "Property": "Total Revenue"
+                  "Property": "Gross Revenue"
                 }
               },
               "queryRef": "KPIs Core Sales.Total Revenew",
@@ -61,7 +61,7 @@
                     "Entity": "KPIs Core Sales"
                   }
                 },
-                "Property": "Total Revenue"
+                "Property": "Gross Revenue"
               }
             },
             "direction": "Descending"

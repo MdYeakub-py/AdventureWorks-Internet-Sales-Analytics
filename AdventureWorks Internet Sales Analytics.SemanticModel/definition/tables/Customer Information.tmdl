@@ -177,7 +177,7 @@ table 'Customer Information'
 	column 'Customer Total Revenue' =
 			
 			CALCULATE(
-			    [Total Revenue],
+			    [Gross Revenue],
 			    ALLEXCEPT('Customer Information','Customer Information'[CustomerKey]))
 		lineageTag: 18a3d487-c16a-42bd-baa3-ee4fb65e2092
 		summarizeBy: none

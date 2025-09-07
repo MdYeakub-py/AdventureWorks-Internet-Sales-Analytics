@@ -63,7 +63,7 @@ table 'KPIs Customers'
 		formatString: 0
 		lineageTag: da02dd68-2290-4eb4-99dd-bb01d3a085c7
 
-	measure 'Avg Revenue per Customer' = DIVIDE([Total Revenue],[Total Customers],0)
+	measure 'Avg Revenue per Customer' = DIVIDE([Gross Revenue],[Total Customers],0)
 		lineageTag: b54fd0b7-43ab-4e22-9778-6eb00441c519
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}

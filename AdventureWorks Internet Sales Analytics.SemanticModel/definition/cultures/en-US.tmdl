@@ -2202,6 +2202,12 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "total revenue": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
 			          "customer total income": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -2209,6 +2215,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "total income": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
 			          }
 			        },
 			        {
@@ -2242,6 +2258,36 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "total profit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "total turnover": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "total yield": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
 			          "turnover": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -2259,46 +2305,6 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "client total revenue": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "consumer total revenue": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "user total revenue": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "buyer total revenue": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
 			          }
 			        }
 			      ]
@@ -6065,17 +6071,17 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "KPIs_profit.total_profit": {
+			    "KPIs_profit.gross_profit": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "KPIs Profit",
-			          "ConceptualProperty": "Total Profit"
+			          "ConceptualProperty": "Gross Profit"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "total profit": {
+			          "gross profit": {
 			            "State": "Generated"
 			          }
 			        },
@@ -6092,7 +6098,7 @@ cultureInfo en-US
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.582
+			            "Weight": 0.647
 			          }
 			        },
 			        {
@@ -6102,11 +6108,41 @@ cultureInfo en-US
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
+			            "Weight": 0.647
+			          }
+			        },
+			        {
+			          "whole profit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.647
+			          }
+			        },
+			        {
+			          "sum profit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
 			            "Weight": 0.582
 			          }
 			        },
 			        {
-			          "total income": {
+			          "total profit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "gross income": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -6116,7 +6152,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "total turnover": {
+			          "gross turnover": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -6126,7 +6162,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "total return": {
+			          "gross return": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -6136,7 +6172,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "total yield": {
+			          "gross yield": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -6153,36 +6189,6 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "yield": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "total advantage": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.461
-			          }
-			        },
-			        {
-			          "total gain": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.461
 			          }
 			        }
 			      ]
@@ -7431,17 +7437,17 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "KPIs_core_sale.total_revenue": {
+			    "KPIs_core_sale.gross_revenue": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "KPIs Core Sales",
-			          "ConceptualProperty": "Total Revenue"
+			          "ConceptualProperty": "Gross Revenue"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "total revenue": {
+			          "gross revenue": {
 			            "State": "Generated"
 			          }
 			        },
@@ -7452,7 +7458,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "total income": {
+			          "gross income": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -7462,7 +7468,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "total turnover": {
+			          "gross turnover": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -7472,7 +7478,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "total yield": {
+			          "gross yield": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -7508,11 +7514,31 @@ cultureInfo en-US
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.582
+			            "Weight": 0.647
 			          }
 			        },
 			        {
 			          "overall revenue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.647
+			          }
+			        },
+			        {
+			          "whole revenue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.647
+			          }
+			        },
+			        {
+			          "sum revenue": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -7523,6 +7549,16 @@ cultureInfo en-US
 			        },
 			        {
 			          "Sales": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Total Sales": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -8173,6 +8209,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "Returns Units": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -8299,6 +8345,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "R. Rate (%)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ],
@@ -9317,6 +9373,12 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "total revenue": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
 			          "customer total income": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -9324,6 +9386,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "total income": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
 			          }
 			        },
 			        {
@@ -9357,6 +9429,36 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "total profit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "total turnover": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "total yield": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
 			          "turnover": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -9374,46 +9476,6 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "client total revenue": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "consumer total revenue": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "user total revenue": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "buyer total revenue": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
 			          }
 			        }
 			      ]
@@ -12040,9 +12102,943 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "KPIs_profit.net_profit": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPIs Profit",
+			          "ConceptualProperty": "Net Profit"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "net profit": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "profit": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "net income": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "net revenue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "net turnover": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "net return": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "net yield": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "turnover": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "yield": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "net advantage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "net gain": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "net benefit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "Adjusted Profit": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "KPIs_return.total_value_of_returns": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPIs Return",
+			          "ConceptualProperty": "Total Value of Returns"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total value of returns": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "value": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "total value": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aggregate value of return": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "overall value of return": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "aggregate value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "total assessment of return": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "total assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "total worth of return": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "total price of return": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "total cost of return": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "total charge of return": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        }
+			      ]
+			    },
+			    "KPIs_return.return_cost_impact": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPIs Return",
+			          "ConceptualProperty": "Return Cost Impact"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "return cost impact": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "impact": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cost impact": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "return cost impression": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "cost impression": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "return cost influence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "return cost effect": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "return cost bearing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "return cost power": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "return cost control": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "return cost sway": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "impression": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "cost influence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "KPIs_return.net_profit_loss": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPIs Return",
+			          "ConceptualProperty": "Net Profit Loss"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "net profit loss": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "loss": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "profit loss": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "net profit injury": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "net profit forfeiture": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "profit injury": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "profit forfeiture": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "net profit damage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "net profit harm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "net profit cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "net profit hurt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "injury": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "forfeiture": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "KPIs_return.profit_impact_loss": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPIs Return",
+			          "ConceptualProperty": "Profit Impact (Loss)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "profit impact (loss)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "profit impact": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "returns_data_has_KPIs_return_profit_impact_loss": {
+			      "Binding": {
+			        "ConceptualEntity": "Returns Data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "returns_data": {
+			          "Target": {
+			            "Entity": "returns_data"
+			          }
+			        },
+			        "KPIs_return.profit_impact_loss": {
+			          "Target": {
+			            "Entity": "KPIs_return.profit_impact_loss"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "returns_data"
+			            },
+			            "Object": {
+			              "Role": "KPIs_return.profit_impact_loss"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "returns_data_have_profit_impact_loss"
+			        }
+			      ]
+			    },
+			    "product_information_has_KPIs_return_profit_impact_loss": {
+			      "Binding": {
+			        "ConceptualEntity": "Product Information"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "product_information": {
+			          "Target": {
+			            "Entity": "product_information"
+			          }
+			        },
+			        "KPIs_return.profit_impact_loss": {
+			          "Target": {
+			            "Entity": "KPIs_return.profit_impact_loss"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "product_information"
+			            },
+			            "Object": {
+			              "Role": "KPIs_return.profit_impact_loss"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "product_information_have_profit_impact_loss"
+			        }
+			      ]
+			    },
+			    "sales_data_has_KPIs_return_net_profit_loss": {
+			      "Binding": {
+			        "ConceptualEntity": "SalesData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sales_data": {
+			          "Target": {
+			            "Entity": "sales_data"
+			          }
+			        },
+			        "KPIs_return.net_profit_loss": {
+			          "Target": {
+			            "Entity": "KPIs_return.net_profit_loss"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sales_data"
+			            },
+			            "Object": {
+			              "Role": "KPIs_return.net_profit_loss"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_data_have_net_profit_loss"
+			        }
+			      ]
+			    },
+			    "returns_data_has_KPIs_return_net_profit_loss": {
+			      "Binding": {
+			        "ConceptualEntity": "Returns Data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "returns_data": {
+			          "Target": {
+			            "Entity": "returns_data"
+			          }
+			        },
+			        "KPIs_return.net_profit_loss": {
+			          "Target": {
+			            "Entity": "KPIs_return.net_profit_loss"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "returns_data"
+			            },
+			            "Object": {
+			              "Role": "KPIs_return.net_profit_loss"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "returns_data_have_net_profit_loss"
+			        }
+			      ]
+			    },
+			    "product_information_has_KPIs_return_net_profit_loss": {
+			      "Binding": {
+			        "ConceptualEntity": "Product Information"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "product_information": {
+			          "Target": {
+			            "Entity": "product_information"
+			          }
+			        },
+			        "KPIs_return.net_profit_loss": {
+			          "Target": {
+			            "Entity": "KPIs_return.net_profit_loss"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "product_information"
+			            },
+			            "Object": {
+			              "Role": "KPIs_return.net_profit_loss"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "product_information_have_net_profit_loss"
+			        }
+			      ]
+			    },
+			    "returns_data_has_KPIs_return_return_cost_impact": {
+			      "Binding": {
+			        "ConceptualEntity": "Returns Data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "returns_data": {
+			          "Target": {
+			            "Entity": "returns_data"
+			          }
+			        },
+			        "KPIs_return.return_cost_impact": {
+			          "Target": {
+			            "Entity": "KPIs_return.return_cost_impact"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "returns_data"
+			            },
+			            "Object": {
+			              "Role": "KPIs_return.return_cost_impact"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "returns_data_have_return_cost_impact"
+			        }
+			      ]
+			    },
+			    "product_information_has_KPIs_return_return_cost_impact": {
+			      "Binding": {
+			        "ConceptualEntity": "Product Information"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "product_information": {
+			          "Target": {
+			            "Entity": "product_information"
+			          }
+			        },
+			        "KPIs_return.return_cost_impact": {
+			          "Target": {
+			            "Entity": "KPIs_return.return_cost_impact"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "product_information"
+			            },
+			            "Object": {
+			              "Role": "KPIs_return.return_cost_impact"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "product_information_have_return_cost_impact"
+			        }
+			      ]
+			    },
+			    "returns_data_has_KPIs_return_total_value_of_returns": {
+			      "Binding": {
+			        "ConceptualEntity": "Returns Data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "returns_data": {
+			          "Target": {
+			            "Entity": "returns_data"
+			          }
+			        },
+			        "KPIs_return.total_value_of_returns": {
+			          "Target": {
+			            "Entity": "KPIs_return.total_value_of_returns"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "returns_data"
+			            },
+			            "Object": {
+			              "Role": "KPIs_return.total_value_of_returns"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "returns_data_have_total_value_of_returns"
+			        }
+			      ]
+			    },
+			    "product_information_has_KPIs_return_total_value_of_returns": {
+			      "Binding": {
+			        "ConceptualEntity": "Product Information"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "product_information": {
+			          "Target": {
+			            "Entity": "product_information"
+			          }
+			        },
+			        "KPIs_return.total_value_of_returns": {
+			          "Target": {
+			            "Entity": "KPIs_return.total_value_of_returns"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "product_information"
+			            },
+			            "Object": {
+			              "Role": "KPIs_return.total_value_of_returns"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "product_information_have_total_value_of_returns"
+			        }
+			      ]
+			    },
+			    "sales_data_has_KPIs_profit_net_profit": {
+			      "Binding": {
+			        "ConceptualEntity": "SalesData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sales_data": {
+			          "Target": {
+			            "Entity": "sales_data"
+			          }
+			        },
+			        "KPIs_profit.net_profit": {
+			          "Target": {
+			            "Entity": "KPIs_profit.net_profit"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sales_data"
+			            },
+			            "Object": {
+			              "Role": "KPIs_profit.net_profit"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_data_have_net_profit"
+			        }
+			      ]
+			    },
+			    "returns_data_has_KPIs_profit_net_profit": {
+			      "Binding": {
+			        "ConceptualEntity": "Returns Data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "returns_data": {
+			          "Target": {
+			            "Entity": "returns_data"
+			          }
+			        },
+			        "KPIs_profit.net_profit": {
+			          "Target": {
+			            "Entity": "KPIs_profit.net_profit"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "returns_data"
+			            },
+			            "Object": {
+			              "Role": "KPIs_profit.net_profit"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "returns_data_have_net_profit"
+			        }
+			      ]
+			    },
+			    "product_information_has_KPIs_profit_net_profit": {
+			      "Binding": {
+			        "ConceptualEntity": "Product Information"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "product_information": {
+			          "Target": {
+			            "Entity": "product_information"
+			          }
+			        },
+			        "KPIs_profit.net_profit": {
+			          "Target": {
+			            "Entity": "KPIs_profit.net_profit"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "product_information"
+			            },
+			            "Object": {
+			              "Role": "KPIs_profit.net_profit"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "product_information_have_net_profit"
+			        }
+			      ]
+			    },
 			    "sales_data_has_KPIs_core_sale_previous_month_profit": {
 			      "Binding": {
 			        "ConceptualEntity": "SalesData"
@@ -13990,7 +14986,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "sales_data_has_KPIs_core_sale_total_revenue": {
+			    "sales_data_has_KPIs_core_sale_gross_revenue": {
 			      "Binding": {
 			        "ConceptualEntity": "SalesData"
 			      },
@@ -14001,9 +14997,9 @@ cultureInfo en-US
 			            "Entity": "sales_data"
 			          }
 			        },
-			        "KPIs_core_sale.total_revenue": {
+			        "KPIs_core_sale.gross_revenue": {
 			          "Target": {
-			            "Entity": "KPIs_core_sale.total_revenue"
+			            "Entity": "KPIs_core_sale.gross_revenue"
 			          }
 			        }
 			      },
@@ -14014,16 +15010,16 @@ cultureInfo en-US
 			              "Role": "sales_data"
 			            },
 			            "Object": {
-			              "Role": "KPIs_core_sale.total_revenue"
+			              "Role": "KPIs_core_sale.gross_revenue"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_data_have_total_revenue"
+			          "ID": "sales_data_have_gross_revenue"
 			        }
 			      ]
 			    },
-			    "product_information_has_KPIs_core_sale_total_revenue": {
+			    "product_information_has_KPIs_core_sale_gross_revenue": {
 			      "Binding": {
 			        "ConceptualEntity": "Product Information"
 			      },
@@ -14034,9 +15030,9 @@ cultureInfo en-US
 			            "Entity": "product_information"
 			          }
 			        },
-			        "KPIs_core_sale.total_revenue": {
+			        "KPIs_core_sale.gross_revenue": {
 			          "Target": {
-			            "Entity": "KPIs_core_sale.total_revenue"
+			            "Entity": "KPIs_core_sale.gross_revenue"
 			          }
 			        }
 			      },
@@ -14047,12 +15043,12 @@ cultureInfo en-US
 			              "Role": "product_information"
 			            },
 			            "Object": {
-			              "Role": "KPIs_core_sale.total_revenue"
+			              "Role": "KPIs_core_sale.gross_revenue"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "product_information_have_total_revenue"
+			          "ID": "product_information_have_gross_revenue"
 			        }
 			      ]
 			    },
@@ -14320,7 +15316,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "sales_data_has_KPIs_profit_total_profit": {
+			    "sales_data_has_KPIs_profit_gross_profit": {
 			      "Binding": {
 			        "ConceptualEntity": "SalesData"
 			      },
@@ -14331,9 +15327,9 @@ cultureInfo en-US
 			            "Entity": "sales_data"
 			          }
 			        },
-			        "KPIs_profit.total_profit": {
+			        "KPIs_profit.gross_profit": {
 			          "Target": {
-			            "Entity": "KPIs_profit.total_profit"
+			            "Entity": "KPIs_profit.gross_profit"
 			          }
 			        }
 			      },
@@ -14344,16 +15340,16 @@ cultureInfo en-US
 			              "Role": "sales_data"
 			            },
 			            "Object": {
-			              "Role": "KPIs_profit.total_profit"
+			              "Role": "KPIs_profit.gross_profit"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_data_have_total_profit"
+			          "ID": "sales_data_have_gross_profit"
 			        }
 			      ]
 			    },
-			    "product_information_has_KPIs_profit_total_profit": {
+			    "product_information_has_KPIs_profit_gross_profit": {
 			      "Binding": {
 			        "ConceptualEntity": "Product Information"
 			      },
@@ -14364,9 +15360,9 @@ cultureInfo en-US
 			            "Entity": "product_information"
 			          }
 			        },
-			        "KPIs_profit.total_profit": {
+			        "KPIs_profit.gross_profit": {
 			          "Target": {
-			            "Entity": "KPIs_profit.total_profit"
+			            "Entity": "KPIs_profit.gross_profit"
 			          }
 			        }
 			      },
@@ -14377,12 +15373,12 @@ cultureInfo en-US
 			              "Role": "product_information"
 			            },
 			            "Object": {
-			              "Role": "KPIs_profit.total_profit"
+			              "Role": "KPIs_profit.gross_profit"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "product_information_have_total_profit"
+			          "ID": "product_information_have_gross_profit"
 			        }
 			      ]
 			    },

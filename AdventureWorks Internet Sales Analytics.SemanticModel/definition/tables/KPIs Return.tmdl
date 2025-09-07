@@ -10,6 +10,51 @@ table 'KPIs Return'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure 'Total Value of Returns' = ```
+			
+			
+			SUMX(
+			    'Returns Data',
+			    'Returns Data'[ReturnQuantity] * RELATED('Product Information'[ProductPrice])
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 63823760-7dd6-4b50-9e2e-140c8636bd5d
+
+	measure 'Return Cost Impact' =
+			
+			SUMX(
+			    'Returns Data',
+			    'Returns Data'[ReturnQuantity] * RELATED('Product Information'[ProductCost])
+			)
+		lineageTag: 9ded6319-5912-433b-a0d7-e89b3b746446
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Net Profit Loss' =
+			
+			
+			VAR ProfitLoss = ([Total Value of Returns]- 'KPIs Return'[Return Cost Impact])
+			VAR ProfitLossAfterReturn = ([Gross Profit]-ProfitLoss)
+			RETURN
+			([Gross Profit]- ProfitLossAfterReturn)
+		lineageTag: 2a596bfb-8902-44bc-bc2e-49882d73a53e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Profit Impact (Loss)' = ```
+			
+			SUMX(
+			    'Returns Data',
+			    'Returns Data'[ReturnQuantity] * 
+			    (RELATED('Product Information'[ProductPrice]) - RELATED('Product Information'[ProductCost]))
+			)
+			```
+		lineageTag: 7703c905-1043-4565-a8ac-4bf8176736c0
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column Column
 		formatString: 0
 		lineageTag: a548fdc1-37e2-4155-b0e9-e0b22449410f

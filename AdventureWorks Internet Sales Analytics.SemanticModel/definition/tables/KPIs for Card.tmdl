@@ -3,7 +3,7 @@ table 'KPIs for Card'
 
 	measure PreviousSales =
 			CALCULATE(
-			    [Total Revenue],
+			    [Gross Revenue],
 			    DATEADD('Calendar'[Date],-1,YEAR)
 			)
 		lineageTag: ef209bcf-79db-416e-bd89-05ad00a5281d
@@ -12,7 +12,7 @@ table 'KPIs for Card'
 
 	measure 'Sales Change %' = ```
 			
-			VAR _Current = [Total Revenue]
+			VAR _Current = [Gross Revenue]
 			VAR Previous = [PreviousSales]
 			RETURN
 			IF(
@@ -79,7 +79,7 @@ table 'KPIs for Card'
 
 	measure PreviousProfit =
 			CALCULATE(
-			    [Total Profit],
+			    [Gross Profit],
 			    DATEADD('Calendar'[Date],-1,YEAR)
 			)
 		lineageTag: e5772068-c292-4496-96ec-6a4658397707
@@ -119,7 +119,7 @@ table 'KPIs for Card'
 
 	measure 'Profit Change %' =
 			
-			VAR _Current = [Total Profit]
+			VAR _Current = [Gross Profit]
 			VAR Previous = [PreviousProfit]
 			RETURN
 			IF(

@@ -41,7 +41,9 @@
     ]
   },
   "publicCustomVisuals": [
-    "scatterChartByAkvelon6CFB0DAB29E746BE850B6DFD1E2789FD"
+    "scatterChartByAkvelon6CFB0DAB29E746BE850B6DFD1E2789FD",
+    "SimpleWaterfall",
+    "ultimateWaterfall9712E1351D4E4FA89077ED4D9351DC71"
   ],
   "resourcePackages": [
     {

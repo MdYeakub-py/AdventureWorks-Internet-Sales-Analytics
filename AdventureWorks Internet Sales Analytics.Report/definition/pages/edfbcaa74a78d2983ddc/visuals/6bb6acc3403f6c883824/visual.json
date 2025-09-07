@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "6bb6acc3403f6c883824",
   "position": {
-    "x": 158.75108412836082,
-    "y": 418.52558542931484,
+    "x": 158.54103343465047,
+    "y": 510.63829787234044,
     "z": 23000,
-    "height": 295.29921942758023,
-    "width": 487.35472679965306,
-    "tabOrder": 23000
+    "height": 202.31003039513678,
+    "width": 487.29483282674772,
+    "tabOrder": 22000
   },
   "visual": {
     "visualType": "tableEx",
@@ -37,7 +37,7 @@
                       "Entity": "KPIs Core Sales"
                     }
                   },
-                  "Property": "Total Revenue"
+                  "Property": "Gross Revenue"
                 }
               },
               "queryRef": "KPIs Core Sales.Total Revenue",
@@ -52,7 +52,7 @@
                       "Entity": "KPIs Profit"
                     }
                   },
-                  "Property": "Total Profit"
+                  "Property": "Gross Profit"
                 }
               },
               "queryRef": "KPIs Profit.Total Profit",
@@ -102,7 +102,7 @@
                     "Entity": "KPIs Profit"
                   }
                 },
-                "Property": "Total Profit"
+                "Property": "Gross Profit"
               }
             },
             "direction": "Descending"
@@ -173,7 +173,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "88.91474077447504D"
+                  "Value": "92.24869498881921D"
                 }
               }
             }
@@ -187,7 +187,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "104.69374340977879D"
+                  "Value": "101.76710003092836D"
                 }
               }
             }
@@ -208,6 +208,20 @@
           },
           "selector": {
             "metadata": "KPIs Core Sales.Total Units Sold"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "117.01007204751035D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Territory Information.Country"
           }
         }
       ],
@@ -319,7 +333,7 @@
                               "Entity": "KPIs Profit"
                             }
                           },
-                          "Property": "Total Profit"
+                          "Property": "Gross Profit"
                         }
                       },
                       "FillRule": {

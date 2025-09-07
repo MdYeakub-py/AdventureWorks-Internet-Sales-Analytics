@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "f5a3477617195d5cb30e",
   "position": {
-    "x": 536.34961439588687,
-    "y": 95.424164524421585,
+    "x": 535.92705167173256,
+    "y": 100.18237082066869,
     "z": 3000,
-    "height": 59.228791773778916,
-    "width": 177.68637532133675,
-    "tabOrder": 18000
+    "height": 59.331306990881458,
+    "width": 177.99392097264439,
+    "tabOrder": 17000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -23,7 +23,7 @@
                       "Entity": "KPIs Profit"
                     }
                   },
-                  "Property": "Total Profit"
+                  "Property": "Gross Profit"
                 }
               },
               "queryRef": "KPIs Profit.Total Profit",
@@ -42,7 +42,7 @@
                     "Entity": "KPIs Profit"
                   }
                 },
-                "Property": "Total Profit"
+                "Property": "Gross Profit"
               }
             },
             "direction": "Descending"
