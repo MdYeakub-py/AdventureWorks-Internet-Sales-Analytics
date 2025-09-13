@@ -7,7 +7,7 @@
     "z": 1000,
     "height": 58.42323651452282,
     "width": 166.77178423236515,
-    "tabOrder": 11000
+    "tabOrder": 9000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -20,14 +20,14 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "KPIs Return"
+                      "Entity": "KPIs Profit"
                     }
                   },
-                  "Property": "Return Rate (%)"
+                  "Property": "Gross Profit"
                 }
               },
-              "queryRef": "KPIs Return.Return Rate (%)",
-              "nativeQueryRef": "Return Rate (%)"
+              "queryRef": "KPIs Profit.Gross Profit",
+              "nativeQueryRef": "Gross Profit"
             }
           ]
         }
@@ -39,10 +39,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "KPIs Return"
+                    "Entity": "KPIs Profit"
                   }
                 },
-                "Property": "Return Rate (%)"
+                "Property": "Gross Profit"
               }
             },
             "direction": "Descending"

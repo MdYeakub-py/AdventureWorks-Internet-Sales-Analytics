@@ -7,7 +7,7 @@
     "z": 24000,
     "height": 351.60165975103735,
     "width": 516.24896265560164,
-    "tabOrder": 23000
+    "tabOrder": 21000
   },
   "visual": {
     "visualType": "SimpleWaterfall",
@@ -258,79 +258,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "49decaed117f62ede1cb",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Core Sales"
-              }
-            },
-            "Property": "Gross Revenue"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "d323788d9c6ac856221e",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Profit"
-              }
-            },
-            "Property": "Total Cost"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "d9f97712cf24f9c05879",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Profit"
-              }
-            },
-            "Property": "Gross Profit"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "2640e6d48da2fd807cef",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Return"
-              }
-            },
-            "Property": "Total Value of Returns"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "2af94dc978e02ebb1674",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Profit"
-              }
-            },
-            "Property": "Net Profit"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

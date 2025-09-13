@@ -4,7 +4,7 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 1078.1398576377544,
+        "x": 1037.2691963678265,
         "y": 0
       },
       "nodes": [
@@ -19,7 +19,7 @@
             "height": 176,
             "width": 234
           },
-          "zIndex": 11
+          "zIndex": 14
         },
         {
           "location": {
@@ -32,7 +32,7 @@
             "height": 328.37332588955576,
             "width": 234
           },
-          "zIndex": 1
+          "zIndex": 13
         },
         {
           "location": {
@@ -44,7 +44,7 @@
             "height": 104,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 15
         },
         {
           "location": {
@@ -56,7 +56,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 1
         },
         {
           "location": {
@@ -68,7 +68,7 @@
             "height": 128,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 2
         },
         {
           "location": {
@@ -80,7 +80,7 @@
             "height": 376.10398995090031,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 3
         },
         {
           "location": {
@@ -92,7 +92,7 @@
             "height": 152,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 4
         },
         {
           "location": {
@@ -104,7 +104,7 @@
             "height": 176,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 5
         },
         {
           "location": {
@@ -116,7 +116,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 6
         },
         {
           "location": {
@@ -128,7 +128,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 7
         },
         {
           "location": {
@@ -140,7 +140,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 8
         },
         {
           "location": {
@@ -152,7 +152,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 9
         },
         {
           "location": {
@@ -164,7 +164,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 10
         },
         {
           "location": {
@@ -176,7 +176,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 11
         },
         {
           "location": {
@@ -189,7 +189,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 12
         }
       ],
       "name": "All tables",

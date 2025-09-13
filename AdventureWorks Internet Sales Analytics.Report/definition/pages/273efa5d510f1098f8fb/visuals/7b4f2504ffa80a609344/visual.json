@@ -7,7 +7,7 @@
     "z": 25000,
     "height": 351.60165975103735,
     "width": 579.98340248962654,
-    "tabOrder": 24000
+    "tabOrder": 22000
   },
   "visual": {
     "visualType": "tableEx",
@@ -883,93 +883,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "ec82023cebef259128be",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Product Information"
-              }
-            },
-            "Property": "ProductName"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "364c706edb2a2dd4ad8a",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Core Sales"
-              }
-            },
-            "Property": "Gross Revenue"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "25d943284cd2f7ce75b9",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Return"
-              }
-            },
-            "Property": "Total Units Returns"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "fb59111c30586c344cc8",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Return"
-              }
-            },
-            "Property": "Return Rate (%)"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "14c59e8d8cf42833b2d8",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Return"
-              }
-            },
-            "Property": "Profit Impact (Loss)"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "0276ae9ca8b8bf1d4d8e",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Territory Information"
-              }
-            },
-            "Property": "Region"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

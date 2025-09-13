@@ -617,6 +617,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.476
 			          }
+			        },
+			        {
+			          "Customer": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -6086,12 +6096,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "profit": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "aggregate profit": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -6182,13 +6186,23 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "turnover": {
+			          "gross advantage": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.476
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "Profit": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -8308,16 +8322,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "frequency": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
 			          "ratio": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -8339,6 +8343,16 @@ cultureInfo en-US
 			        },
 			        {
 			          "return amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "return proportion": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -9236,118 +9250,108 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "KPIs_customer.avg_revenue_per_customer": {
+			    "KPIs_customer.avg__sales_per_customer": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "KPIs Customers",
-			          "ConceptualProperty": "Avg Revenue per Customer"
+			          "ConceptualProperty": "Avg. Sales per Customer"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "avg revenue per customer": {
+			          "avg. sales per customer": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "avg income per customer": {
+			          "avg. sale per customer": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.771
+			            "Weight": 0.757
 			          }
 			        },
 			        {
-			          "avg profit per customer": {
+			          "avg. sale per client": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.748
+			            "Weight": 0.624
 			          }
 			        },
 			        {
-			          "avg turnover per customer": {
+			          "avg. sale per consumer": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.748
+			            "Weight": 0.624
 			          }
 			        },
 			        {
-			          "avg yield per customer": {
+			          "avg. sale per user": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.748
+			            "Weight": 0.624
 			          }
 			        },
 			        {
-			          "avg revenue per client": {
+			          "avg. sale per buyer": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.617
+			            "Weight": 0.624
 			          }
 			        },
 			        {
-			          "avg revenue per consumer": {
+			          "avg. sale per patron": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.617
+			            "Weight": 0.624
 			          }
 			        },
 			        {
-			          "avg revenue per user": {
+			          "avg. sale per purchaser": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.617
+			            "Weight": 0.624
 			          }
 			        },
 			        {
-			          "avg revenue per buyer": {
+			          "avg. sale per shopper": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.617
+			            "Weight": 0.624
 			          }
 			        },
 			        {
-			          "avg revenue per patron": {
+			          "average . sale per customer": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "avg revenue per purchaser": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
+			            "Weight": 0.605
 			          }
 			        }
 			      ]
@@ -10147,12 +10151,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "profit": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "previous income": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -10193,26 +10191,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "turnover": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "yield": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
 			          "previous advantage": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -10244,6 +10222,26 @@ cultureInfo en-US
 			        },
 			        {
 			          "previous use": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "previous reward": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "previous good": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -11868,12 +11866,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "profit": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "profit per module": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -11987,12 +11979,6 @@ cultureInfo en-US
 			        {
 			          "previous month profit": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "profit": {
-			            "State": "Generated",
-			            "Weight": 0.97
 			          }
 			        },
 			        {
@@ -12118,12 +12104,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "profit": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "net income": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -12174,26 +12154,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "turnover": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "yield": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
 			          "net advantage": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -12215,6 +12175,26 @@ cultureInfo en-US
 			        },
 			        {
 			          "net benefit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "net use": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "net reward": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -12640,9 +12620,1863 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "customer_information.recency": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Customer Information",
+			          "ConceptualProperty": "Recency (Days)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "recency": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "recency (Days)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "recency (Day)": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ],
+			      "Units": [
+			        "day"
+			      ]
+			    },
+			    "customer_information.recency_bucket": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Customer Information",
+			          "ConceptualProperty": "Recency Bucket"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "recency bucket": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "recency pail": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "recency container": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "recency vessel": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "KPIs_core_sale.sales_LY_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPIs Core Sales",
+			          "ConceptualProperty": "Sales LY :"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sales LY :": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sale ly :": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "KPIs_core_sale.YoY_growth_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPIs Core Sales",
+			          "ConceptualProperty": "YoY Growth %:"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "YoY growth %:": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yoy growth percentage :": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "yoy growth pct :": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "KPIs_core_sale.sales_LM": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPIs Core Sales",
+			          "ConceptualProperty": "Sales LM:"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sales LM:": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sale lm:": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "KPIs_core_sale.MoM_growth_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPIs Core Sales",
+			          "ConceptualProperty": "MoM Growth %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "MoM growth %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mom growth percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "mom growth pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "KPIs_core_sale.YTD_sales": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPIs Core Sales",
+			          "ConceptualProperty": "YTD Sales:"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "YTD sales:": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ytd sale :": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "year to date sale:": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.498
+			          }
+			        }
+			      ]
+			    },
+			    "KPIs_core_sale.YTD_profit": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPIs Core Sales",
+			          "ConceptualProperty": "YTD Profit:"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "YTD profit:": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year to date profit:": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.498
+			          }
+			        }
+			      ]
+			    },
+			    "KPIs_customer.avg__profit_per_customer": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPIs Customers",
+			          "ConceptualProperty": "Avg. Profit per Customer"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "avg. profit per customer": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "avg. profit per client": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "avg. profit per consumer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "avg. profit per user": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "avg. profit per buyer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "avg. profit per patron": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "avg. profit per purchaser": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "avg. profit per shopper": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "average . profit per customer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "avg. income per customer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "avg. revenue per customer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        }
+			      ]
+			    },
+			    "KPIs_customer.CLV_profit_based_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPIs Customers",
+			          "ConceptualProperty": "CLV (Profit Based) :"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CLV (profit based) :": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "KPIs_customer.active_customers_l30d": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPIs Customers",
+			          "ConceptualProperty": "Active Customers (L-30d)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "active customers (l-30d)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "active customers": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "active customers (l 30d)": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "KPIs_customer.lost_customers_l30d": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPIs Customers",
+			          "ConceptualProperty": "Lost Customers (L-30d)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "lost customers (l-30d)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "lost customers": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "lost customers (l 30d)": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "KPIs_customer.cumulative_sales_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPIs Customers",
+			          "ConceptualProperty": "Cumulative Sales %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cumulative sales %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cumulative sale percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "cumulative sale pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "cumulative sale %": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "KPIs_customer.frequency": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPIs Customers",
+			          "ConceptualProperty": "Frequency"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "frequency": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "incidence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "occurrence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "regularity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "KPIs_customer.monetary": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPIs Customers",
+			          "ConceptualProperty": "Monetary"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "monetary": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "financial": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "fiscal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "economic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "pecuniary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "regulatory": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "monetarist": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "budgetary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "KPIs_customer.profit": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPIs Customers",
+			          "ConceptualProperty": "Profit"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "profit": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "turnover": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "yield": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "advantage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "gain": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "benefit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "use": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "reward": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "good": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "KPIs_customer.clv": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPIs Customers",
+			          "ConceptualProperty": "CLV"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "clv": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "KPIs_customer.segment": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "KPIs Customers",
+			          "ConceptualProperty": "Segment"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "segment": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "division": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "subdivision": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "sector": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "bit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "fragment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "part": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "piece": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "portion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "slice": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "sales_data_has_KPIs_customer_clv": {
+			      "Binding": {
+			        "ConceptualEntity": "SalesData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sales_data": {
+			          "Target": {
+			            "Entity": "sales_data"
+			          }
+			        },
+			        "KPIs_customer.clv": {
+			          "Target": {
+			            "Entity": "KPIs_customer.clv"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sales_data"
+			            },
+			            "Object": {
+			              "Role": "KPIs_customer.clv"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_data_have_clv"
+			        }
+			      ]
+			    },
+			    "product_information_has_KPIs_customer_clv": {
+			      "Binding": {
+			        "ConceptualEntity": "Product Information"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "product_information": {
+			          "Target": {
+			            "Entity": "product_information"
+			          }
+			        },
+			        "KPIs_customer.clv": {
+			          "Target": {
+			            "Entity": "KPIs_customer.clv"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "product_information"
+			            },
+			            "Object": {
+			              "Role": "KPIs_customer.clv"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "product_information_have_clv"
+			        }
+			      ]
+			    },
+			    "sales_data_has_KPIs_customer_profit": {
+			      "Binding": {
+			        "ConceptualEntity": "SalesData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sales_data": {
+			          "Target": {
+			            "Entity": "sales_data"
+			          }
+			        },
+			        "KPIs_customer.profit": {
+			          "Target": {
+			            "Entity": "KPIs_customer.profit"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sales_data"
+			            },
+			            "Object": {
+			              "Role": "KPIs_customer.profit"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_data_have_profit"
+			        }
+			      ]
+			    },
+			    "product_information_has_KPIs_customer_profit": {
+			      "Binding": {
+			        "ConceptualEntity": "Product Information"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "product_information": {
+			          "Target": {
+			            "Entity": "product_information"
+			          }
+			        },
+			        "KPIs_customer.profit": {
+			          "Target": {
+			            "Entity": "KPIs_customer.profit"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "product_information"
+			            },
+			            "Object": {
+			              "Role": "KPIs_customer.profit"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "product_information_have_profit"
+			        }
+			      ]
+			    },
+			    "sales_data_has_KPIs_customer_monetary": {
+			      "Binding": {
+			        "ConceptualEntity": "SalesData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sales_data": {
+			          "Target": {
+			            "Entity": "sales_data"
+			          }
+			        },
+			        "KPIs_customer.monetary": {
+			          "Target": {
+			            "Entity": "KPIs_customer.monetary"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sales_data"
+			            },
+			            "Object": {
+			              "Role": "KPIs_customer.monetary"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_data_have_monetary"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "sales_data"
+			            },
+			            "Adjectives": [
+			              {
+			                "monetary": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "KPIs_customer.monetary"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "monetary_indicates_how_monetary_sales_data_are"
+			        }
+			      ]
+			    },
+			    "product_information_has_KPIs_customer_monetary": {
+			      "Binding": {
+			        "ConceptualEntity": "Product Information"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "product_information": {
+			          "Target": {
+			            "Entity": "product_information"
+			          }
+			        },
+			        "KPIs_customer.monetary": {
+			          "Target": {
+			            "Entity": "KPIs_customer.monetary"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "product_information"
+			            },
+			            "Object": {
+			              "Role": "KPIs_customer.monetary"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "product_information_have_monetary"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "product_information"
+			            },
+			            "Adjectives": [
+			              {
+			                "monetary": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "KPIs_customer.monetary"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "monetary_indicates_how_monetary_product_information_are"
+			        }
+			      ]
+			    },
+			    "sales_data_has_KPIs_customer_frequency": {
+			      "Binding": {
+			        "ConceptualEntity": "SalesData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sales_data": {
+			          "Target": {
+			            "Entity": "sales_data"
+			          }
+			        },
+			        "KPIs_customer.frequency": {
+			          "Target": {
+			            "Entity": "KPIs_customer.frequency"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sales_data"
+			            },
+			            "Object": {
+			              "Role": "KPIs_customer.frequency"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_data_have_frequency"
+			        }
+			      ]
+			    },
+			    "sales_data_has_KPIs_customer_cumulative_sales_": {
+			      "Binding": {
+			        "ConceptualEntity": "SalesData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sales_data": {
+			          "Target": {
+			            "Entity": "sales_data"
+			          }
+			        },
+			        "KPIs_customer.cumulative_sales_": {
+			          "Target": {
+			            "Entity": "KPIs_customer.cumulative_sales_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sales_data"
+			            },
+			            "Object": {
+			              "Role": "KPIs_customer.cumulative_sales_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_data_have_cumulative_sales_"
+			        }
+			      ]
+			    },
+			    "product_information_has_KPIs_customer_cumulative_sales_": {
+			      "Binding": {
+			        "ConceptualEntity": "Product Information"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "product_information": {
+			          "Target": {
+			            "Entity": "product_information"
+			          }
+			        },
+			        "KPIs_customer.cumulative_sales_": {
+			          "Target": {
+			            "Entity": "KPIs_customer.cumulative_sales_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "product_information"
+			            },
+			            "Object": {
+			              "Role": "KPIs_customer.cumulative_sales_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "product_information_have_cumulative_sales_"
+			        }
+			      ]
+			    },
+			    "customer_information_has_KPIs_customer_lost_customers_l30d": {
+			      "Binding": {
+			        "ConceptualEntity": "Customer Information"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "customer_information": {
+			          "Target": {
+			            "Entity": "customer_information"
+			          }
+			        },
+			        "KPIs_customer.lost_customers_l30d": {
+			          "Target": {
+			            "Entity": "KPIs_customer.lost_customers_l30d"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "customer_information"
+			            },
+			            "Object": {
+			              "Role": "KPIs_customer.lost_customers_l30d"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "customer_information_have_lost_customers_l30d"
+			        }
+			      ]
+			    },
+			    "sales_data_has_KPIs_customer_active_customers_l30d": {
+			      "Binding": {
+			        "ConceptualEntity": "SalesData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sales_data": {
+			          "Target": {
+			            "Entity": "sales_data"
+			          }
+			        },
+			        "KPIs_customer.active_customers_l30d": {
+			          "Target": {
+			            "Entity": "KPIs_customer.active_customers_l30d"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sales_data"
+			            },
+			            "Object": {
+			              "Role": "KPIs_customer.active_customers_l30d"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_data_have_active_customers_l30d"
+			        }
+			      ]
+			    },
+			    "sales_data_has_KPIs_customer_CLV_profit_based_": {
+			      "Binding": {
+			        "ConceptualEntity": "SalesData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sales_data": {
+			          "Target": {
+			            "Entity": "sales_data"
+			          }
+			        },
+			        "KPIs_customer.CLV_profit_based_": {
+			          "Target": {
+			            "Entity": "KPIs_customer.CLV_profit_based_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sales_data"
+			            },
+			            "Object": {
+			              "Role": "KPIs_customer.CLV_profit_based_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_data_have_CLV_profit_based_"
+			        }
+			      ]
+			    },
+			    "product_information_has_KPIs_customer_CLV_profit_based_": {
+			      "Binding": {
+			        "ConceptualEntity": "Product Information"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "product_information": {
+			          "Target": {
+			            "Entity": "product_information"
+			          }
+			        },
+			        "KPIs_customer.CLV_profit_based_": {
+			          "Target": {
+			            "Entity": "KPIs_customer.CLV_profit_based_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "product_information"
+			            },
+			            "Object": {
+			              "Role": "KPIs_customer.CLV_profit_based_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "product_information_have_CLV_profit_based_"
+			        }
+			      ]
+			    },
+			    "sales_data_has_KPIs_customer_avg__profit_per_customer": {
+			      "Binding": {
+			        "ConceptualEntity": "SalesData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sales_data": {
+			          "Target": {
+			            "Entity": "sales_data"
+			          }
+			        },
+			        "KPIs_customer.avg__profit_per_customer": {
+			          "Target": {
+			            "Entity": "KPIs_customer.avg__profit_per_customer"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sales_data"
+			            },
+			            "Object": {
+			              "Role": "KPIs_customer.avg__profit_per_customer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_data_have_avg__profit_per_customer"
+			        }
+			      ]
+			    },
+			    "product_information_has_KPIs_customer_avg__profit_per_customer": {
+			      "Binding": {
+			        "ConceptualEntity": "Product Information"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "product_information": {
+			          "Target": {
+			            "Entity": "product_information"
+			          }
+			        },
+			        "KPIs_customer.avg__profit_per_customer": {
+			          "Target": {
+			            "Entity": "KPIs_customer.avg__profit_per_customer"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "product_information"
+			            },
+			            "Object": {
+			              "Role": "KPIs_customer.avg__profit_per_customer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "product_information_have_avg__profit_per_customer"
+			        }
+			      ]
+			    },
+			    "sales_data_has_KPIs_core_sale_YTD_profit": {
+			      "Binding": {
+			        "ConceptualEntity": "SalesData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sales_data": {
+			          "Target": {
+			            "Entity": "sales_data"
+			          }
+			        },
+			        "KPIs_core_sale.YTD_profit": {
+			          "Target": {
+			            "Entity": "KPIs_core_sale.YTD_profit"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sales_data"
+			            },
+			            "Object": {
+			              "Role": "KPIs_core_sale.YTD_profit"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_data_have_YTD_profit"
+			        }
+			      ]
+			    },
+			    "product_information_has_KPIs_core_sale_YTD_profit": {
+			      "Binding": {
+			        "ConceptualEntity": "Product Information"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "product_information": {
+			          "Target": {
+			            "Entity": "product_information"
+			          }
+			        },
+			        "KPIs_core_sale.YTD_profit": {
+			          "Target": {
+			            "Entity": "KPIs_core_sale.YTD_profit"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "product_information"
+			            },
+			            "Object": {
+			              "Role": "KPIs_core_sale.YTD_profit"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "product_information_have_YTD_profit"
+			        }
+			      ]
+			    },
+			    "sales_data_has_KPIs_core_sale_YTD_sales": {
+			      "Binding": {
+			        "ConceptualEntity": "SalesData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sales_data": {
+			          "Target": {
+			            "Entity": "sales_data"
+			          }
+			        },
+			        "KPIs_core_sale.YTD_sales": {
+			          "Target": {
+			            "Entity": "KPIs_core_sale.YTD_sales"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sales_data"
+			            },
+			            "Object": {
+			              "Role": "KPIs_core_sale.YTD_sales"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_data_have_YTD_sales"
+			        }
+			      ]
+			    },
+			    "product_information_has_KPIs_core_sale_YTD_sales": {
+			      "Binding": {
+			        "ConceptualEntity": "Product Information"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "product_information": {
+			          "Target": {
+			            "Entity": "product_information"
+			          }
+			        },
+			        "KPIs_core_sale.YTD_sales": {
+			          "Target": {
+			            "Entity": "KPIs_core_sale.YTD_sales"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "product_information"
+			            },
+			            "Object": {
+			              "Role": "KPIs_core_sale.YTD_sales"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "product_information_have_YTD_sales"
+			        }
+			      ]
+			    },
+			    "sales_data_has_KPIs_core_sale_MoM_growth_": {
+			      "Binding": {
+			        "ConceptualEntity": "SalesData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sales_data": {
+			          "Target": {
+			            "Entity": "sales_data"
+			          }
+			        },
+			        "KPIs_core_sale.MoM_growth_": {
+			          "Target": {
+			            "Entity": "KPIs_core_sale.MoM_growth_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sales_data"
+			            },
+			            "Object": {
+			              "Role": "KPIs_core_sale.MoM_growth_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_data_have_MoM_growth_"
+			        }
+			      ]
+			    },
+			    "product_information_has_KPIs_core_sale_MoM_growth_": {
+			      "Binding": {
+			        "ConceptualEntity": "Product Information"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "product_information": {
+			          "Target": {
+			            "Entity": "product_information"
+			          }
+			        },
+			        "KPIs_core_sale.MoM_growth_": {
+			          "Target": {
+			            "Entity": "KPIs_core_sale.MoM_growth_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "product_information"
+			            },
+			            "Object": {
+			              "Role": "KPIs_core_sale.MoM_growth_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "product_information_have_MoM_growth_"
+			        }
+			      ]
+			    },
+			    "sales_data_has_KPIs_core_sale_sales_LM": {
+			      "Binding": {
+			        "ConceptualEntity": "SalesData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sales_data": {
+			          "Target": {
+			            "Entity": "sales_data"
+			          }
+			        },
+			        "KPIs_core_sale.sales_LM": {
+			          "Target": {
+			            "Entity": "KPIs_core_sale.sales_LM"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sales_data"
+			            },
+			            "Object": {
+			              "Role": "KPIs_core_sale.sales_LM"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_data_have_sales_LM"
+			        }
+			      ]
+			    },
+			    "product_information_has_KPIs_core_sale_sales_LM": {
+			      "Binding": {
+			        "ConceptualEntity": "Product Information"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "product_information": {
+			          "Target": {
+			            "Entity": "product_information"
+			          }
+			        },
+			        "KPIs_core_sale.sales_LM": {
+			          "Target": {
+			            "Entity": "KPIs_core_sale.sales_LM"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "product_information"
+			            },
+			            "Object": {
+			              "Role": "KPIs_core_sale.sales_LM"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "product_information_have_sales_LM"
+			        }
+			      ]
+			    },
+			    "sales_data_has_KPIs_core_sale_YoY_growth_": {
+			      "Binding": {
+			        "ConceptualEntity": "SalesData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sales_data": {
+			          "Target": {
+			            "Entity": "sales_data"
+			          }
+			        },
+			        "KPIs_core_sale.YoY_growth_": {
+			          "Target": {
+			            "Entity": "KPIs_core_sale.YoY_growth_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sales_data"
+			            },
+			            "Object": {
+			              "Role": "KPIs_core_sale.YoY_growth_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_data_have_YoY_growth_"
+			        }
+			      ]
+			    },
+			    "product_information_has_KPIs_core_sale_YoY_growth_": {
+			      "Binding": {
+			        "ConceptualEntity": "Product Information"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "product_information": {
+			          "Target": {
+			            "Entity": "product_information"
+			          }
+			        },
+			        "KPIs_core_sale.YoY_growth_": {
+			          "Target": {
+			            "Entity": "KPIs_core_sale.YoY_growth_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "product_information"
+			            },
+			            "Object": {
+			              "Role": "KPIs_core_sale.YoY_growth_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "product_information_have_YoY_growth_"
+			        }
+			      ]
+			    },
+			    "sales_data_has_KPIs_core_sale_sales_LY_": {
+			      "Binding": {
+			        "ConceptualEntity": "SalesData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sales_data": {
+			          "Target": {
+			            "Entity": "sales_data"
+			          }
+			        },
+			        "KPIs_core_sale.sales_LY_": {
+			          "Target": {
+			            "Entity": "KPIs_core_sale.sales_LY_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sales_data"
+			            },
+			            "Object": {
+			              "Role": "KPIs_core_sale.sales_LY_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_data_have_sales_LY_"
+			        }
+			      ]
+			    },
+			    "product_information_has_KPIs_core_sale_sales_LY_": {
+			      "Binding": {
+			        "ConceptualEntity": "Product Information"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "product_information": {
+			          "Target": {
+			            "Entity": "product_information"
+			          }
+			        },
+			        "KPIs_core_sale.sales_LY_": {
+			          "Target": {
+			            "Entity": "KPIs_core_sale.sales_LY_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "product_information"
+			            },
+			            "Object": {
+			              "Role": "KPIs_core_sale.sales_LY_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "product_information_have_sales_LY_"
+			        }
+			      ]
+			    },
+			    "customer_information_has_recency_bucket": {
+			      "Binding": {
+			        "ConceptualEntity": "Customer Information"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "customer_information": {
+			          "Target": {
+			            "Entity": "customer_information"
+			          }
+			        },
+			        "customer_information.recency_bucket": {
+			          "Target": {
+			            "Entity": "customer_information.recency_bucket"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "customer_information"
+			            },
+			            "Object": {
+			              "Role": "customer_information.recency_bucket"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "customer_information_have_recency_buckets"
+			        }
+			      ]
+			    },
+			    "customer_information_has_recency": {
+			      "Binding": {
+			        "ConceptualEntity": "Customer Information"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "customer_information": {
+			          "Target": {
+			            "Entity": "customer_information"
+			          }
+			        },
+			        "customer_information.recency": {
+			          "Target": {
+			            "Entity": "customer_information.recency"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "customer_information"
+			            },
+			            "Object": {
+			              "Role": "customer_information.recency"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "customer_information_have_recencies"
+			        }
+			      ]
+			    },
 			    "returns_data_has_KPIs_return_profit_impact_loss": {
 			      "Binding": {
 			        "ConceptualEntity": "Returns Data"
@@ -14425,7 +16259,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "sales_data_has_KPIs_customer_avg_revenue_per_customer": {
+			    "sales_data_has_KPIs_customer_avg__sales_per_customer": {
 			      "Binding": {
 			        "ConceptualEntity": "SalesData"
 			      },
@@ -14436,9 +16270,9 @@ cultureInfo en-US
 			            "Entity": "sales_data"
 			          }
 			        },
-			        "KPIs_customer.avg_revenue_per_customer": {
+			        "KPIs_customer.avg__sales_per_customer": {
 			          "Target": {
-			            "Entity": "KPIs_customer.avg_revenue_per_customer"
+			            "Entity": "KPIs_customer.avg__sales_per_customer"
 			          }
 			        }
 			      },
@@ -14449,16 +16283,16 @@ cultureInfo en-US
 			              "Role": "sales_data"
 			            },
 			            "Object": {
-			              "Role": "KPIs_customer.avg_revenue_per_customer"
+			              "Role": "KPIs_customer.avg__sales_per_customer"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_data_have_avg_revenue_per_customer"
+			          "ID": "sales_data_have_avg__sales_per_customer"
 			        }
 			      ]
 			    },
-			    "product_information_has_KPIs_customer_avg_revenue_per_customer": {
+			    "product_information_has_KPIs_customer_avg__sales_per_customer": {
 			      "Binding": {
 			        "ConceptualEntity": "Product Information"
 			      },
@@ -14469,9 +16303,9 @@ cultureInfo en-US
 			            "Entity": "product_information"
 			          }
 			        },
-			        "KPIs_customer.avg_revenue_per_customer": {
+			        "KPIs_customer.avg__sales_per_customer": {
 			          "Target": {
-			            "Entity": "KPIs_customer.avg_revenue_per_customer"
+			            "Entity": "KPIs_customer.avg__sales_per_customer"
 			          }
 			        }
 			      },
@@ -14482,12 +16316,12 @@ cultureInfo en-US
 			              "Role": "product_information"
 			            },
 			            "Object": {
-			              "Role": "KPIs_customer.avg_revenue_per_customer"
+			              "Role": "KPIs_customer.avg__sales_per_customer"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "product_information_have_avg_revenue_per_customer"
+			          "ID": "product_information_have_avg__sales_per_customer"
 			        }
 			      ]
 			    },
@@ -17668,6 +19502,72 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.9,
 			          "ID": "customer_information_are_purchased_on_first_purchase_dates"
+			        }
+			      ]
+			    },
+			    "product_information_has_KPIs_customer_segment": {
+			      "Binding": {
+			        "ConceptualEntity": "Product Information"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "product_information": {
+			          "Target": {
+			            "Entity": "product_information"
+			          }
+			        },
+			        "KPIs_customer.segment": {
+			          "Target": {
+			            "Entity": "KPIs_customer.segment"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "product_information"
+			            },
+			            "Object": {
+			              "Role": "KPIs_customer.segment"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "product_information_have_segment"
+			        }
+			      ]
+			    },
+			    "sales_data_has_KPIs_customer_segment": {
+			      "Binding": {
+			        "ConceptualEntity": "SalesData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sales_data": {
+			          "Target": {
+			            "Entity": "sales_data"
+			          }
+			        },
+			        "KPIs_customer.segment": {
+			          "Target": {
+			            "Entity": "KPIs_customer.segment"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sales_data"
+			            },
+			            "Object": {
+			              "Role": "KPIs_customer.segment"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_data_have_segment"
 			        }
 			      ]
 			    },

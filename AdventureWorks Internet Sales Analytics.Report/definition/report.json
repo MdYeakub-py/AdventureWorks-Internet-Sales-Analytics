@@ -43,7 +43,10 @@
   "publicCustomVisuals": [
     "scatterChartByAkvelon6CFB0DAB29E746BE850B6DFD1E2789FD",
     "SimpleWaterfall",
-    "ultimateWaterfall9712E1351D4E4FA89077ED4D9351DC71"
+    "ultimateWaterfall9712E1351D4E4FA89077ED4D9351DC71",
+    "heatmapF244EA9EE1F34E828A80CF19B41976F8",
+    "financialreportingmatrixD8A502553641450F8EAEB9BA40B2166E",
+    "paretoEDD8E69761BA4B7BB3AA6D813990D7BF"
   ],
   "resourcePackages": [
     {

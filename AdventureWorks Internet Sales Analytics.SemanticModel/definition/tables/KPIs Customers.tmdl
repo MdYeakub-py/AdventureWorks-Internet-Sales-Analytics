@@ -63,7 +63,7 @@ table 'KPIs Customers'
 		formatString: 0
 		lineageTag: da02dd68-2290-4eb4-99dd-bb01d3a085c7
 
-	measure 'Avg Revenue per Customer' = DIVIDE([Gross Revenue],[Total Customers],0)
+	measure 'Avg. Sales per Customer' = DIVIDE([Gross Revenue],[Total Customers],0)
 		lineageTag: b54fd0b7-43ab-4e22-9778-6eb00441c519
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
@@ -74,6 +74,119 @@ table 'KPIs Customers'
 		lineageTag: 96eba87e-9e7a-4297-99ed-1a8f8021c7e0
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Avg. Profit per Customer' = DIVIDE([Gross Profit],[Total Customers],0)
+		lineageTag: 1a579a57-6da4-4d24-9122-48efbf285564
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CLV (Profit Based) :' =
+			
+			CALCULATE(
+			    [Gross Profit],
+			    ALLEXCEPT(SalesData, SalesData[CustomerKey])
+			)
+		lineageTag: dbfd458b-ce0e-4376-8aff-60aca382fe01
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Active Customers (L-30d)' = ```
+			
+			CALCULATE(
+			    DISTINCTCOUNT(SalesData[CustomerKey]),
+			    FILTER(
+			        SalesData,
+			        SalesData[OrderDate] >= MAX(SalesData[OrderDate]) - 30
+			    )
+			)
+			
+			```
+		formatString: 0
+		lineageTag: c064e7c4-2897-4707-b444-7ec543da3865
+
+	measure 'Lost Customers (L-30d)' = ```
+			
+			VAR MaxOrderDate =
+			    CALCULATE(
+			        MAX ( SalesData[OrderDate] )
+			    )
+			RETURN
+			CALCULATE(
+			    DISTINCTCOUNT ( 'Customer Information'[CustomerKey] ),
+			    FILTER (
+			        'Customer Information',
+			       'Customer Information'[Last Purchase Date] < (MaxOrderDate) - 30
+			    )
+			)
+			
+			```
+		formatString: 0
+		lineageTag: c8755287-73a4-49c5-9e2d-44880e47b434
+
+	measure 'Cumulative Sales %' = ```
+			
+			VAR TotalAllSales =
+			    CALCULATE([Gross Revenue],ALL('Customer Information'))
+			
+			VAR RunningSales = 
+			    CALCULATE(
+			        [Gross Revenue],
+			        FILTER(
+			            ALL('Customer Information'),
+			            'Customer Information'[Customer Revenue Rank] <= MAX('Customer Information'[Customer Revenue Rank])
+			        )
+			    )
+			RETURN
+			DIVIDE(RunningSales,TotalAllSales)
+			```
+		lineageTag: 2b943711-d501-4f34-b96d-0cafe8cc6f5f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Frequency =
+			
+			CALCULATE(
+			    DISTINCTCOUNT(SalesData[OrderDate]),
+			    ALLEXCEPT(SalesData,SalesData[CustomerKey])
+			)
+		formatString: 0
+		lineageTag: 175313d7-8fa8-41e3-9560-93c5227ce209
+
+	measure Monetary =
+			
+			CALCULATE(
+			    [Gross Revenue],
+			    ALLEXCEPT(SalesData,SalesData[CustomerKey])
+			)
+		lineageTag: 0e9d0a4a-4a66-46f3-886e-3f75151202f4
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Profit =
+			
+			CALCULATE(
+			    [Gross Profit],
+			    ALLEXCEPT(SalesData,SalesData[CustomerKey])
+			)
+		lineageTag: 606e2dbe-81da-4e4e-a7bc-f1dcd766bf74
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure CLV = [Gross Revenue]
+		lineageTag: 3f53ed07-4e49-4acf-b483-9529b2d5cd7e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Segment =
+			
+			SWITCH(
+			    TRUE(),
+			    [CLV]>= PERCENTILEX.INC(ALL('Customer Information'), [CLV], 0.75), "High Value",
+			    [CLV]>= PERCENTILEX.INC(ALL('Customer Information'), [CLV], 0.50), "Medium Value",
+			    [CLV]>= PERCENTILEX.INC(ALL('Customer Information'), [CLV], 0.25), "Low Value",
+			    "Very Low"
+			)
+		lineageTag: cd194ebd-81f6-414d-ac65-c3232d79a0db
 
 	column Column
 		formatString: 0

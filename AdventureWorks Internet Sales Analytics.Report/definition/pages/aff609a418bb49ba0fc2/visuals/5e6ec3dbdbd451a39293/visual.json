@@ -7,7 +7,7 @@
     "z": 1000,
     "height": 58.42323651452282,
     "width": 166.77178423236515,
-    "tabOrder": 11000
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -20,14 +20,14 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "KPIs Return"
+                      "Entity": "KPIs Customers"
                     }
                   },
-                  "Property": "Return Rate (%)"
+                  "Property": "Active Customers (L-30d)"
                 }
               },
-              "queryRef": "KPIs Return.Return Rate (%)",
-              "nativeQueryRef": "Return Rate (%)"
+              "queryRef": "KPIs Customers.Active Customers (L-30d)",
+              "nativeQueryRef": "Active Customers (L-30d)"
             }
           ]
         }
@@ -39,10 +39,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "KPIs Return"
+                    "Entity": "KPIs Customers"
                   }
                 },
-                "Property": "Return Rate (%)"
+                "Property": "Active Customers (L-30d)"
               }
             },
             "direction": "Descending"
@@ -621,6 +621,27 @@
           },
           "selector": {
             "metadata": "KPIs Customers.Total Customers"
+          }
+        },
+        {
+          "properties": {
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "0L"
+                }
+              }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "KPIs Customers.Active Customers (L-30d)"
           }
         }
       ],

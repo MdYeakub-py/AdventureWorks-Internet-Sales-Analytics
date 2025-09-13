@@ -5,10 +5,44 @@
   "displayOption": "FitToPage",
   "height": 720,
   "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "5b2dd0be54879ae24a09",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Product Information"
+              }
+            },
+            "Property": "ProductName"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      }
+    ]
+  },
   "pageBinding": {
     "name": "4e2b9cd779cb04213d4c",
-    "type": "Default",
-    "parameters": [],
+    "type": "Drillthrough",
+    "parameters": [
+      {
+        "name": "8482b2c2ae919a20dd73",
+        "boundFilter": "5b2dd0be54879ae24a09",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Product Information"
+              }
+            },
+            "Property": "ProductName"
+          }
+        }
+      }
+    ],
     "referenceScope": "CrossReport"
   },
   "objects": {

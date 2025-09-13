@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "5887d136ef3e486f2c9e",
   "position": {
-    "x": 1079.2365145228216,
-    "y": 100.91286307053942,
+    "x": 1079.6352583586627,
+    "y": 101.15501519756839,
     "z": 3000,
-    "height": 59.485477178423238,
-    "width": 177.39419087136929,
-    "tabOrder": 17000
+    "height": 59.331306990881458,
+    "width": 189.66565349544075,
+    "tabOrder": 15000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -20,14 +20,14 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "KPIs Return"
+                      "Entity": "KPIs Core Sales"
                     }
                   },
-                  "Property": "Return Cost Impact"
+                  "Property": "YTD Sales:"
                 }
               },
-              "queryRef": "KPIs Return.Return Cost Impact",
-              "nativeQueryRef": "Return Cost Impact"
+              "queryRef": "KPIs Core Sales.YTD Sales:",
+              "nativeQueryRef": "YTD Sales:"
             }
           ]
         }
@@ -39,10 +39,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "KPIs Return"
+                    "Entity": "KPIs Core Sales"
                   }
                 },
-                "Property": "Return Cost Impact"
+                "Property": "YTD Sales:"
               }
             },
             "direction": "Descending"
@@ -392,27 +392,6 @@
           },
           "selector": {
             "metadata": "KPIs for Card.Profit Comparison"
-          }
-        },
-        {
-          "properties": {
-            "labelPrecision": {
-              "expr": {
-                "Literal": {
-                  "Value": "2L"
-                }
-              }
-            },
-            "labelDisplayUnits": {
-              "expr": {
-                "Literal": {
-                  "Value": "1000D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "KPIs Return.Return Cost Impact"
           }
         }
       ],

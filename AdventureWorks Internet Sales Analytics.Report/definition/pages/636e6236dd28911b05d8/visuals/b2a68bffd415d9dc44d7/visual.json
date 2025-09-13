@@ -7,7 +7,7 @@
     "z": 4000,
     "height": 59.485477178423238,
     "width": 179.51867219917011,
-    "tabOrder": 18000
+    "tabOrder": 16000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -20,14 +20,14 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "KPIs Return"
+                      "Entity": "KPIs Core Sales"
                     }
                   },
-                  "Property": "Total Value of Returns"
+                  "Property": "MoM Growth %"
                 }
               },
-              "queryRef": "KPIs Return.Total Value of Returns",
-              "nativeQueryRef": "Total Value of Returns"
+              "queryRef": "KPIs Core Sales.MoM Growth %",
+              "nativeQueryRef": "MoM Growth %"
             }
           ]
         }
@@ -39,10 +39,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "KPIs Return"
+                    "Entity": "KPIs Core Sales"
                   }
                 },
-                "Property": "Total Value of Returns"
+                "Property": "MoM Growth %"
               }
             },
             "direction": "Descending"
@@ -392,20 +392,6 @@
           },
           "selector": {
             "metadata": "KPIs for Card.Profit Comparison"
-          }
-        },
-        {
-          "properties": {
-            "labelPrecision": {
-              "expr": {
-                "Literal": {
-                  "Value": "2L"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "KPIs Return.Total Value of Returns"
           }
         }
       ],

@@ -30,6 +30,62 @@ table 'KPIs Core Sales'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure 'Sales LY :' =
+			
+			CALCULATE([Gross Revenue],SAMEPERIODLASTYEAR('Calendar'[Date]))
+		formatString: 0
+		lineageTag: e55d0e98-1f03-453c-8317-aa78aa1658c1
+
+	measure 'YoY Growth %:' =
+			
+			DIVIDE([Gross Revenue] - [Sales LY :],[Sales LY :])
+		lineageTag: c1f41a2f-4d26-4dd8-ae0d-3ddbf72ec3d6
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Sales LM:' =
+			
+			CALCULATE([Gross Revenue], PREVIOUSMONTH('Calendar'[Date]))
+		lineageTag: 9a4ac966-bf13-4d72-9291-344c3804bf35
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'MoM Growth %' = ```
+			
+			VAR SalesLM = [Sales LM:]
+			RETURN
+			IF (
+			    NOT ISBLANK ( SalesLM ) && SalesLM <> 0,
+			    DIVIDE ( [Gross Revenue] - SalesLM, SalesLM ),
+			    BLANK()
+			)
+			
+			```
+		lineageTag: ff4583d7-ba6d-438f-b979-290d69ca7e43
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'YTD Sales:' =
+			
+			CALCULATE([Gross Revenue],DATESYTD('Calendar'[Date]))
+		lineageTag: d6093258-3d4f-4123-8776-e0bab0830ee5
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'YTD Profit:' =
+			
+			CALCULATE([Gross Profit],DATESYTD('Calendar'[Date]))
+		lineageTag: 49b2e78c-ea36-481f-8e6d-7d4197a6f33c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Previous Month Sales' =
+			
+			CALCULATE([Gross Revenue],DATEADD('Calendar'[Date],-1,MONTH))
+		lineageTag: 7e9d8323-559a-4d38-b067-3249503e3d9a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column Column
 		formatString: 0
 		lineageTag: 2b4bbf7c-a86e-42b4-8c0b-da65f0c5e39b

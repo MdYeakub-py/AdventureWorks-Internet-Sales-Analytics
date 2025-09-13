@@ -199,6 +199,33 @@ table 'Customer Information'
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Recency (Days)' = ```
+			
+			DATEDIFF(
+			    'Customer Information'[Last Purchase Date], 
+			    TODAY(),
+			    DAY)
+			```
+		formatString: 0
+		lineageTag: 01df6fca-1d01-4df4-92b8-87bbdc51dc6f
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Recency Bucket' =
+			
+			SWITCH(
+			    TRUE(),
+			    'Customer Information'[Recency (Days)] <= 300, "Active (≤30 days)",
+			    'Customer Information'[Recency (Days)] <= 900, "Warm (31–90 days)",
+			   'Customer Information'[Recency (Days)] <= 1800, "At Risk (91–180 days)",
+			    "Churned (>180 days)"
+			)
+		lineageTag: b9f0c0ae-ac76-4c3f-9b42-c21c5026783d
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'Customer Information' = m
 		mode: import
 		source =

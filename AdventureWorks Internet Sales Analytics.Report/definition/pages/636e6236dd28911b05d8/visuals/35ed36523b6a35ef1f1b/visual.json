@@ -7,7 +7,7 @@
     "z": 0,
     "height": 59.485477178423238,
     "width": 171.02074688796679,
-    "tabOrder": 10000
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -20,14 +20,14 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "KPIs Return"
+                      "Entity": "KPIs Core Sales"
                     }
                   },
-                  "Property": "Total Units Returns"
+                  "Property": "Gross Revenue"
                 }
               },
-              "queryRef": "KPIs Return.Total Units Returns",
-              "nativeQueryRef": "Total Units Returns"
+              "queryRef": "KPIs Core Sales.Gross Revenue",
+              "nativeQueryRef": "Gross Revenue"
             }
           ]
         }
@@ -39,10 +39,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "KPIs Return"
+                    "Entity": "KPIs Core Sales"
                   }
                 },
-                "Property": "Total Units Returns"
+                "Property": "Gross Revenue"
               }
             },
             "direction": "Descending"
@@ -611,27 +611,6 @@
           "selector": {
             "metadata": "KPIs Core Sales.Total Orders"
           }
-        },
-        {
-          "properties": {
-            "labelDisplayUnits": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "16D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "KPIs Return.Total Units Returns"
-          }
         }
       ],
       "label": [
@@ -763,31 +742,6 @@
           },
           "selector": {
             "metadata": "KPIs Profit.Total Profit"
-          }
-        },
-        {
-          "properties": {
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#605E5C'"
-                    }
-                  }
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "10D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "KPIs Return.Total Units Returns"
           }
         }
       ],

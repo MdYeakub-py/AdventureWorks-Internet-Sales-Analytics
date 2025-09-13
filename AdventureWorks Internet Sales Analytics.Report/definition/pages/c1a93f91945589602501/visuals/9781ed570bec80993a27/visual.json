@@ -7,7 +7,7 @@
     "z": 2000,
     "height": 59.331306990881458,
     "width": 210.09118541033436,
-    "tabOrder": 16000
+    "tabOrder": 14000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -23,7 +23,7 @@
                       "Entity": "KPIs Customers"
                     }
                   },
-                  "Property": "Avg Revenue per Customer"
+                  "Property": "Avg. Sales per Customer"
                 }
               },
               "queryRef": "KPIs Customers.Avg Revenue per Customer",
@@ -42,7 +42,7 @@
                     "Entity": "KPIs Customers"
                   }
                 },
-                "Property": "Avg Revenue per Customer"
+                "Property": "Avg. Sales per Customer"
               }
             },
             "direction": "Descending"

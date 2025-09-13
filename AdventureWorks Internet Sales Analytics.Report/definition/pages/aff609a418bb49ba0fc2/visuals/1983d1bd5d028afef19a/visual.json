@@ -4,10 +4,10 @@
   "position": {
     "x": 698.954356846473,
     "y": 100.91286307053942,
-    "z": 20000,
+    "z": 16000,
     "height": 59.485477178423238,
     "width": 179.51867219917011,
-    "tabOrder": 19000
+    "tabOrder": 13000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -20,14 +20,14 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "KPIs Profit"
+                      "Entity": "KPIs Customers"
                     }
                   },
-                  "Property": "Net Profit"
+                  "Property": "Avg. Sales per Customer"
                 }
               },
-              "queryRef": "KPIs Profit.Net Profit",
-              "nativeQueryRef": "Net Profit"
+              "queryRef": "KPIs Customers.Avg. Sales per Customer",
+              "nativeQueryRef": "Avg. Sales per Customer"
             }
           ]
         }
@@ -39,10 +39,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "KPIs Profit"
+                    "Entity": "KPIs Customers"
                   }
                 },
-                "Property": "Net Profit"
+                "Property": "Avg. Sales per Customer"
               }
             },
             "direction": "Descending"

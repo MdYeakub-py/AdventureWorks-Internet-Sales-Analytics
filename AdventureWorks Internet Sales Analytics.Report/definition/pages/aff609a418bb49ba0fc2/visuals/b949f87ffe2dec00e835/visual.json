@@ -7,7 +7,7 @@
     "z": 2000,
     "height": 58.42323651452282,
     "width": 154.02489626556016,
-    "tabOrder": 16000
+    "tabOrder": 10000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -20,14 +20,14 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "KPIs Return"
+                      "Entity": "KPIs Customers"
                     }
                   },
-                  "Property": "Net Profit Loss"
+                  "Property": "Lost Customers (L-30d)"
                 }
               },
-              "queryRef": "KPIs Return.Net Profit Loss",
-              "nativeQueryRef": "Net Profit Loss"
+              "queryRef": "KPIs Customers.Lost Customers (L-30d)",
+              "nativeQueryRef": "Lost Customers (L-30d)"
             }
           ]
         }
@@ -39,10 +39,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "KPIs Return"
+                    "Entity": "KPIs Customers"
                   }
                 },
-                "Property": "Net Profit Loss"
+                "Property": "Lost Customers (L-30d)"
               }
             },
             "direction": "Descending"
@@ -396,23 +396,16 @@
         },
         {
           "properties": {
-            "labelPrecision": {
-              "expr": {
-                "Literal": {
-                  "Value": "2L"
-                }
-              }
-            },
             "labelDisplayUnits": {
               "expr": {
                 "Literal": {
-                  "Value": "1000D"
+                  "Value": "1D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "KPIs Return.Net Profit Loss"
+            "metadata": "KPIs Customers.Lost Customers (L-30d)"
           }
         }
       ],

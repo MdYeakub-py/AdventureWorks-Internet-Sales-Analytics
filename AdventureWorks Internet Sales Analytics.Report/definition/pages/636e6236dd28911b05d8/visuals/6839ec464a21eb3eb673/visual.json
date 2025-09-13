@@ -7,7 +7,7 @@
     "z": 20000,
     "height": 59.485477178423238,
     "width": 179.51867219917011,
-    "tabOrder": 19000
+    "tabOrder": 17000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -20,14 +20,14 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "KPIs Profit"
+                      "Entity": "KPIs Core Sales"
                     }
                   },
-                  "Property": "Net Profit"
+                  "Property": "YoY Growth %:"
                 }
               },
-              "queryRef": "KPIs Profit.Net Profit",
-              "nativeQueryRef": "Net Profit"
+              "queryRef": "KPIs Core Sales.YoY Growth %:",
+              "nativeQueryRef": "YoY Growth %:"
             }
           ]
         }
@@ -39,10 +39,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "KPIs Profit"
+                    "Entity": "KPIs Core Sales"
                   }
                 },
-                "Property": "Net Profit"
+                "Property": "YoY Growth %:"
               }
             },
             "direction": "Descending"

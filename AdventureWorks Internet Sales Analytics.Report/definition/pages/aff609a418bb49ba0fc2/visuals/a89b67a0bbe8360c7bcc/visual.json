@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
-  "name": "f611faa2831c6f391eef",
+  "name": "a89b67a0bbe8360c7bcc",
   "position": {
-    "x": 463.75114364135408,
-    "y": 52.698993595608457,
-    "z": 15000,
-    "height": 45.672461116193965,
-    "width": 200.25617566331198,
-    "tabOrder": 9000
+    "x": 159.33609958506224,
+    "y": 53.11203319502075,
+    "z": 22000,
+    "height": 47.800829875518673,
+    "width": 283.6182572614108,
+    "tabOrder": 21000
   },
   "visual": {
     "visualType": "slicer",
@@ -23,15 +23,33 @@
                       "Entity": "Calendar"
                     }
                   },
-                  "Property": "Month Name"
+                  "Property": "Date"
                 }
               },
-              "queryRef": "Calendar.Month Name",
-              "nativeQueryRef": "Month Name",
+              "queryRef": "Calendar.Date",
+              "nativeQueryRef": "Date",
               "active": true
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Calendar"
+                  }
+                },
+                "Property": "Date"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": true
       }
     },
     "objects": {
@@ -54,14 +72,7 @@
             "orientation": {
               "expr": {
                 "Literal": {
-                  "Value": "1D"
-                }
-              }
-            },
-            "responsive": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
+                  "Value": "0D"
                 }
               }
             }
@@ -88,54 +99,72 @@
           }
         }
       ],
+      "selection": [
+        {
+          "properties": {
+            "singleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "strictSingleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "selectAllCheckboxEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
       "items": [
         {
           "properties": {
-            "padding": {
+            "outlineStyle": {
               "expr": {
                 "Literal": {
-                  "Value": "2D"
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
-    "visualContainerObjects": {
-      "visualHeader": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
+                  "Value": "15D"
                 }
               }
             }
           }
         }
       ],
-      "general": [
+      "pendingChangesIcon": [
         {
           "properties": {
-            "keepLayerOrder": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 4,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
-            }
-          }
-        }
-      ],
-      "lockAspect": [
-        {
-          "properties": {
-            "show": {
+            },
+            "position": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "'right'"
+                }
+              }
+            },
+            "size": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }

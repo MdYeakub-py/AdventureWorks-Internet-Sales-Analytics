@@ -7,7 +7,7 @@
     "z": 16000,
     "height": 50.356816102470269,
     "width": 1110.1921317474839,
-    "tabOrder": 12000
+    "tabOrder": 10000
   },
   "visual": {
     "visualType": "shape",
@@ -55,7 +55,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Product Profitability Dashboard'"
+                  "Value": "'Time Intelligence'"
                 }
               }
             },
