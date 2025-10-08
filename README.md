@@ -45,14 +45,16 @@ This project demonstrates advanced data modeling, DAX measures, and visual story
 #### 1. **Overview**
 - Executive summary KPIs: Revenue, Profit, Orders, Return Rate  
 - Year-over-Year and Month-over-Month performance overview  
-- High-level visualization of sales and profitability trends  
+- High-level visualization of sales and profitability trends
+  
 ![AdventureWorks Internet Sales Analytics_page-0001](https://github.com/user-attachments/assets/3ebbc329-47ed-4090-8463-b4abcf1e6dac)
 
 
 #### 2. **Sales Performance**
 - Time-series analysis of sales and orders  
 - Product category contribution  
-- Target vs Actual performance visualization  
+- Target vs Actual performance visualization
+  
 ![AdventureWorks Internet Sales Analytics_page-0002](https://github.com/user-attachments/assets/f425f27c-0854-4938-a9e4-4e1dd56df01f)
 
 
@@ -60,6 +62,7 @@ This project demonstrates advanced data modeling, DAX measures, and visual story
 - Total and active customers, new vs lost customer metrics  
 - Top 10 customers by sales  
 - Customer retention trend and behavior analysis
+  
 ![AdventureWorks Internet Sales Analytics_page-0003](https://github.com/user-attachments/assets/0676546b-db93-452e-b8c7-1edb563f8756)
 
 
@@ -73,34 +76,39 @@ This project demonstrates advanced data modeling, DAX measures, and visual story
 #### 5. **Regional Insights**
 - Sales and profit distribution by region and country  
 - Map visualization for geographic performance  
-- Top-performing markets  
+- Top-performing markets
+  
 ![AdventureWorks Internet Sales Analytics_page-0005](https://github.com/user-attachments/assets/c2784783-ece1-411f-889f-355feda1b78f)
 
 
 #### 6. **Returns Analysis**
 - Total value of returns and profit loss impact  
 - High-risk products and regions  
-- Adjusted profit after return deduction  
+- Adjusted profit after return deduction
+  
 ![AdventureWorks Internet Sales Analytics_page-0006](https://github.com/user-attachments/assets/98be0da9-532a-4fcb-afd5-320518373daf)
 
 
 #### 7. **Time Intelligence**
 - Year-to-Date (YTD) and Month-to-Date (MTD) sales  
 - YoY and MoM comparison charts  
-- Seasonal sales and profit trend  
+- Seasonal sales and profit trend
+  
 ![AdventureWorks Internet Sales Analytics_page-0007](https://github.com/user-attachments/assets/9b612236-de37-4c03-82cc-2479f9bc6a18)
 
 
 #### 8. **Customer Segmentation**
 - CLV-based customer segmentation  
 - RFM (Recency, Frequency, Monetary) pattern visualization  
-- Cumulative sales distribution by customer rank  
+- Cumulative sales distribution by customer rank
+  
 ![AdventureWorks Internet Sales Analytics_page-0008](https://github.com/user-attachments/assets/07aa2fc0-58a8-490b-b235-ebcccd87792c)
 
 
 #### 9. **Product Profile**
 - Drill-through page for product-level deep dive  
-- Product cost, sales, profit margin, and return details  
+- Product cost, sales, profit margin, and return details
+  
 ![AdventureWorks Internet Sales Analytics_page-0009](https://github.com/user-attachments/assets/12584752-d1b5-4de6-98b1-a141a876e9d3)
 
 
@@ -134,8 +142,8 @@ This project demonstrates advanced data modeling, DAX measures, and visual story
 
 I'm passionate about data, product thinking, and solving real-world problems with business intelligence. If you're interested in collaborating or want to discuss the dashboard, feel free to connect!
 
-<img width="512" height="512" alt="portfolio" src="https://github.com/user-attachments/assets/8c747e78-eb98-4232-a211-751132f3498c" /> https://mdyeakub-py.github.io/Personal_Portfolio-/
 
+💼 https://mdyeakub-py.github.io/Personal_Portfolio-/
 
 🔗 https://www.linkedin.com/in/mdyeakub35/
 
