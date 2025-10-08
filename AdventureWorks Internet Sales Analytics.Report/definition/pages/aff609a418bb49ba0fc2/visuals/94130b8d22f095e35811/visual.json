@@ -7,7 +7,7 @@
     "z": 0,
     "height": 58.502758077226162,
     "width": 177.52561071710008,
-    "tabOrder": 7000
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -947,23 +947,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "3677ee242c4527036d68",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Customers"
-              }
-            },
-            "Property": "Total Customers"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

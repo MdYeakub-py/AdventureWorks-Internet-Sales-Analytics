@@ -4,10 +4,10 @@
   "position": {
     "x": 542.576112412178,
     "y": 131.89695550351288,
-    "z": 9000,
+    "z": 7000,
     "height": 194.84777517564405,
     "width": 292.77127244340363,
-    "tabOrder": 17000
+    "tabOrder": 11000
   },
   "visual": {
     "visualType": "pieChart",
@@ -371,34 +371,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "7b58ae261a8ee2287e15",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Customer Information"
-              }
-            },
-            "Property": "Gender"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "863738394b0521255d0e",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Core Sales"
-              }
-            },
-            "Property": "Gross Revenue"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

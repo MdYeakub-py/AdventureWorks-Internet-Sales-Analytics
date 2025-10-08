@@ -7,7 +7,7 @@
     "z": 9000,
     "height": 183,
     "width": 301,
-    "tabOrder": 15000
+    "tabOrder": 13000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -486,20 +486,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "f119c11aae1d837100b2",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Core Sales"
-              }
-            },
-            "Property": "Gross Revenue"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

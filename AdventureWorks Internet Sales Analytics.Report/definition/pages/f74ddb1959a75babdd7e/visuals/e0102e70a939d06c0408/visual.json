@@ -7,7 +7,7 @@
     "z": 8000,
     "height": 184,
     "width": 276,
-    "tabOrder": 14000
+    "tabOrder": 12000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -426,37 +426,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "113d185da4251b601d94",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Product Categories"
-              }
-            },
-            "Property": "CategoryName"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "96ef5bd150a09080bc60",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Core Sales"
-              }
-            },
-            "Property": "Gross Revenue"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

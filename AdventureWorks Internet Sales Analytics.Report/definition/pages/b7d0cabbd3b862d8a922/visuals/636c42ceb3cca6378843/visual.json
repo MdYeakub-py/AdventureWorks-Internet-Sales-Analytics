@@ -7,7 +7,7 @@
     "z": 8000,
     "height": 117,
     "width": 203,
-    "tabOrder": 10000
+    "tabOrder": 9000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -1119,37 +1119,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "a2aef272e1e7c934a65a",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Return"
-              }
-            },
-            "Property": "Return Rate (%)"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "586c2175b1c00d6b6060",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs for Card"
-              }
-            },
-            "Property": "Return Rate Comparison"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

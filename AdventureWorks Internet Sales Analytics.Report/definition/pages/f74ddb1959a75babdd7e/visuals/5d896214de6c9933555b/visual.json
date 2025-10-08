@@ -6,7 +6,8 @@
     "y": 236.01584428522446,
     "z": 8000,
     "height": 45.444642314207563,
-    "width": 140.06079027355625
+    "width": 140.06079027355625,
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "actionButton",
@@ -380,7 +381,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 0,
+                      "ColorId": 2,
                       "Percent": 0
                     }
                   }

@@ -4,10 +4,10 @@
   "position": {
     "x": 589.53942232630754,
     "y": 131.89695550351288,
-    "z": 14000,
+    "z": 8000,
     "height": 353.72365339578454,
     "width": 679.46916471506643,
-    "tabOrder": 4000
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "lineStackedColumnComboChart",
@@ -448,51 +448,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "c6b9e33402743aa2783b",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Calendar"
-              }
-            },
-            "Property": "Month Name"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "9c884ea290b184029973",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Core Sales"
-              }
-            },
-            "Property": "Gross Revenue"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "5c99106422db69be0eb2",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Profit"
-              }
-            },
-            "Property": "Gross Profit"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

@@ -7,7 +7,7 @@
     "z": 9000,
     "height": 43.444782168186457,
     "width": 140.06079027355625,
-    "tabOrder": 10000
+    "tabOrder": 9000
   },
   "visual": {
     "visualType": "actionButton",
@@ -381,7 +381,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 0,
+                      "ColorId": 2,
                       "Percent": 0
                     }
                   }

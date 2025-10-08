@@ -6,8 +6,7 @@
     "y": 141,
     "z": 1000,
     "height": 301,
-    "width": 556,
-    "tabOrder": 1000
+    "width": 556
   },
   "visual": {
     "visualType": "areaChart",
@@ -414,51 +413,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "78a5bc3235d3ddd065a5",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Calendar"
-              }
-            },
-            "Property": "Month Name"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "7a8fd910b06ed0460716",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Core Sales"
-              }
-            },
-            "Property": "Total Orders"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "cfa24b49305645c0c4b9",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Return"
-              }
-            },
-            "Property": "Total Units Returns"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

@@ -4,10 +4,10 @@
   "position": {
     "x": 158.87587822014052,
     "y": 305.76112412177986,
-    "z": 16000,
+    "z": 10000,
     "height": 179.85948477751757,
     "width": 423.66900858704139,
-    "tabOrder": 6000
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "tableEx",
@@ -952,20 +952,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "d76db93320e06e45092b",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "KPIs Core Sales"
-              }
-            },
-            "Property": "Gross Revenue"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }
