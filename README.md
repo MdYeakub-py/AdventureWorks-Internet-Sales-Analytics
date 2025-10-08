@@ -1,4 +1,4 @@
-![AdventureWorks Internet Sales Analytics_page-0004](https://github.com/user-attachments/assets/1577f96b-1d78-4142-9dd2-61b6053ef716)# 📊 AdventureWorks Internet Sales Analytics Dashboard
+# 📊 AdventureWorks Internet Sales Analytics Dashboard
 
 ### 🔍 Project Overview
 The **AdventureWorks Internet Sales Analytics Dashboard** is an interactive Power BI solution designed to provide deep insights into sales, profitability, customer behavior, and product performance across multiple dimensions.  
