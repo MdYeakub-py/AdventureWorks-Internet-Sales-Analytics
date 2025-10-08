@@ -134,6 +134,9 @@ This project demonstrates advanced data modeling, DAX measures, and visual story
 
 I'm passionate about data, product thinking, and solving real-world problems with business intelligence. If you're interested in collaborating or want to discuss the dashboard, feel free to connect!
 
+<img width="512" height="512" alt="portfolio" src="https://github.com/user-attachments/assets/8c747e78-eb98-4232-a211-751132f3498c" /> https://mdyeakub-py.github.io/Personal_Portfolio-/
+
+
 🔗 https://www.linkedin.com/in/mdyeakub35/
 
 📧 mdyeakub.cse@gmail.com
