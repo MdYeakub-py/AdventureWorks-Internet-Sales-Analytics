@@ -153,7 +153,7 @@ I'm passionate about data, product thinking, and solving real-world problems wit
 
 ---
 
-Thanks for checking out my iFlix Movie Streaming Analysis – Power BI Dashboard project! 🍽️📊
+Thanks for checking out my AdventureWorks Internet Sales Analytics – Power BI Dashboard project! 🍽️📊
 ---
 
 ### 📎 License
