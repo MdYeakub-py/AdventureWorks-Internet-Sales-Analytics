@@ -4,10 +4,10 @@
   "position": {
     "x": 446.40959725792629,
     "y": 553.89888603256213,
-    "z": 25000,
+    "z": 16000,
     "height": 160.13710368466153,
     "width": 267.62639245929734,
-    "tabOrder": 22000
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "kpi",
@@ -240,8 +240,8 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": -0.2
+                      "ColorId": 2,
+                      "Percent": 0
                     }
                   }
                 }
@@ -258,6 +258,19 @@
               "expr": {
                 "Literal": {
                   "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }

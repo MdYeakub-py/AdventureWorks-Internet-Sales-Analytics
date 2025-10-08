@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "d4e4d5b476a37c15c1e7",
   "position": {
-    "x": 789.24481327800834,
-    "y": 339.91701244813277,
-    "z": 21000,
-    "height": 373.90871369294604,
-    "width": 480.13278008298755,
-    "tabOrder": 19000
+    "x": 788.77856579984234,
+    "y": 339.92119779353823,
+    "z": 12000,
+    "height": 374.21591804570528,
+    "width": 481.13475177304963,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "tableEx",
@@ -23,12 +23,11 @@
                       "Entity": "Customer Information"
                     }
                   },
-                  "Property": "CustomerKey"
+                  "Property": "FullName"
                 }
               },
-              "queryRef": "Customer Information.CustomerKey",
-              "nativeQueryRef": "Customer",
-              "displayName": "Customer"
+              "queryRef": "Customer Information.FullName",
+              "nativeQueryRef": "FullName"
             },
             {
               "field": {
@@ -568,20 +567,6 @@
             }
           },
           "selector": {
-            "metadata": "Customer Information.CustomerKey"
-          }
-        },
-        {
-          "properties": {
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Center'"
-                }
-              }
-            }
-          },
-          "selector": {
             "metadata": "KPIs Customers.Segment"
           }
         }
@@ -704,7 +689,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "91.15451097561437D"
+                  "Value": "80.94319960165937D"
                 }
               }
             }
@@ -760,21 +745,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "99.72242639984368D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Customer Information.CustomerKey"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "81.74688796680498D"
+                  "Value": "77.29533076853672D"
                 }
               }
             }
@@ -788,7 +759,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "96.43842559698673D"
+                  "Value": "84.90785105219071D"
                 }
               }
             }
@@ -867,6 +838,13 @@
                   "Value": "false"
                 }
               }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Customer 360° Table'"
+                }
+              }
             }
           }
         }
@@ -940,8 +918,8 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": -0.2
+                      "ColorId": 2,
+                      "Percent": 0
                     }
                   }
                 }
@@ -958,6 +936,19 @@
               "expr": {
                 "Literal": {
                   "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -1025,6 +1016,7 @@
             }
           ]
         },
+        "howCreated": "User",
         "objects": {
           "general": [
             {

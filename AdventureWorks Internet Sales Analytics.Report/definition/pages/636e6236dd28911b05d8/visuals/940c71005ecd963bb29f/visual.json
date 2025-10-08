@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "940c71005ecd963bb29f",
   "position": {
-    "x": 156.59574468085108,
-    "y": 505.77507598784194,
-    "z": 26000,
-    "height": 207.17325227963528,
-    "width": 378.35866261398178,
-    "tabOrder": 24000
+    "x": 160.87431693989072,
+    "y": 494.61358313817334,
+    "z": 17000,
+    "height": 218.82903981264639,
+    "width": 373.70804059328651,
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "financialreportingmatrixD8A502553641450F8EAEB9BA40B2166E",
@@ -253,6 +253,13 @@
                   "Value": "150D"
                 }
               }
+            },
+            "firstColumnWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "133D"
+                }
+              }
             }
           }
         }
@@ -458,8 +465,8 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": -0.2
+                      "ColorId": 2,
+                      "Percent": 0
                     }
                   }
                 }
@@ -476,6 +483,19 @@
               "expr": {
                 "Literal": {
                   "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }

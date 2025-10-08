@@ -7,7 +7,7 @@
       "type": "SharedResources"
     },
     "customTheme": {
-      "name": "Colours8249189052688856.json",
+      "name": "Colours0518089058406761.json",
       "reportVersionAtImport": "5.65",
       "type": "RegisteredResources"
     }
@@ -35,6 +35,13 @@
                 "Value": "true"
               }
             }
+          },
+          "visible": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
           }
         }
       }
@@ -46,7 +53,8 @@
     "ultimateWaterfall9712E1351D4E4FA89077ED4D9351DC71",
     "heatmapF244EA9EE1F34E828A80CF19B41976F8",
     "financialreportingmatrixD8A502553641450F8EAEB9BA40B2166E",
-    "paretoEDD8E69761BA4B7BB3AA6D813990D7BF"
+    "paretoEDD8E69761BA4B7BB3AA6D813990D7BF",
+    "Gantt1448688115699"
   ],
   "resourcePackages": [
     {
@@ -78,11 +86,6 @@
           "name": "total_profit-color026865126305591347.png",
           "path": "total_profit-color026865126305591347.png",
           "type": "Image"
-        },
-        {
-          "name": "Colours8249189052688856.json",
-          "path": "Colours8249189052688856.json",
-          "type": "CustomTheme"
         },
         {
           "name": "Sales_Performance7140910623236898.png",
@@ -117,6 +120,71 @@
         {
           "name": "profit_margin9252048806921193.png",
           "path": "profit_margin9252048806921193.png",
+          "type": "Image"
+        },
+        {
+          "name": "profile1420100646244744.png",
+          "path": "profile1420100646244744.png",
+          "type": "Image"
+        },
+        {
+          "name": "Colours0518089058406761.json",
+          "path": "Colours0518089058406761.json",
+          "type": "CustomTheme"
+        },
+        {
+          "name": "home-color7368293331603119.svg",
+          "path": "home-color7368293331603119.svg",
+          "type": "Image"
+        },
+        {
+          "name": "sales_performance-color7793234964041426.png",
+          "path": "sales_performance-color7793234964041426.png",
+          "type": "Image"
+        },
+        {
+          "name": "customer_analytics-color4845652927141252.png",
+          "path": "customer_analytics-color4845652927141252.png",
+          "type": "Image"
+        },
+        {
+          "name": "product_profitability-color5200793289881018.png",
+          "path": "product_profitability-color5200793289881018.png",
+          "type": "Image"
+        },
+        {
+          "name": "regional_insights-color9008596542550359.png",
+          "path": "regional_insights-color9008596542550359.png",
+          "type": "Image"
+        },
+        {
+          "name": "return_analysis-color6998034097724338.png",
+          "path": "return_analysis-color6998034097724338.png",
+          "type": "Image"
+        },
+        {
+          "name": "time_intelligence-color18785638309120145.png",
+          "path": "time_intelligence-color18785638309120145.png",
+          "type": "Image"
+        },
+        {
+          "name": "customer_segmentation-color28545936173943176.png",
+          "path": "customer_segmentation-color28545936173943176.png",
+          "type": "Image"
+        },
+        {
+          "name": "product_profile_-_color48344001058089936.png",
+          "path": "product_profile_-_color48344001058089936.png",
+          "type": "Image"
+        },
+        {
+          "name": "customer_segmentation-color8107585633719858.png",
+          "path": "customer_segmentation-color8107585633719858.png",
+          "type": "Image"
+        },
+        {
+          "name": "Filter_Icon_Blue0672336699434315.png",
+          "path": "Filter_Icon_Blue0672336699434315.png",
           "type": "Image"
         }
       ]

@@ -1,0 +1,47 @@
+table sub-category
+	lineageTag: d76e0d58-39d6-42f5-8761-41491189aba7
+
+	column sub-category
+		lineageTag: 53916b35-5c34-454b-92e7-7489eb570aa3
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'sub-category Order'
+
+		relatedColumnDetails
+			groupByColumn: 'sub-category Fields'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'sub-category Fields'
+		isHidden
+		lineageTag: f45b47cc-f00d-48ad-9391-fe178cbdefe9
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'sub-category Order'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'sub-category Order'
+		isHidden
+		formatString: 0
+		lineageTag: 4562c5f6-0976-4bfd-bc90-53d8bdca9778
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition sub-category = calculated
+		mode: import
+		source =
+				{
+				    ("SubcategoryName", NAMEOF('Product Subcategories'[SubcategoryName]), 0)
+				}
+
+	annotation PBI_Id = dbc1b2db2e9f491cbcf0fae00843165f
+

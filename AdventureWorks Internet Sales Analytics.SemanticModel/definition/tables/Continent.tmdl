@@ -1,0 +1,47 @@
+table Continent
+	lineageTag: c4294797-e54d-4c9b-a30d-de2c0baae50b
+
+	column Continent
+		lineageTag: aaf926b7-517c-4008-87f0-d849be8fc2f9
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Continent Order'
+
+		relatedColumnDetails
+			groupByColumn: 'Continent Fields'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Continent Fields'
+		isHidden
+		lineageTag: a7c28951-18d2-42b5-93d2-1483f0589f6b
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Continent Order'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Continent Order'
+		isHidden
+		formatString: 0
+		lineageTag: 46a0da0a-6bc7-4e7a-a736-44ee62fbbc68
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Continent = calculated
+		mode: import
+		source =
+				{
+				    ("Continent", NAMEOF('Territory Information'[Continent]), 0)
+				}
+
+	annotation PBI_Id = ed420214c246473d874db7fa118f1983
+

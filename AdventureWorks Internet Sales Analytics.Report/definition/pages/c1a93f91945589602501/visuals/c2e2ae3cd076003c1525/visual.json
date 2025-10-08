@@ -3,11 +3,11 @@
   "name": "c2e2ae3cd076003c1525",
   "position": {
     "x": 517.44680851063833,
-    "y": 105.04559270516718,
+    "y": 60.080721510787754,
     "z": 3000,
     "height": 59.331306990881458,
     "width": 153.67781155015197,
-    "tabOrder": 15000
+    "tabOrder": 19000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -941,8 +941,8 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": -0.2
+                      "ColorId": 2,
+                      "Percent": 0
                     }
                   }
                 }
@@ -971,7 +971,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
@@ -979,9 +979,8 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 1,
-                      "Percent": 0
+                    "Literal": {
+                      "Value": "'#1b7eac'"
                     }
                   }
                 }

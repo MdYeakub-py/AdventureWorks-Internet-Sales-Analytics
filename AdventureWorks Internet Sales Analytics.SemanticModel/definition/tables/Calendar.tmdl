@@ -101,9 +101,10 @@ table Calendar
 				    #"Inserted Day" = Table.AddColumn(#"Inserted Day Name", "Day", each Date.Day([Date]), Int64.Type),
 				    #"Inserted Month" = Table.AddColumn(#"Inserted Day", "Month", each Date.Month([Date]), Int64.Type),
 				    #"Changed Type1" = Table.TransformColumnTypes(#"Inserted Month",{{"Month Name", type text}}),
-				    #"Inserted Start of Month" = Table.AddColumn(#"Changed Type1", "Start of Month", each Date.StartOfMonth([Date]), type date)
+				    #"Inserted Start of Month" = Table.AddColumn(#"Changed Type1", "Start of Month", each Date.StartOfMonth([Date]), type date),
+				    #"Changed Type2" = Table.TransformColumnTypes(#"Inserted Start of Month",{{"Start of Month", type date}})
 				in
-				    #"Inserted Start of Month"
+				    #"Changed Type2"
 
 	annotation PBI_ResultType = Table
 

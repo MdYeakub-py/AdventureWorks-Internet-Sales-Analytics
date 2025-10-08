@@ -1,0 +1,47 @@
+table date
+	lineageTag: e9025b2e-e32b-4f61-9471-f3facfedafa7
+
+	column date
+		lineageTag: 41288af4-8364-4ee5-8d5e-23012d5fc553
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'date Order'
+
+		relatedColumnDetails
+			groupByColumn: 'date Fields'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'date Fields'
+		isHidden
+		lineageTag: eb9226b3-09c0-4b9e-a930-4aa8a8a5d5f0
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'date Order'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'date Order'
+		isHidden
+		formatString: 0
+		lineageTag: 68777a9f-852d-491c-8b87-fad20d35a96c
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition date = calculated
+		mode: import
+		source =
+				{
+				    ("Date", NAMEOF('Calendar'[Date]), 0)
+				}
+
+	annotation PBI_Id = 71771187cd624df292a970a9c2454ee8
+

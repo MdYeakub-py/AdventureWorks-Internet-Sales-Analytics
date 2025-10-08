@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "315a50eb8615c01b261f",
   "position": {
-    "x": 502.85714285714289,
-    "y": 359.87841945288756,
-    "z": 21000,
-    "height": 185.77507598784194,
-    "width": 765.47112462006078,
-    "tabOrder": 18000
+    "x": 502.60733801717413,
+    "y": 356.72131147540983,
+    "z": 12000,
+    "height": 188.85245901639345,
+    "width": 765.4020296643248,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "tableEx",
@@ -654,8 +654,8 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": -0.2
+                      "ColorId": 2,
+                      "Percent": 0
                     }
                   }
                 }
@@ -672,6 +672,19 @@
               "expr": {
                 "Literal": {
                   "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -798,6 +811,54 @@
             }
           ]
         }
+      },
+      {
+        "name": "dfc07f9fa0f7d70e9691",
+        "type": "Exclude",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "p",
+              "Entity": "Product Information",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "p"
+                              }
+                            },
+                            "Property": "ProductName"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'Mountain-200 Black, 42'"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "Exclude"
       }
     ],
     "filterSortOrder": "Ascending"

@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "29f3470666428d8b9108",
   "position": {
-    "x": 160.39834024896265,
-    "y": 168.89626556016597,
-    "z": 17000,
-    "height": 158.27385892116183,
-    "width": 374.97095435684645,
-    "tabOrder": 15000
+    "x": 157.87665886026542,
+    "y": 131.89695550351288,
+    "z": 8000,
+    "height": 194.84777517564405,
+    "width": 377.70491803278691,
+    "tabOrder": 16000
   },
   "visual": {
     "visualType": "columnChart",
@@ -315,8 +315,8 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": -0.2
+                      "ColorId": 2,
+                      "Percent": 0
                     }
                   }
                 }
@@ -333,6 +333,19 @@
               "expr": {
                 "Literal": {
                   "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -417,6 +430,20 @@
             }
           ]
         }
+      },
+      {
+        "name": "12d1a0820206ec3ee7c3",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "KPIs Core Sales"
+              }
+            },
+            "Property": "Gross Revenue"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

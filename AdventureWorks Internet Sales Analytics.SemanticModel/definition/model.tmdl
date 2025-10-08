@@ -28,7 +28,9 @@ ref table 'KPIs Return'
 ref table 'KIPs Time Intelligence'
 ref table 'KPIs Customers'
 ref table 'KPIs for Card'
-ref table Table
+ref table Continent
+ref table date
+ref table sub-category
 
 ref cultureInfo en-US
 

@@ -1,14 +1,48 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
   "name": "f74ddb1959a75babdd7e",
-  "displayName": "Sales Perfirmance",
+  "displayName": "Sales Performance",
   "displayOption": "FitToPage",
   "height": 720,
   "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "2a30a5c513c7ccaade03",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Product Information"
+              }
+            },
+            "Property": "ProductName"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      }
+    ]
+  },
   "pageBinding": {
     "name": "b8b841cfa362cd9ac242",
-    "type": "Default",
-    "parameters": [],
+    "type": "Drillthrough",
+    "parameters": [
+      {
+        "name": "bff98427877ecad71a9d",
+        "boundFilter": "2a30a5c513c7ccaade03",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Product Information"
+              }
+            },
+            "Property": "ProductName"
+          }
+        }
+      }
+    ],
     "referenceScope": "CrossReport"
   },
   "objects": {
@@ -19,6 +53,23 @@
             "expr": {
               "Literal": {
                 "Value": "'Middle'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#F9F9F6'"
+                  }
+                }
               }
             }
           }

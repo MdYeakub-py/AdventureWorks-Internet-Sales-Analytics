@@ -4,14 +4,14 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 1037.2691963678265,
+        "x": 1223.3011718033604,
         "y": 0
       },
       "nodes": [
         {
           "location": {
             "x": 835.01408379286931,
-            "y": 89.983088959968114
+            "y": 455.53938785983854
           },
           "nodeIndex": "Returns Data",
           "nodeLineageTag": "a37dc88c-a442-4486-b0f9-10a6a0be1e83",
@@ -24,7 +24,7 @@
         {
           "location": {
             "x": 1194.9430451519988,
-            "y": 483.12530747303947
+            "y": 848.68160637291
           },
           "nodeIndex": "SalesData",
           "nodeLineageTag": "b84ab6d6-d0f7-4b9d-a47a-03d0bee052ef",
@@ -37,7 +37,7 @@
         {
           "location": {
             "x": 472.12660432502969,
-            "y": 868.25996290578541
+            "y": 1233.8162618056558
           },
           "nodeIndex": "Calendar",
           "size": {
@@ -49,7 +49,7 @@
         {
           "location": {
             "x": 245.22396761956765,
-            "y": 476.80302328993025
+            "y": 842.35932218980065
           },
           "nodeIndex": "Customer Information",
           "size": {
@@ -61,7 +61,7 @@
         {
           "location": {
             "x": 242.73349897151377,
-            "y": 205.09364567375337
+            "y": 570.64994457362377
           },
           "nodeIndex": "Product Categories",
           "size": {
@@ -73,7 +73,7 @@
         {
           "location": {
             "x": 832.26933593865556,
-            "y": 469.68125081840958
+            "y": 835.23754971828
           },
           "nodeIndex": "Product Information",
           "size": {
@@ -85,7 +85,7 @@
         {
           "location": {
             "x": 553.31412021000631,
-            "y": 93.205762905771437
+            "y": 458.76206180564191
           },
           "nodeIndex": "Product Subcategories",
           "size": {
@@ -97,7 +97,7 @@
         {
           "location": {
             "x": 1124.0237833873637,
-            "y": 95.686189117782874
+            "y": 461.24248801765333
           },
           "nodeIndex": "Territory Information",
           "size": {
@@ -109,7 +109,7 @@
         {
           "location": {
             "x": 2576.485369204674,
-            "y": 400.77109529945278
+            "y": 766.32739419932318
           },
           "nodeIndex": "KPIs Return",
           "size": {
@@ -121,7 +121,7 @@
         {
           "location": {
             "x": 2617.7518702331604,
-            "y": 400.77109529945278
+            "y": 766.32739419932318
           },
           "nodeIndex": "KIPs Time Intelligence",
           "size": {
@@ -133,7 +133,7 @@
         {
           "location": {
             "x": 2659.0183712616467,
-            "y": 400.77109529945278
+            "y": 766.32739419932318
           },
           "nodeIndex": "KPIs Customers",
           "size": {
@@ -145,7 +145,7 @@
         {
           "location": {
             "x": 2535.2188681761877,
-            "y": 400.77109529945278
+            "y": 766.32739419932318
           },
           "nodeIndex": "KPIs Core Sales",
           "size": {
@@ -157,7 +157,7 @@
         {
           "location": {
             "x": 2700.2848722901331,
-            "y": 400.77109529945278
+            "y": 766.32739419932318
           },
           "nodeIndex": "KPIs for Card",
           "size": {
@@ -169,7 +169,7 @@
         {
           "location": {
             "x": 2493.9523671477014,
-            "y": 753.53088930941249
+            "y": 1119.0871882092829
           },
           "nodeIndex": "KPIs Profit",
           "size": {
@@ -181,15 +181,41 @@
         {
           "location": {
             "x": 2741.5513733186194,
-            "y": 400.77109529945278
+            "y": 685.70319139279491
           },
-          "nodeIndex": "Table",
-          "nodeLineageTag": "b0e290db-d515-4d91-b9c1-6373e393d583",
+          "nodeIndex": "Continent",
+          "nodeLineageTag": "c4294797-e54d-4c9b-a30d-de2c0baae50b",
           "size": {
-            "height": 200,
+            "height": 152,
             "width": 234
           },
-          "zIndex": 12
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2782.8178743471058,
+            "y": 618.21587467281893
+          },
+          "nodeIndex": "date",
+          "nodeLineageTag": "e9025b2e-e32b-4f61-9471-f3facfedafa7",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2824.0843753755921,
+            "y": 516.98489959285484
+          },
+          "nodeIndex": "sub-category",
+          "nodeLineageTag": "d76e0d58-39d6-42f5-8761-41491189aba7",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "All tables",
